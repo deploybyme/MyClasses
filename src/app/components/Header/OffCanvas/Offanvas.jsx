@@ -3,7 +3,6 @@ import React, {useEffect, useState} from 'react';
 import {auth, db} from "@/app/firebase";
 import {doc, getDoc} from "firebase/firestore";
 
-import './Offcanvas.css'
 import OffcanvasMenu from './OffcanvasMenu'
 export default function Offanvas(props) {
  
