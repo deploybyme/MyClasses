@@ -160,7 +160,7 @@ export default function UserRegister() {
               <div className="col-12 col-md-6">
                 <label htmlFor="Password" className="form-label">Set Password</label>
                 <input type={`${show ? "text" : "Password"}`} className="form-control shadow-none"  required
-                 placeholder={phone?` Password Suggestion : P${phone}`:"Set Your Password"} id="Password" minLength={6} maxLength={12}
+                 placeholder={phone?` Password Suggestion : P${phone}`:"Set Your Password"} id="Password" minLength={6} maxLength={11}
                  value={password}
                  onChange={(e)=>setPassword(e.target.value)}
                  />
