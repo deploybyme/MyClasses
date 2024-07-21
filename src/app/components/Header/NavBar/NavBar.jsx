@@ -3,7 +3,6 @@ import React, {useEffect, useState} from 'react';
 import {auth, db} from "@/app/firebase";
 import {doc, getDoc} from "firebase/firestore";
 import 'bootstrap-icons/font/bootstrap-icons.min.css'
-import './NavBar.css'
 export default function NavBar(props) {
 
 
