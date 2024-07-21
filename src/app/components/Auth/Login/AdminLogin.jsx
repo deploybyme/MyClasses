@@ -57,7 +57,7 @@ export default function AdminLogin() {
     <div className="col-12">
       <label htmlFor="LoginPassword" className="form-label">Password </label>
       <input type={`${show ? "text" : "Password"}`} className="form-control shadow-none"  required
-       placeholder="Password [min-6 & max-12] digit" id="LoginPassword" minLength={4} maxLength={12}
+       placeholder="Password [min-6 & max-12] digit" id="LoginPassword" minLength={4} maxLength={11}
        value={password}
        onChange={(e)=>setPassword(e.target.value)}
        />
