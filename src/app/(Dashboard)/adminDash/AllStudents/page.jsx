@@ -41,7 +41,7 @@ export default function AllStudent() {
                 <div className='d-flex justify-content-center'>
                     
 
-                    <div className="spinner-border mt-5" role="status">
+                    <div className="spinner-border my-5" role="status">
                         <span className="sr-only"></span>
                     </div>
 
