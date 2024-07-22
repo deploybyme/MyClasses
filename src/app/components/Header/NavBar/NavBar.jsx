@@ -53,18 +53,20 @@ export default function NavBar(props) {
          
             <div className="btn-group">
                 <button type="button" className="btn btn-dark dropdown-toggle rounded-pill shadow-none border-0" data-bs-toggle="dropdown" aria-expanded="false" style={{background: "#00000055"}}>
-                    <i className="bi bi-person-circle me-2"></i>
-                    <span className='me-2' id="profile">
-                        { userDetails ? (
-                            <>{userDetails.name}</>
-                        ) : (
-                            <>Username</>
-                        )}
-                    </span>
+                    <i className="bi bi-person-circle"></i>
                 </button>
-                <ul className="dropdown-menu dropdown-menu-end">
+                <ul className="dropdown-menu dropdown-menu-end px-4 mt-2">
+                    <li className='pt-2 username'>
+                    
+                        { userDetails ? (
+                            <b className='fw-bold'>{userDetails.name}</b>
+                        ) : (
+                            <></>
+                        )}
+                    
+                    </li>
                     <li>
-                      <button className="dropdown-item d-flex align-items-center" type="button" id="exit" onClick={handleLogout}>
+                      <button className="dropdown-item d-flex align-items-center p-0 mt-2" type="button" id="exit" onClick={handleLogout}>
                           <i className="bi bi-box-arrow-in-right fs-4 me-2"></i>
                           <b className='text-decoration-none fw-light'>Logout</b>
                       </button>
