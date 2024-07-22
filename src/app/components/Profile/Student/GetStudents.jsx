@@ -100,8 +100,8 @@ const update = async ()=>{
               {
               return(
                 
-                <div key={data.id} className="accordion shadow-0 mt-1 rounded" id={`StudentDetails${index}`}>
-                  <div  className="accordion-item rounded">
+                <div key={data.id} className="accordion shadow-0 mt-1 overflow-hidden" id={`StudentDetails${index}`}>
+                  <div  className="accordion-item ">
                     <h2 className="accordion-header">
                       <div className="accordion-button collapsed p-3" type="button" data-bs-toggle="collapse" data-bs-target={`#Collapse${index}`} aria-expanded="false" aria-controls="collapseTwo">
                         
