@@ -37,12 +37,12 @@ export default function Offanvas(props) {
           <div className="col-12">
     { userDetails ? (
                 <>
-                <small className='text-start ps-2 type'>{userDetails.MemberType?(userDetails.MemberType+" "+userDetails.name):<big>userDetails.name</big>}</small>
+                <small className='text-start ps-2 type'>{userDetails.MemberType?<>{userDetails.MemberType} <big>{userDetails.name}</big></>:<big>{userDetails.name}</big>}</small>
                 <h6 className='accountInfo'>{userDetails.email}</h6>
                 </>
               ) : (
                 <>
-                <small className='text-start ps-2 type'>Usertype</small>
+                <small className='text-start ps-2 type'>User</small>
                 <h6 className='accountInfo'>Email id</h6>
                 </>
         )}
