@@ -119,16 +119,16 @@ const update = async ()=>{
                     <div className="row mt-1 w-100">
                         <div className="col-12 col-md-6">
                           <div className="row">
-                            <div className="col-5"><b>Course Fee</b></div>
-                            <div className="col-1"><b>:</b></div>
+                            <div className="col-5 col-md-4"><b>Course Fee</b></div>
+                            <div className="col-1 col-md-2"><b>:</b></div>
                             <div className="col-4">{data.courseFee}</div>
                           </div>
                         </div>
 
                         <div className="col-12 col-md-6 text-start text-md-end mt-sm-0 mt-1">
                         <div className="row">
-                            <div className="col-4"><b>Paid</b></div>
-                            <div className="col-2"><b>:</b></div>
+                            <div className="col-5 col-md-4"><b>Paid</b></div>
+                            <div className="col-1 col-md-2"><b>:</b></div>
                             <div className="col-4">{data.totalPaid}</div>
                           </div>
                         </div>
