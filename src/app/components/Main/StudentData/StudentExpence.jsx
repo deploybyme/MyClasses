@@ -107,7 +107,7 @@ const update = async ()=>{
                             <b className='pt-2'> son/daughter of : </b> {data.fatherName}
                         </div>
                         <div className="col-12 col-md-3 text-start mt-md-0 mt-2">
-                          <b>{data.balance?"Bal :"+data.balance:(<>The Fee Paid <small>(in Full)</small></>)}</b>
+                          <b>{data.balance?"Balance :"+data.balance:(<>The Fee Paid <small>(in Full)</small></>)}</b>
                         </div>
                     </div>
                       
