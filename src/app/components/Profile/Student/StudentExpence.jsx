@@ -91,7 +91,7 @@ const update = async ()=>{
                       
                     <div className="row w-100 my-2">
                         <div className="col-12 col-md-6">
-                          <b>{data.name} s/d of {data.fatherName}</b>
+                          <b>{data.name}</b> <small>s/d of {data.fatherName}</small>
                         </div>
 
                         <div className="col-12 col-md-6 text-start text-md-end mt-sm-0 mt-2">
