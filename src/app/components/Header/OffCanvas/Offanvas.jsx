@@ -37,7 +37,7 @@ export default function Offanvas(props) {
           <div className="col-12">
     { userDetails ? (
                 <>
-                <small className='text-start ps-2 type'>{userDetails.MemberType?(userDetails.MemberType+" "+userDetails.name):(userDetails.name)}</small>
+                <small className='text-start ps-2 type'>{userDetails.MemberType?(userDetails.MemberType+" "+userDetails.name):(<big>userDetails.name</big>)}</small>
                 <h6 className='accountInfo'>{userDetails.email}</h6>
                 </>
               ) : (
