@@ -131,7 +131,7 @@ const update = async ()=>{
                     <div id={`Collapse${index}`} className="accordion-collapse collapse" data-bs-parent={`#StudentDetails${index}`}>
                       <div className="accordion-body">
 
-                      <div className="row mt-1 w-100">
+                      <div className="row mt-1 w-100 pb-2 border-bottom">
                           <div className="col-12 col-md-6">
                             <div className="row">
                               <div className="col-4"><b>Paid</b></div>
