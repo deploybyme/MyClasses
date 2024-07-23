@@ -61,18 +61,18 @@ export default function UserRegister() {
           <div className="row">
 
             <div className="col-12 col-md-6">
-              <label htmlFor="Name" className="form-label">Student Name</label>
+              <label htmlFor="stdName" className="form-label">Student Name</label>
               <input type="text" className="form-control shadow-none"
-               placeholder="Enter Student Name" id="Name" required  
+               placeholder="Enter Student Name" id="stdName" required  
                value={name}
                onChange={(e)=>setName(e.target.value)}
                />
             </div>
 
             <div className="col-12 col-md-6">
-              <label htmlFor="Email" className="form-label">Student Email</label>
+              <label htmlFor="stdEmail" className="form-label">Student Email</label>
               <input type="email" className="form-control shadow-none"
-               placeholder="Enter Student Email" id="Email" required
+               placeholder="Enter Student Email" id="stdEmail" required
                value={email}
                onChange={(e)=>setEmail(e.target.value)}
                />
@@ -83,9 +83,9 @@ export default function UserRegister() {
           <div className="row mt-lg-3 mt-2">
 
             <div className="col-12 col-md-6">
-              <label htmlFor="Phone" className="form-label">Student Phone</label>
+              <label htmlFor="stdPhone" className="form-label">Student Phone</label>
               <input type="text" className="form-control shadow-none" 
-              placeholder="Enter Student Phone" id="Phone" maxLength={10} required
+              placeholder="Enter Student Phone" id="stdPhone" maxLength={10} required
               value={phone}
               onChange={(e)=>setPhone(e.target.value)}
               />
