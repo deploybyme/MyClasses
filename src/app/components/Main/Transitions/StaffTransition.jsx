@@ -45,6 +45,7 @@ export default function StaffTransition(props) {
           setstudentName("")
           setPayToo("")
           alert("data add successfully")
+            window.location.reload();
         }
       }
 
