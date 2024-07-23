@@ -23,7 +23,7 @@ export default function UserLogin() {
 
   }
   return (
-    <div className="d-flex justify-content-center align-self-center py-5 mt-2">
+    <div className="d-flex justify-content-center align-self-center py-3 mt-2">
 
       <form id="LoginForm" onSubmit={handleSubmit}>
 
