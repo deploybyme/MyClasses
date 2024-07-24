@@ -13,7 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <BootstrapInstall/>
+    <head>
+     <meta name="viewport" content="width=device-width, user-scalable=no" />
+     <BootstrapInstall/>
+    </head>
       <body className={inter.className}> 
         {children}
         </body>
