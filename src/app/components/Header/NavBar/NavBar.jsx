@@ -66,7 +66,7 @@ export default function NavBar(props) {
                     <li className='pt-2 username'>
                     
                         { userDetails ? (
-                           <b className='fw-bold'>Hello, {userDetails.name}</b>
+                           <b className='fw-bold'>{userDetails.name}</b>
                         ) : (
                             <></>
                         )}
