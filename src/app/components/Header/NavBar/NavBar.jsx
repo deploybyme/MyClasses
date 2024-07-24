@@ -56,7 +56,7 @@ export default function NavBar(props) {
                         { userDetails ? (
                             <>
                                     <div className="rounded-circle bg-light avatar fw-bold d-flex align-items-center justify-content-center">{((userDetails.name).charAt(0).toUpperCase())}</div>
-                                    <b>Hello, </b><small className='mx-2 pe-0 pe-lg-2 fw-normal username1'>{userDetails.name}</small>
+                                    <b className='mx-2 pe-0 pe-lg-2 fw-normal username1'>{userDetails.name}</b>
                             </>
                         ) : (
                             <></>
@@ -66,7 +66,7 @@ export default function NavBar(props) {
                     <li className='pt-2 username'>
                     
                         { userDetails ? (
-                            <b className='fw-bold'>{userDetails.name}</b>
+                           <b className='fw-bold'>Hello, {userDetails.name}</b>
                         ) : (
                             <></>
                         )}
