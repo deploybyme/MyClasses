@@ -108,14 +108,14 @@ const update = async ()=>{
             {
             return(
             
-              <div key={data.id} className="accordion shadow-0 mt-1">
+              <div key={data.id} className="accordion shadow-0 mt-1 overflow-hidden">
                 <div className="accordion-item ">
                   <h2 className="accordion-header">
                     <div className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#${data.id}StudentDetails`} aria-expanded="false" aria-controls="collapseTwo">
                       
                     <div className="row w-100">
 
-                        <div className="col-12 col-md-5 d-flex align-items-center p-0">
+                        <div className="col-12 col-md-5 d-flex align-items-center">
                         <span className="rounded-circle text-dark avatar fw-bold d-flex align-items-center justify-content-center me-2" style={{background:`rgb(${(Math.pow((data.name).charCodeAt(2),7)%200)+100},${(Math.pow((data.name).charCodeAt(1),7)%200)+100},${(Math.pow((data.name).charCodeAt(3),7)%200)+100})`}}>{((data.name).charAt(0).toUpperCase())}</span>
                           <b>{data.name}</b>
                         </div>
