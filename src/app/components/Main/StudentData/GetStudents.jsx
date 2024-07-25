@@ -1,6 +1,6 @@
 'use client'
 import React ,{useState , useEffect} from 'react'
-import { auth,db } from '@/app/firebase'
+import { db } from '@/app/firebase'
 import { doc, collection, getDocs, updateDoc,deleteDoc} from 'firebase/firestore'
 
 
@@ -13,25 +13,35 @@ export default function GetStudents(props) {
   const[UpdateCourse,setUpdateCourse]=useState();
   const[UpdateCourseFee,setUpdateCourseFee]=useState();
   const[UpdateAdmissionDate,setUpdateAdmissionDate]=useState();
-  
+  const [searchTerm, setSearchTerm] = useState('');
+
   const[fetchData,setfetchData]=useState([]);
   const[id,setId]=useState();
 
     // Create Database reference --------------------------------------------------------------------
     const dbref = collection(db,"StudentRegister")
     // Get Data -------------------------------------------------------------------------------------
-      const fetchFirebaseDatabase = async () =>{
-        const snapshot = await getDocs(dbref)
-        const fetchdata = snapshot.docs.map((doc =>({
-          id:doc.id, ...doc.data()
-        })))
-        setfetchData(fetchdata)
-              // console.log(fetchdata)
-      }
+const fetchFirebaseDatabase = async () => {
+  try {
+    const snapshot = await getDocs(dbref);
+    const fetchdata = snapshot.docs.map((doc) => ({
+      id: doc.id, ...doc.data()
+    }));
 
-  useEffect(()=>{
-    fetchFirebaseDatabase()
-  },[])
+    // Filter data based on search term
+    const filteredData = fetchdata.filter((data) =>
+      data.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    setfetchData(filteredData);
+  } catch (error) {
+    console.error("Error fetching data: ", error);
+  }
+};
+
+useEffect(() => {
+  fetchFirebaseDatabase();
+}, [searchTerm]);
 
 // Delete ----------------------------------------------------------------------------------------------
   const del = async (id)=>{
@@ -96,13 +106,19 @@ const update = async ()=>{
   
       <>
 
-          <div className='container my-3 py-3 border-bottom border-dark'>
-                <div className="row">
-                  <div className="col-md-5 col-12">
-                    <input className="form-control shadow-none border-dark" type="text" placeholder="Search by Name"/>
-                  </div>
-               </div>
+        <div className='container my-3 py-3 border-bottom border-dark'>
+          <div className="row">
+            <div className="col-md-5 col-12">
+              <input 
+                className="form-control shadow-none border-dark" 
+                type="search" 
+                placeholder="Search by Name"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
           </div>
+        </div>
             <div className='container' key="accordian">
           {
               fetchData.map( (data,index) => 
@@ -320,7 +336,3 @@ const update = async ()=>{
 
   )
 }
-
-
-
-
