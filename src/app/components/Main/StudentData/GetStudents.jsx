@@ -106,11 +106,11 @@ const update = async ()=>{
   
       <>
 
-        <div className='container my-3 py-3 border-bottom border-dark'>
+        <div className='container my-3 py-3 border-dark'>
           <div className="row">
             <div className="col-md-5 col-12">
               <input 
-                className="form-control shadow-none border-dark" 
+                className="form-control shadow-none ps-3 border-dark rounded-pill" 
                 type="search" 
                 placeholder="Search by Name"
                 value={searchTerm}
