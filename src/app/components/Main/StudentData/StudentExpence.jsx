@@ -14,7 +14,7 @@ export default function StudentExpence(props) {
   + currentdate.getMinutes() + ":" 
   + currentdate.getSeconds();
   
-  
+  const [searchQuery, setSearchQuery] = useState("");
   const[Pay,setPay]=useState("")
   const[updateName,setUpdateName]=useState();
   const[UpdateCourse,setUpdateCourse]=useState();
@@ -24,23 +24,33 @@ export default function StudentExpence(props) {
   
   
   const[fetchData,setfetchData]=useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
   const[id,setId]=useState();
 
     // Create Database reference --------------------------------------------------------------------
     const dbref = collection(db,"StudentRegister")
     // Get Data -------------------------------------------------------------------------------------
-      const fetchFirebaseDatabase = async () =>{
-        const snapshot = await getDocs(dbref)
-        const fetchdata = snapshot.docs.map((doc =>({
-          id:doc.id, ...doc.data()
-        })))
-        setfetchData(fetchdata)
-              // console.log(fetchdata)
+    const fetchFirebaseDatabase = async () => {
+      try {
+        const snapshot = await getDocs(dbref);
+        const fetchdata = snapshot.docs.map((doc) => ({
+          id: doc.id, ...doc.data()
+        }));
+    
+        // Filter data based on search term
+        const filteredData = fetchdata.filter((data) =>
+          data.name.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+  
+        setfetchData(filteredData);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
       }
+    };
 
-  useEffect(()=>{
-    fetchFirebaseDatabase()
-  },[])
+    useEffect(() => {
+      fetchFirebaseDatabase();
+    }, [searchTerm]);
 
 
 //Pass Value to form -------------------------------------------------------------------------------------
@@ -78,13 +88,19 @@ const update = async ()=>{
 
   return (
     <>
-          <div className='container my-3'>
-                <div className="row">
-                  <div className="col-md-5 col-12">
-                    <input className="form-control shadow-none border-dark" type="text" placeholder="Search by Name"/>
-                  </div>
-               </div>
+        <div className='container my-3 py-3 border-bottom border-dark'>
+          <div className="row">
+            <div className="col-md-5 col-12">
+              <input 
+                className="form-control shadow-none border-dark" 
+                type="search" 
+                placeholder="Search by Name"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
           </div>
+        </div>
 
            <div className='container'>
            {
@@ -236,7 +252,3 @@ const update = async ()=>{
     </>
   )
 }
-
-
-
-
