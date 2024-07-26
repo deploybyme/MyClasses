@@ -85,11 +85,13 @@ const update = async ()=>{
   const updateRef = doc(dbref,id)
   try {
       await updateDoc(updateRef ,{
-      name:updateName,
-      phone:UpdatePhone,
-      fatherName:UpdateFatherName,
-      course:UpdateCourse,
-      admissionDate:UpdateAdmissionDate,
+        name:updateName,
+        phone:UpdatePhone,
+        fatherName:UpdateFatherName,
+        balance:(UpdateCourseFee-UpdateTotalPaid),
+        course:UpdateCourse,
+        courseFee:UpdateCourseFee,
+        admissionDate:UpdateAdmissionDate,
     })
     alert("updateData Successfully");
 
@@ -334,7 +336,3 @@ const update = async ()=>{
 
   )
 }
-
-
-
-
