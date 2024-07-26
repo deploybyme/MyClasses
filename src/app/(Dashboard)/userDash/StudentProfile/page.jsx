@@ -34,7 +34,7 @@ export default function AllStudent() {
                   <Profile Name={userDetails.name} Email={userDetails.email}
                   Phone={userDetails.phone} fatherName={userDetails.fatherName}
                   AdmissionDate={userDetails.admissionDate}
-                  Id={userDetails.uid}/>
+                  Id={userDetails.uid} Course={userDetails.course}/>
             </>
             ) : (
                 <div className='d-flex justify-content-center'>
@@ -48,5 +48,3 @@ export default function AllStudent() {
     </>
   )
 }
-
-
