@@ -108,6 +108,15 @@ const update = async ()=>{
                         <div className="col-12 col-sm-6">{props.fatherName}</div>
                       </div>
                     </button>
+
+                    <button  className="list-group-item list-group-item-action">
+                      <div className="row">
+                        <div className="col-12 col-sm-6"><b>Course </b></div>
+
+                        <div className="col-12 col-sm-6">{props.Course}</div>
+                      </div>
+                    </button>  
+
                     <button  className="list-group-item list-group-item-action">
                       <div className="row">
                         <div className="col-12 col-sm-6"><b>Admission Date </b></div>
