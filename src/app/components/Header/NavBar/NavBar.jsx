@@ -60,7 +60,7 @@ export default function NavBar(props) {
                             </>
                         ) : (
                             <>
-                            <small>Wait</small>
+                            <small className='p-3'></small>
                             </>
                         )}
                 </button>
