@@ -86,8 +86,8 @@ export default function AdminLogin() {
                 </div>
 
 
-                <div className="col-12 col-md-6 text-end">
-                   <Link className='text-decoration-none text-info text-end' href="/">Student Login</Link>
+                <div className="col-12 col-md-6">
+                   <Link className='text-decoration-none text-info' href="/">Student Login</Link>
                 </div>
         </div>
 
