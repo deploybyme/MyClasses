@@ -8,7 +8,7 @@ import HtmlIndex from '@/app/components/Main/StudentComponent/CourseIndex/HtmlIn
 import CssIndex from '@/app/components/Main/StudentComponent/CourseIndex/CssIndex';
 
 
-export default function AllStudent() {
+export default function Page() {
 
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async()=>{
@@ -38,41 +38,50 @@ export default function AllStudent() {
                         <>
                                 <CPrograming/>
                         </>:<>
-                                {userDetails.course=="FrontEnd Development"?
-                                <>
-                                        <HtmlIndex/>
-                                        <CssIndex/>
-                                        <JavaScript/>
-                                </>:<>
-                                        {userDetails.course=="JavaScript"?
-                                        <>
-                                                <JavaScript/>
-                                        </>:<>
-                                            <div className='d-flex justify-content-center'>
-                        
-                                                <div className="spinner-border my-5" role="status">
-                                                    <span className="sr-only"></span>
-                                                </div>
+                            <div className='d-flex justify-content-center'>
+                                
+                                <div className="spinner-border my-5" role="status">
+                                    <span className="sr-only"></span>
+                                </div>
 
-                                            </div>
-                                        </>
-                            
-                                        }
-                                </>
-                    
-                                }
+                            </div>
                         </>
                     
                     }
             </>
             ) : (
-                <div className='d-flex justify-content-center'>
-                    
-                    <div className="spinner-border my-5" role="status">
-                        <span className="sr-only"></span>
-                    </div>
 
-                </div>
+
+            <>
+
+            
+                                        {userDetails.course=="JavaScript"?
+                                        <>
+                                                <JavaScript/>
+                                        </>:<>
+                                                    {userDetails.course=="FrontEnd Development"?
+                                                    <>
+                                                            <HtmlIndex/>
+                                                            <CssIndex/>
+                                                            <JavaScript/>
+                                                    </>:<>
+                                                            <div className='d-flex justify-content-center'>
+                                                                
+                                                                <div className="spinner-border my-5" role="status">
+                                                                    <span className="sr-only"></span>
+                                                                </div>
+
+                                                            </div>
+                                                    </>
+                                        
+                                                    }
+                                        </>
+                            
+                                        }   
+                
+                
+            </>
+
         )}
     </>
   )
