@@ -8,11 +8,11 @@ export default function JavaScript() {
       <div className="accordion accordion-flush overflow-hidden mt-3" id="Cproraming">
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C1" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#JS1" aria-expanded="false" aria-controls="flush-collapseOne">
                 JS Introduction
             </button>
           </h2>
-          <div id="C1" className="accordion-collapse collapse" data-bs-parent="#Cproraming">
+          <div id="JS1" className="accordion-collapse collapse" data-bs-parent="#Cproraming">
             <div className="accordion-body">
 
 
@@ -53,11 +53,11 @@ export default function JavaScript() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C2" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#JS2" aria-expanded="false" aria-controls="flush-collapseTwo">
               JS Control Flow
             </button>
           </h2>
-          <div id="C2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="JS2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
 
             <div className="list-group">
@@ -92,11 +92,11 @@ export default function JavaScript() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C4" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#JS4" aria-expanded="false" aria-controls="flush-collapseThree">
               JS Functions
             </button>
           </h2>
-          <div id="C4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="JS4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
@@ -126,11 +126,11 @@ export default function JavaScript() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C5" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#JS5" aria-expanded="false" aria-controls="flush-collapseThree">
               JS Types
             </button>
           </h2>
-          <div id="C5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="JS5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
@@ -181,22 +181,22 @@ export default function JavaScript() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C3" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#JS3" aria-expanded="false" aria-controls="flush-collapseThree">
             JS DOM
             </button>
           </h2>
-          <div id="C3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="JS3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
             <div className="list-group">
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3a" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#JS3a" aria-expanded="false" aria-controls="flush-collapseThree">
                           Selecting elements
                           </button>
                         </h2>
-                        <div id="C3a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="JS3a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -235,11 +235,11 @@ export default function JavaScript() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3b" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#JS3b" aria-expanded="false" aria-controls="flush-collapseThree">
                           Traversing elements
                           </button>
                         </h2>
-                        <div id="C3b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="JS3b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -264,11 +264,11 @@ export default function JavaScript() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3ca" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#JS3ca" aria-expanded="false" aria-controls="flush-collapseThree">
                           Manipulating elements
                           </button>
                         </h2>
-                        <div id="C3ca" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="JS3ca" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -341,11 +341,11 @@ export default function JavaScript() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3caa" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#JS3caa" aria-expanded="false" aria-controls="flush-collapseThree">
                           Working with Attributes
                           </button>
                         </h2>
-                        <div id="C3caa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="JS3caa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -378,11 +378,11 @@ export default function JavaScript() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3caaa" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#JS3caaa" aria-expanded="false" aria-controls="flush-collapseThree">
                           Manipulating Element’s Styles
                           </button>
                         </h2>
-                        <div id="C3caaa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="JS3caaa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -415,11 +415,11 @@ export default function JavaScript() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3caaaa" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#JS3caaaa" aria-expanded="false" aria-controls="flush-collapseThree">
                           Working with Events
                           </button>
                         </h2>
-                        <div id="C3caaaa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="JS3caaaa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -500,11 +500,11 @@ export default function JavaScript() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3caaaaa" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#JS3caaaaa" aria-expanded="false" aria-controls="flush-collapseThree">
                           Scripting Web Forms
                           </button>
                         </h2>
-                        <div id="C3caaaaa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="JS3caaaaa" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
