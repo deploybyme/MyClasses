@@ -8,11 +8,11 @@ export default function CssIndex() {
       <div className="accordion accordion-flush overflow-hidden mt-3" id="Cproraming">
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C1" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS1" aria-expanded="false" aria-controls="flush-collapseOne">
                 CSS Introduction
             </button>
           </h2>
-          <div id="C1" className="accordion-collapse collapse" data-bs-parent="#Cproraming">
+          <div id="CSS1" className="accordion-collapse collapse" data-bs-parent="#Cproraming">
             <div className="accordion-body">
 
 
@@ -37,11 +37,11 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C2" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS2" aria-expanded="false" aria-controls="flush-collapseTwo">
               CSS Selectors
             </button>
           </h2>
-          <div id="C2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
 
             <div className="list-group">
@@ -80,22 +80,22 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C3" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS3" aria-expanded="false" aria-controls="flush-collapseThree">
             CSS Pseudo-Classes Selectors
             </button>
           </h2>
-          <div id="C3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
             <div className="list-group">
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3a" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#CSS3a" aria-expanded="false" aria-controls="flush-collapseThree">
                           Structural pseudo-class
                           </button>
                         </h2>
-                        <div id="C3a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS3a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -155,11 +155,11 @@ export default function CssIndex() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3b" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#CSS3b" aria-expanded="false" aria-controls="flush-collapseThree">
                           Link pseudo-class:
                           </button>
                         </h2>
-                        <div id="C3b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS3b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -196,11 +196,11 @@ export default function CssIndex() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3ca" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#CSS3ca" aria-expanded="false" aria-controls="flush-collapseThree">
                           UI pseudo-class:
                           </button>
                         </h2>
-                        <div id="C3ca" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS3ca" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -259,11 +259,11 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C4" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS4" aria-expanded="false" aria-controls="flush-collapseThree">
               CSS Font
             </button>
           </h2>
-          <div id="C4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
@@ -306,11 +306,11 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C5" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS5" aria-expanded="false" aria-controls="flush-collapseThree">
               Text Formatting
             </button>
           </h2>
-          <div id="C5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
@@ -353,11 +353,11 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C6" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS6" aria-expanded="false" aria-controls="flush-collapseThree">
               CSS Background
             </button>
           </h2>
-          <div id="C6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
@@ -408,11 +408,11 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C7" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS7" aria-expanded="false" aria-controls="flush-collapseThree">
               CSS Border
             </button>
           </h2>
-          <div id="C7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
@@ -455,11 +455,11 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C8" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS8" aria-expanded="false" aria-controls="flush-collapseThree">
               CSS Box Model
             </button>
           </h2>
-          <div id="C8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
@@ -497,22 +497,22 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C9" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS9" aria-expanded="false" aria-controls="flush-collapseThree">
             Display and Position
             </button>
           </h2>
-          <div id="C9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS9" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
             <div className="list-group">
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C9a" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#CSS9a" aria-expanded="false" aria-controls="flush-collapseThree">
                           CSS Display
                           </button>
                         </h2>
-                        <div id="C9a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS9a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -551,11 +551,11 @@ export default function CssIndex() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C9b" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#CSS9b" aria-expanded="false" aria-controls="flush-collapseThree">
                           CSS position
                           </button>
                         </h2>
-                        <div id="C9b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS9b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -588,11 +588,11 @@ export default function CssIndex() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C9ca" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#CSS9ca" aria-expanded="false" aria-controls="flush-collapseThree">
                           CSS Z-index and Overflow
                           </button>
                         </h2>
-                        <div id="C9ca" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS9ca" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -619,22 +619,22 @@ export default function CssIndex() {
         </div>
         <div className="accordion-item">
           <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C10" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS10" aria-expanded="false" aria-controls="flush-collapseThree">
             CSS Transition, Transform, and Animations
             </button>
           </h2>
-          <div id="C10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div id="CSS10" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
               
 
             <div className="list-group">
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C10a" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS10a" aria-expanded="false" aria-controls="flush-collapseThree">
                           CSS Transforms Methods
                           </button>
                         </h2>
-                        <div id="C10a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS10a" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -681,11 +681,11 @@ export default function CssIndex() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C10b" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS10b" aria-expanded="false" aria-controls="flush-collapseThree">
                           CSS Transitions
                           </button>
                         </h2>
-                        <div id="C10b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div id="CSS10b" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
@@ -718,11 +718,11 @@ export default function CssIndex() {
 
                    <div className="accordion-item">
                         <h2 className="accordion-header">
-                          <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#C10ca" aria-expanded="false" aria-controls="flush-collapseThree">
+                          <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#CSS10ca" aria-expanded="false" aria-controls="flush-collapseThree">
                           CSS Animation
                           </button>
                         </h2>
-                        <div id="C10ca" className="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                        <div id="CSS10ca" className="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
                           <div className="accordion-body">
                             
 
