@@ -122,7 +122,7 @@ const update = async ()=>{
                         <div className="col-12 col-md-4 mt-md-0 mt-2">
                             <b className='pt-2'> son/daughter of : </b> {data.fatherName}
                         </div>
-                        <div className="col-12 col-md-3 text-start p-2 mt-md-0 mt-2 fw-light rounded"
+                        <div className="col-12 col-md-3 text-start p-2 mt-md-0 mt-2 mx-2 fw-light rounded"
                         style={{background:`
                           ${
                           data.balance>=3500?
