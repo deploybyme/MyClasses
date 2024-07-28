@@ -115,14 +115,31 @@ const update = async ()=>{
                       
                     <div className="row w-100">
 
-                        <div className="col-12 col-md-5 d-flex align-items-center">
+                        <div className="col-12 col-md-4 d-flex align-items-center">
                         <span className="rounded-circle text-dark avatar fw-bold d-flex align-items-center justify-content-center me-2" style={{background:`rgb(${(Math.pow((data.name).charCodeAt(2),7)%200)+100},${(Math.pow((data.name).charCodeAt(1),7)%200)+100},${(Math.pow((data.name).charCodeAt(3),7)%200)+100})`}}>{((data.name).charAt(0).toUpperCase())}</span>
                           <b>{data.name}</b>
                         </div>
                         <div className="col-12 col-md-4 mt-md-0 mt-2">
                             <b className='pt-2'> son/daughter of : </b> {data.fatherName}
                         </div>
-                        <div className="col-12 col-md-3 text-start mt-md-0 mt-2">
+                        <div className="col-12 col-md-3 text-start p-2 mt-md-0 mt-2 fw-light rounded"
+                        style={{background:`
+                          ${
+                          data.balance>=3500?
+                            "#ff000099"
+                          :
+                          data.balance>=1500?
+                            "#ffff50bd"
+                          :
+                          data.balance>=1000?
+                            "#ffff00bd"
+                          :
+                          data.balance>=500?
+                            "#d8fa96"
+                          :
+                            "#96fa96"
+                        }
+                        `}}>
                           <b>{data.balance?"Balance :"+data.balance:(<>The Fee Paid <small>(in Full)</small></>)}</b>
                         </div>
                     </div>
