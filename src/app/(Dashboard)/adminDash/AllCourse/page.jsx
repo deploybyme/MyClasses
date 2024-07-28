@@ -4,7 +4,7 @@ import HtmlIndex from '@/app/components/Main/StudentComponent/CourseIndex/HtmlIn
 import JavaScript from '@/app/components/Main/StudentComponent/CourseIndex/JavaScript'
 import React from 'react'
 
-export default function page() {
+export default function AllCourse() {
   return (
     <>
       <CPrograming/>
