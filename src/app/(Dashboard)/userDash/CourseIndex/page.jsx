@@ -8,7 +8,7 @@ import HtmlIndex from '@/app/components/Main/StudentComponent/CourseIndex/HtmlIn
 import CssIndex from '@/app/components/Main/StudentComponent/CourseIndex/CssIndex';
 
 
-export default function CourseIndexPage() {
+export default function page() {
 
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async()=>{
@@ -37,50 +37,43 @@ export default function CourseIndexPage() {
                     {userDetails.course=="C and C++ Programing"?
                         <>
                                 <CPrograming/>
-                        </>:<>
-                            <div className='d-flex justify-content-center'>
-                                
-                                <div className="spinner-border my-5" role="status">
-                                    <span className="sr-only"></span>
-                                </div>
+                        </>:<>              
+                            {userDetails.course=="JavaScript"?(
+                            <>
+                                    <JavaScript/>
+                            </>):<>
+                                        {userDetails.course=="FrontEnd Development"?
+                                        (<>
+                                                <HtmlIndex/>
+                                                <CssIndex/>
+                                                <JavaScript/>
+                                        </>):<>
+                                                <div className='d-flex justify-content-center'>
+                                                    
+                                                    <div className="spinner-border my-5" role="status">
+                                                        <span className="sr-only"></span>
+                                                    </div>
 
-                            </div>
-                        </>
+                                                </div>
+                                        </>
+
+                                        }
+                            </>
+                            }   
+                            </>
+
                     
                     }
             </>
             ) : (
 
+                <div className='d-flex justify-content-center'>
+                                                
+                        <div className="spinner-border my-5" role="status">
+                            <span className="sr-only"></span>
+                        </div>
 
-            <>
-
-            
-                                        {userDetails.course=="JavaScript"?
-                                        <>
-                                                <JavaScript/>
-                                        </>:<>
-                                                    {userDetails.course=="FrontEnd Development"?
-                                                    <>
-                                                            <HtmlIndex/>
-                                                            <CssIndex/>
-                                                            <JavaScript/>
-                                                    </>:<>
-                                                            <div className='d-flex justify-content-center'>
-                                                                
-                                                                <div className="spinner-border my-5" role="status">
-                                                                    <span className="sr-only"></span>
-                                                                </div>
-
-                                                            </div>
-                                                    </>
-                                        
-                                                    }
-                                        </>
-                            
-                                        }   
-                
-                
-            </>
+                </div>
 
         )}
     </>
