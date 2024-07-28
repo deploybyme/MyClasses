@@ -8,7 +8,7 @@ import HtmlIndex from '@/app/components/Main/StudentComponent/CourseIndex/HtmlIn
 import CssIndex from '@/app/components/Main/StudentComponent/CourseIndex/CssIndex';
 
 
-export default function Page() {
+export default function CourseIndexPage() {
 
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async()=>{
