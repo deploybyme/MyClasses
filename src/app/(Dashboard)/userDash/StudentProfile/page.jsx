@@ -5,7 +5,7 @@ import {doc, getDoc} from "firebase/firestore";
 import Profile from '@/app/components/Main/StudentComponent/Profile';
 
 
-export default function AllStudent() {
+export default function StudentProfile() {
 
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async()=>{
