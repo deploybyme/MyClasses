@@ -53,7 +53,15 @@ export default function Transition() {
 
 { userDetails ? (
     <>
+
     <div className="px-sm-5 pt-3">
+
+      <div className="alert alert-danger mx-1" role="alert">
+         <div className="row">
+            <div className="col-12 mb-2 mb-md-0 text-center"><i className="bi bi-exclamation-triangle-fill"></i>This Transition is only for Faizan Mirza</div>
+         </div>
+      </div>
+
     <div className="row m-4">
 
 
