@@ -18,6 +18,7 @@ export default function UserRegister() {
     const[password,setPassword] = useState("");
 
     const handleRegister = async (e) =>{
+        alert("Please Wait for a while.")
         e.preventDefault();
         try {
             await createUserWithEmailAndPassword(auth,email,password);
