@@ -17,7 +17,7 @@ export default function Profile(props) {
                     </div>
 
                     <div className="mt-3">
-                      <h4>John Doe</h4>
+                      <h4>{props.Name}</h4>
                       <p className="text-secondary mb-1">{props.Course}</p>
                       <p className="text-muted font-size-sm">Acharya Computer Institute</p>
                     </div>
