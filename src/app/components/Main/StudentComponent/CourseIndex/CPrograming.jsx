@@ -2,49 +2,32 @@ import React from 'react'
 
 export default function CPrograming() {
   return (
-    <div className='container'>
-          <h4 className='mt-3'>Core C and C++ Index</h4>
+    <>
+  <section className="py-2 mt-4 mx-3 rounded timebox">
+  <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">Core C / C++ Index</h3>
+    <ul className="timeline ps-4">
 
-      <div className="accordion accordion-flush overflow-hidden mt-3" id="Cproraming">
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C1" aria-expanded="false" aria-controls="flush-collapseOne">
-                C Introduction
-            </button>
-          </h2>
-          <div id="C1" className="accordion-collapse collapse" data-bs-parent="#Cproraming">
-            <div className="accordion-body">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C Introduction</h5>
+            <div className="list-group me-4">
+                 <label className="list-group-item border-0">
+                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                   Getting Started with C
+                 </label>
+                 <label className="list-group-item border-0">
+                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                   Your First C Program
+                 </label>
+                 <label className="list-group-item border-0">
+                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                   Keywords
+                 </label>
+               </div>
+      </li>
 
-
-            <div className="list-group">
-                <label className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
-                  Getting Started with C
-                </label>
-                <label className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
-                  Your First C Program
-                </label>
-                <label className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
-                  C Comments
-                </label>
-              </div>
-
-
-            </div>
-        </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed  border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C2" aria-expanded="false" aria-controls="flush-collapseTwo">
-              C Fundamentals
-            </button>
-          </h2>
-          <div id="C2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-
-            <div className="list-group">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C Fundamentals</h5>
+        <div className="list-group me-4">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Variables, Constants and Literals
@@ -61,22 +44,12 @@ export default function CPrograming() {
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Operators
                 </label>
-              </div>
-
             </div>
-        </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C3" aria-expanded="false" aria-controls="flush-collapseThree">
-              C Flow Control
-            </button>
-          </h2>
-          <div id="C3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
+      </li>
 
-            <div className="list-group">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C Flow Control</h5>
+        <div className="list-group me-4">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   if...else Statements
@@ -98,23 +71,11 @@ export default function CPrograming() {
                   for Loop
                 </label>
               </div>
+      </li>
 
-
-              
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C4" aria-expanded="false" aria-controls="flush-collapseThree">
-              C++ Functions
-            </button>
-          </h2>
-          <div id="C4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
-
-            <div className="list-group">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C++ Functions</h5>
+        <div className="list-group me-4">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Functions
@@ -123,24 +84,12 @@ export default function CPrograming() {
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   User-defined Functions
                 </label>
-              </div>
-
-
-              
-            </div>
           </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C5" aria-expanded="false" aria-controls="flush-collapseThree">
-              C++ Arrays
-            </button>
-          </h2>
-          <div id="C5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
+      </li>
 
-            <div className="list-group">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C++ Arrays</h5>
+        <div className="list-group me-4">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Onedimentional Arrays
@@ -150,23 +99,11 @@ export default function CPrograming() {
                   Multidimentional Arrays
                 </label>
               </div>
+      </li>
 
-
-              
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C6" aria-expanded="false" aria-controls="flush-collapseThree">
-              C++ Pointers
-            </button>
-          </h2>
-          <div id="C6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
-
-            <div className="list-group">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C++ Pointers</h5>
+        <div className="list-group me-4">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Pointers
@@ -176,23 +113,11 @@ export default function CPrograming() {
                   References
                 </label>
               </div>
+      </li>
 
-
-              
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C7" aria-expanded="false" aria-controls="flush-collapseThree">
-              C++ Structures
-            </button>
-          </h2>
-          <div id="C7" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
-
-            <div className="list-group">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C++ Structures</h5>
+        <div className="list-group me-4">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Structures
@@ -202,23 +127,11 @@ export default function CPrograming() {
                   Member Function in Structures
                 </label>
               </div>
+      </li>
 
-
-              
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#C8" aria-expanded="false" aria-controls="flush-collapseThree">
-              C++ File Handling
-            </button>
-          </h2>
-          <div id="C8" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
-
-            <div className="list-group">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">C++ File Handling</h5>
+        <div className="list-group me-4">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Opening and Closing a File
@@ -236,18 +149,11 @@ export default function CPrograming() {
                   Append to a Text File
                 </label>
               </div>
+      </li>
 
 
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-
-
-    </div>
+    </ul>
+  </section>
+    </>
   )
 }
