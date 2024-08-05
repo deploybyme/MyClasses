@@ -2,46 +2,34 @@ import React from 'react'
 
 export default function HtmlIndex() {
   return (
-    <div className='container'>
-          <h4 className='mt-3'>HTML Index</h4>
+  <>
+  
+  <section className="py-2 mt-4 mx-3 rounded timebox">
+  <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">HTML Index</h3>
+    <ul className="timeline ps-4">
 
-      <div className="accordion accordion-flush overflow-hidden mt-3" id="Cproraming">
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#HTML1" aria-expanded="false" aria-controls="flush-collapseOne">
-                Introduction
-            </button>
-          </h2>
-          <div id="HTML1" className="accordion-collapse collapse" data-bs-parent="#Cproraming">
-            <div className="accordion-body">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">Introduction</h5>
+            <div className="list-group me-4">
+                 <label className="list-group-item border-0">
+                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                   What is HTML?
+                 </label>
+                 <label className="list-group-item border-0">
+                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                   HTML Structure
+                 </label>
+                 <label className="list-group-item border-0">
+                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                   Tags and Attributes
+                 </label>
+               </div>
+      </li>
 
-
-            <div className="list-group">
-                <label className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
-                  What is HTML?
-                </label>
-                <label className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
-                  HTML Structure
-                </label>
-              </div>
-
-
-            </div>
-        </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#HTML2" aria-expanded="false" aria-controls="flush-collapseTwo">
-              HTML Basics
-            </button>
-          </h2>
-          <div id="HTML2" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-
-            <div className="list-group">
-                <label className="list-group-item border-0">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">HTML Basics</h5>
+        <div className="list-group me-4">
+        <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Paragraphs
                 </label>
@@ -69,23 +57,13 @@ export default function HtmlIndex() {
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Table
                 </label>
-              </div>
-
             </div>
-        </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#HTML3" aria-expanded="false" aria-controls="flush-collapseThree">
-              HTML Inline
-            </button>
-          </h2>
-          <div id="HTML3" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
+      </li>
 
-            <div className="list-group">
-                <label className="list-group-item border-0">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">HTML Inline</h5>
+        <div className="list-group me-4">
+        <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Block and Inline
                 </label>
@@ -102,24 +80,12 @@ export default function HtmlIndex() {
                   HTML Formating
                 </label>
               </div>
+      </li>
 
-
-              
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#HTML4" aria-expanded="false" aria-controls="flush-collapseThree">
-              HTML Form
-            </button>
-          </h2>
-          <div id="HTML4" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
-
-            <div className="list-group">
-                <label className="list-group-item border-0">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">HTML Form</h5>
+        <div className="list-group me-4">
+        <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Form
                 </label>
@@ -135,25 +101,13 @@ export default function HtmlIndex() {
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Form Actions
                 </label>
-              </div>
-
-
-              
-            </div>
           </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#HTML5" aria-expanded="false" aria-controls="flush-collapseThree">
-              Semantic HTML
-            </button>
-          </h2>
-          <div id="HTML5" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
+      </li>
 
-            <div className="list-group">
-                <label className="list-group-item border-0">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">Semantic HTML</h5>
+        <div className="list-group me-4">
+        <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML div Tag
                 </label>
@@ -170,24 +124,12 @@ export default function HtmlIndex() {
                   HTML footer Tag
                 </label>
               </div>
+      </li>
 
-
-              
-            </div>
-          </div>
-        </div>
-        <div className="accordion-item">
-          <h2 className="accordion-header">
-            <button className="accordion-button collapsed border-bottom shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#HTML6" aria-expanded="false" aria-controls="flush-collapseThree">
-              Graphics & Media
-            </button>
-          </h2>
-          <div id="HTML6" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div className="accordion-body">
-              
-
-            <div className="list-group">
-                <label className="list-group-item border-0">
+      <li className="timeline-item mb-5">
+        <h5 className="fw-bold">Graphics & Media</h5>
+        <div className="list-group me-4">
+        <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Video
                 </label>
@@ -204,17 +146,12 @@ export default function HtmlIndex() {
                   HTML Canvas
                 </label>
               </div>
+      </li>
 
+    </ul>
+  </section>
 
-              
-            </div>
-          </div>
-        </div>
-      </div>
+  </>
 
-
-
-
-    </div>
   )
 }
