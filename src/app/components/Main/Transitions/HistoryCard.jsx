@@ -3,7 +3,7 @@ import React from 'react'
 export default function HistoryCard(props) {
   return (
     <>
-<div className='container mt-1'>
+<div className='mt-1 mx-1'>
 <div className="accordion" id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header" id="headingOne">
