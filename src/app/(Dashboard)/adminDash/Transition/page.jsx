@@ -80,10 +80,10 @@ export default function Transition() {
   
 <ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-center bg-light" id="pills-tab" role="tablist">
   <li className="nav-item" role="presentation">
-    <button className="nav-link link-dark border active" id="pills-Transition-tab" data-bs-toggle="pill" data-bs-target="#pills-Transition" type="button" role="tab" aria-controls="pills-Transition" aria-selected="false">Do Transition</button>
+    <button className="nav-link link-dark border border-dark active" id="pills-Transition-tab" data-bs-toggle="pill" data-bs-target="#pills-Transition" type="button" role="tab" aria-controls="pills-Transition" aria-selected="false">Do Transition</button>
   </li>
   <li className="nav-item" role="presentation">
-    <button className="nav-link link-dark border" id="pills-History-tab" data-bs-toggle="pill" data-bs-target="#pills-History" type="button" role="tab" aria-controls="pills-History" aria-selected="false">History</button>
+    <button className="nav-link link-dark border border border-dark" id="pills-History-tab" data-bs-toggle="pill" data-bs-target="#pills-History" type="button" role="tab" aria-controls="pills-History" aria-selected="false">History</button>
   </li>
 </ul>
 <div className="tab-content" id="pills-tabContent">
