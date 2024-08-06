@@ -78,7 +78,7 @@ export default function Transition() {
 
 </div>
   
-<ul className="nav nav-pills mb-3 border rounded text-light justify-content-center bg-light" id="pills-tab" role="tablist">
+<ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-center bg-light" id="pills-tab" role="tablist">
   <li className="nav-item" role="presentation">
     <button className="nav-link link-dark border active" id="pills-Transition-tab" data-bs-toggle="pill" data-bs-target="#pills-Transition" type="button" role="tab" aria-controls="pills-Transition" aria-selected="false">Do Transition</button>
   </li>
