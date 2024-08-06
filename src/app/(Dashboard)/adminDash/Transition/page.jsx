@@ -78,11 +78,11 @@ export default function Transition() {
 
 </div>
   
-<ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-center bg-light" id="pills-tab" role="tablist">
-  <li className="nav-item" role="presentation">
+<ul className="nav nav-pills mb-3 mx-2 border rounded text-light bg-light" id="pills-tab" role="tablist">
+  <li className="nav-item me-2" role="presentation">
     <button className="nav-link link-dark border border-dark active" id="pills-Transition-tab" data-bs-toggle="pill" data-bs-target="#pills-Transition" type="button" role="tab" aria-controls="pills-Transition" aria-selected="false">Do Transition</button>
   </li>
-  <li className="nav-item" role="presentation">
+  <li className="nav-item ms-2" role="presentation">
     <button className="nav-link link-dark border border border-dark" id="pills-History-tab" data-bs-toggle="pill" data-bs-target="#pills-History" type="button" role="tab" aria-controls="pills-History" aria-selected="false">History</button>
   </li>
 </ul>
