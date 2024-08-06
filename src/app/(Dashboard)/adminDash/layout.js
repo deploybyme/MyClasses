@@ -22,7 +22,7 @@ export default function layout({ children }) {
           tab4="All Course" icon4="bi bi-journals" link4="/adminDash/AllCourse/"
           tab5="Student Report" icon5="bi bi-clipboard-check-fill" link5="/adminDash/ReportAndCretificate/"
           />
-           <div className='rootdiv m-md-2 m-1 py-5 formbox'>
+           <div className='rootdiv m-md-2 py-5 formbox'>
 
                 {children}
 
