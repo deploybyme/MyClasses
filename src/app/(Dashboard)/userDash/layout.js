@@ -21,7 +21,7 @@ export default function layout({ children }) {
           tab2="Course Index" icon2="bi bi-journals" link2="/userDash/CourseIndex"
           tab3="Certificate" icon3="bi bi-clipboard-check-fill" link3="/userDash/"
           />
-           <div className='rootdiv px-md-5 p-0 p-2 m-md-2 m-1 formbox'>
+           <div className='rootdiv px-md-5 p-0 p-2 m-md-2 m-0 formbox'>
 
                 {children}
 
