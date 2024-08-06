@@ -51,7 +51,7 @@ export default function StaffTransition(props) {
 
     return (
   <>
-  <div className="card mb-3">
+  <div className="card mb-3 mx-2">
     <div className="card-body">
       <form  onSubmit={handleSubmit}>
 
