@@ -4,8 +4,7 @@ import {auth, db} from "@/app/firebase";
 import { doc,getDoc} from 'firebase/firestore'
 
 
-import ReportAndCertificate from '@/app/components/Main/StudentData/ReportAndCertificate.jsx';
-
+import ReportAndCertificate from '@/app/components/Main/StudentData/ReportAndCertificate';
 
 export default function TotalExp(props) {
 
