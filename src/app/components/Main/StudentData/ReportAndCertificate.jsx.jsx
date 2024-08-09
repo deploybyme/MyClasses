@@ -150,20 +150,21 @@ if(UpdateCourse === "JavaScript"){
                   <div id={`${data.id}StudentDetails`} className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
 
-                    <div className="row mt-1 w-100">
+                    <div className="row m-1">
 
                     {
                             (data.course==="C and C++ Programing")?(
                                 <>
-                                    <small>C Programing</small>
-                                    <div className="progress px-0" style={{height: 15+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["C Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+
+                                    <small className='my-2'>C Programing</small>
+                                    <div className="progress px-0 border border-secondary" style={{height: 20+"px"}}>
+                                            <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number(data["C Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["C Marks"])}
                                             </div>
                                         </div>
 
-                                    <small>C++ Programing</small>
-                                    <div className="progress px-0" style={{height: 15+"px"}}>
+                                    <small className='my-2'>C++ Programing</small>
+                                    <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
                                             <div className="progress-bar" role="progressbar" style={{width: Number(data["Cpp Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Cpp Marks"])}
                                             </div>
@@ -172,22 +173,22 @@ if(UpdateCourse === "JavaScript"){
                             ):(
                                 (data.course==="FrontEnd Development")?(
                                     <>
-                                        <small>HTML</small>
-                                        <div className="progress px-0" style={{height: 15+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["HTML Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <small className='my-2'>HTML</small>
+                                        <div className="progress px-0 border border-danger" style={{height: 20+"px"}}>
+                                            <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(data["HTML Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["HTML Marks"])}
                                             </div>
                                         </div>
     
-                                        <small>CSS</small>
-                                        <div className="progress px-0" style={{height: 15+"px"}}>
+                                        <small className='my-2'>CSS</small>
+                                        <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
                                             <div className="progress-bar" role="progressbar" style={{width: Number(data["CSS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["CSS Marks"])}
                                             </div>
                                         </div>
-                                        <small>Javascript</small>
-                                        <div className="progress px-0" style={{height: 15+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <small className='my-2'>Javascript</small>
+                                        <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
+                                            <div className="progress-bar bg-warning" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["JS Marks"])}
                                             </div>
                                         </div>
@@ -195,9 +196,9 @@ if(UpdateCourse === "JavaScript"){
                                 ):(
                                   (data.course==="JavaScript")?(
                                     <>
-                                        <small>Javascript</small>
-                                        <div className="progress px-0" style={{height: 15+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        <small className='my-2'>Javascript</small>
+                                        <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
+                                            <div className="progress-bar bg-warning" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["JS Marks"])}
                                             </div>
                                         </div>
@@ -341,7 +342,3 @@ if(UpdateCourse === "JavaScript"){
     </>
   )
 }
-
-
-
-
