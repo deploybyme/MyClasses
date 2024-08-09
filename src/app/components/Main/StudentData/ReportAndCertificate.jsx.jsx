@@ -9,7 +9,7 @@ export default function ReportAndCertificate(props) {
   const[CppMarks,setCppMarks]=useState("")
   const[CMarks,setCMarks]=useState("")
 
-  const[HtmlMarks,setHtmlMarks]=useState("")
+  const[HtmlMarks,setHtmlMarks]=useState("") 
   const[CssMarks,setCssMarks]=useState("")
   const[JsMarks,setJsMarks]=useState("")
 
