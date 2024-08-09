@@ -17,8 +17,8 @@ export default function layout({ children }) {
           <NavBar Directory="StudentRegister"/>
           <Offanvas Directory="StudentRegister"
           tab1="Profile" icon1="bi bi-person-square" link1="/userDash/StudentProfile" 
-          tab5="Fee Status" icon5="bi bi-bank" link5="/userDash/FeeStatus"
-          tab2="Course Index" icon2="bi bi-journals" link2="/userDash/CourseIndex"
+          tab2="Fee Status" icon2="bi bi-bank" link2="/userDash/FeeStatus"
+          tab5="Course Index" icon5="bi bi-journals" link5="/userDash/CourseIndex"
           tab3="Certificate" icon3="bi bi-clipboard-check-fill" link3="/userDash/"
           />
            <div className='rootdiv px-md-5 p-0 p-2 m-md-2 m-0 formbox'>
