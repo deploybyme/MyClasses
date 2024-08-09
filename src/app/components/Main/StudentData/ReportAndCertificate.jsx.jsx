@@ -188,7 +188,7 @@ if(UpdateCourse === "JavaScript"){
                                         </div>
                                         <small className='my-2'>Javascript</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["JS Marks"])}
                                             </div>
                                         </div>
@@ -198,7 +198,7 @@ if(UpdateCourse === "JavaScript"){
                                     <>
                                         <small className='my-2'>Javascript</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["JS Marks"])}
                                             </div>
                                         </div>
