@@ -9,7 +9,7 @@ export default function ReportAndCertificate(props) {
   const[CppMarks,setCppMarks]=useState("")
   const[CMarks,setCMarks]=useState("")
 
-  const[HtmlMarks,setHtmlMarks]=useState("") 
+  const[HtmlMarks,setHtmlMarks]=useState("")
   const[CssMarks,setCssMarks]=useState("")
   const[JsMarks,setJsMarks]=useState("")
 
@@ -156,14 +156,14 @@ if(UpdateCourse === "JavaScript"){
                             (data.course==="C and C++ Programing")?(
                                 <>
 
-                                    <small className='my-2'>C Programing</small>
+                                    <small className='my-2 p-0'>C Programing</small>
                                     <div className="progress px-0 border border-secondary" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number(data["C Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["C Marks"])}
                                             </div>
                                         </div>
 
-                                    <small className='my-2'>C++ Programing</small>
+                                    <small className='my-2 p-0'>C++ Programing</small>
                                     <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
                                             <div className="progress-bar" role="progressbar" style={{width: Number(data["Cpp Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Cpp Marks"])}
@@ -173,20 +173,20 @@ if(UpdateCourse === "JavaScript"){
                             ):(
                                 (data.course==="FrontEnd Development")?(
                                     <>
-                                        <small className='my-2'>HTML</small>
+                                        <small className='my-2 p-0'>HTML</small>
                                         <div className="progress px-0 border border-danger" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(data["HTML Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["HTML Marks"])}
                                             </div>
                                         </div>
     
-                                        <small className='my-2'>CSS</small>
+                                        <small className='my-2 p-0'>CSS</small>
                                         <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
                                             <div className="progress-bar" role="progressbar" style={{width: Number(data["CSS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["CSS Marks"])}
                                             </div>
                                         </div>
-                                        <small className='my-2'>Javascript</small>
+                                        <small className='my-2 p-0'>Javascript</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["JS Marks"])}
@@ -196,7 +196,7 @@ if(UpdateCourse === "JavaScript"){
                                 ):(
                                   (data.course==="JavaScript")?(
                                     <>
-                                        <small className='my-2'>Javascript</small>
+                                        <small className='my-2 p-0'>Javascript</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["JS Marks"])}
