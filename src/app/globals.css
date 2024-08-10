@@ -38,7 +38,10 @@ body::-webkit-scrollbar{
     box-shadow: 10px 10px 30px #00000022;
 }
 .keyfont{
-    font-size: 12px !important;
+    font-size: 14px !important;
+}
+.textShadow{
+    text-shadow: 1px 1px 4px #ffffffa6;
 }
 #LoginForm{
     color: white;
