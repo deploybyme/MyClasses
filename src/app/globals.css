@@ -37,7 +37,9 @@ body::-webkit-scrollbar{
     border:1px solid #00000088;
     box-shadow: 10px 10px 30px #00000022;
 }
-
+.keyfont{
+    font-size: 12px !important;
+}
 #LoginForm{
     color: white;
     padding: 25px;
@@ -132,6 +134,10 @@ body::-webkit-scrollbar{
         background: #00000044;
         border-radius: 10px;
         backdrop-filter: blur(3px);
+    }
+
+    .keyfont{
+        font-size: 18px !important;
     }
 
 }
