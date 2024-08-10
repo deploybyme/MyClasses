@@ -3,16 +3,15 @@ import React from 'react'
 export default function CPrograming() {
   return (
     <>
-  <section className="py-2 mt-4 mx-3 rounded timebox">
+  <section className="py-2 mt-4 mx-1 rounded timebox">
   <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">Core C / C++ Index</h3>
-    <ul className="timeline ps-4">
+    <ul className="timeline ps-1">
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">Introduction</h5>
-            <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">Introduction</h5>
+            <div className="list-group me-1">
                  
-                <p className="mb-2 mt-3 text-light">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                <p className="mb-2 mt-3   text-dark fw-bold textShadow">
                   Introduction to C
                 </p>
                 <label className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
@@ -24,8 +23,7 @@ export default function CPrograming() {
                 </label>
 
 
-                <p className="mb-2 mt-3 text-light">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                <p className="mb-2 mt-3   text-dark fw-bold textShadow">
                   Structure of C
                 </p>
                 <label className="list-group-item border-0 rounded">
@@ -103,8 +101,7 @@ export default function CPrograming() {
                 </label>
 
 
-                <p className="mb-2 mt-3 text-light">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                <p className="mb-2 mt-3   text-dark fw-bold textShadow">
                   Keywords is C
                 </p>
                 <label className="list-group-item border-0 rounded">
@@ -178,12 +175,11 @@ export default function CPrograming() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">C Fundamentals</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">C Fundamentals</h5>
+        <div className="list-group me-1">
 
 
-                <p className="mb-2 mt-3 text-light">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                <p className="mb-2 mt-3   text-dark fw-bold textShadow">
                   Variables, Constants and Literals
                 </p>
                 <label className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
@@ -232,8 +228,8 @@ export default function CPrograming() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">C Flow Control</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">C Flow Control</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   if...else Statements
@@ -258,8 +254,8 @@ export default function CPrograming() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">C++ Functions</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">C++ Functions</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Functions
@@ -272,8 +268,8 @@ export default function CPrograming() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">C++ Arrays</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">C++ Arrays</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Onedimentional Arrays
@@ -286,8 +282,8 @@ export default function CPrograming() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">C++ Pointers</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">C++ Pointers</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Pointers
@@ -300,8 +296,8 @@ export default function CPrograming() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">C++ Structures</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">C++ Structures</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Structures
@@ -314,8 +310,8 @@ export default function CPrograming() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">C++ File Handling</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">C++ File Handling</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   Opening and Closing a File
