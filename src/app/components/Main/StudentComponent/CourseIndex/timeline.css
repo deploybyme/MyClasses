@@ -16,7 +16,7 @@
   
   .timeline .timeline-item:after {
     background-color: #ffffff;
-    left: -6px;
+    left: -3px;
     margin: 4px 0 0 0;
     border: 2px solid black;
     border-radius:0 50% 50%;
