@@ -16,10 +16,10 @@
   
   .timeline .timeline-item:after {
     background-color: #ffffff;
-    left: -13px;
+    left: -6px;
     margin: 4px 0 0 0;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius:0 50% 50%;
     height: 17px;
     width: 17px;
     content: "";
