@@ -14,7 +14,7 @@ export default function CPrograming() {
                 <p className="mb-2 mt-3   text-dark fw-bold textShadow">
                   Introduction to C
                 </p>
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
                    C is a powerful general-purpose programming language known for its efficiency
                     and flexibility. It's commonly used in system programming, embedded systems, 
                     and creating high-performance applications.It was created in the 1970s by 
@@ -26,9 +26,9 @@ export default function CPrograming() {
                 <p className="mb-2 mt-3   text-dark fw-bold textShadow">
                   Structure of C
                 </p>
-                <div className="list-group-item border-0 rounded">
+                <div className="list-group-item border-0 rounded py-4">
 
-                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                  <p className='rounded p-2' style={{background: "lightgrey"}}>
                   <code className='text-dark'>
                       <span style={{color:"#006cb9"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
                       <br />
@@ -104,10 +104,8 @@ export default function CPrograming() {
                 <p className="mb-2 mt-3   text-dark fw-bold textShadow">
                   Keywords is C
                 </p>
-                <div className="list-group-item border-0 rounded">
-
-                
-                    <div className='pt-2'>
+                <div className="list-group-item border-0 rounded py-4">
+                    <div>
                     <b>Keywords</b> are predefined, reserved words used in programming 
                     that have special meanings to the compiler. 
                     Keywords are part of the syntax and they cannot be used as an identifier.
@@ -182,7 +180,7 @@ export default function CPrograming() {
                 <p className="mb-2 mt-3  text-dark fw-bold textShadow">
                   Variables, Constants and Literals
                 </p>
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
                   <p>
                   In programming, a <b>variable</b> is a container &#40;storage area&#41; to hold data.
                   <br />
@@ -205,11 +203,11 @@ export default function CPrograming() {
                 </div>
 
 
-                <p className="mb-2 mt-3   text-dark fw-bold textShadow">
+                <p className="mb-2 mt-3 text-dark fw-bold textShadow">
                   C Data Types
                 </p>
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
-                <p className='mt-3'>
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
+                <p>
                 In C programming, data types are declarations for variables. 
                 This determines the type and size of data associated with variables. For example,
                 </p>
@@ -279,8 +277,8 @@ export default function CPrograming() {
                 <p className="mb-2 mt-3  text-dark fw-bold textShadow">
                   Input Output (I/O)
                 </p>
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
-                  <div className='my-3'>
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
+                  <div>
                     <h3>C output</h3>
                     <p>
                     In C programming,<span className='p-1 bh-highlight border rounded'>printf( )</span> is one of the main output function. 
@@ -403,7 +401,7 @@ export default function CPrograming() {
                       </p>
                   </div>   
 
-                  <div className='my-3'>
+                  <div>
                     <h5>Format Specifiers for I/O</h5>
                     <p>
                     As you can see from the above examples, we use
@@ -433,8 +431,8 @@ export default function CPrograming() {
                 <p className="mb-2 mt-3  text-dark fw-bold textShadow">
                   Operators
                 </p>
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
-                  <div className='my-3'>
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
+                  <div>
                     <p>
                     An <b>operator</b> is a symbol that operates on a value or a variable to perform specific task. 
                     <br />
@@ -679,7 +677,7 @@ export default function CPrograming() {
                   If Else Statements
                 </p>
 
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
                     <p>
                         There are following type of if..else Statements
                     </p>
@@ -897,7 +895,7 @@ export default function CPrograming() {
                   Switch Statements
                 </p>
 
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
                     <p>
                     The switch statement allows us to execute one code block among many alternatives.
                     <br />
@@ -992,24 +990,6 @@ export default function CPrograming() {
                     </code>
                   </p>
 
-
-
-                </div>
-
-                <p className="mb-2 mt-3  text-dark fw-bold textShadow">
-                  Switch Statements
-                </p>
-
-                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
-                    <p>
-                    The switch statement allows us to execute one code block among many alternatives.
-                    <br />
-                    You can do the same thing with the 
-                    <span className='p-1 bh-highlight border rounded'>if</span>...<span className='p-1 bh-highlight border rounded'>else if</span>...<span className='p-1 bh-highlight border rounded'>else</span> 
-                      ladder.
-                     However, the syntax of the <span className='p-1 bh-highlight border rounded'>switch</span> statement is much easier to read and write.
-                    </p>
-
                   <b>Another Syntax of switch...case:</b>
                   <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
                     <code className='text-dark'>
@@ -1077,15 +1057,44 @@ export default function CPrograming() {
                     </code>
                   </p>
 
-
-
                 </div>
 
 
 
-                <div className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
-                  goto Statement
+                <p className="mb-2 mt-3  text-dark fw-bold textShadow">
+                  Goto Statement
+                </p>
+
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
+                    <p>
+                    The <span className='p-1 bh-highlight border rounded'>goto</span> statement 
+                    allows us to transfer control of the program to the 
+                     specified <span className='p-1 bh-highlight border rounded'>label</span>.
+                    
+                    </p>
+
+                  <b>Syntax of switch...case:</b>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                    <code className='text-dark'>
+                      <span style={{color:"magenta"}}>goto </span> label; 
+                       <br />
+                        ....  ....  ....
+                       <br />
+                        ....  ....  .... 
+                       <br />
+                        label :
+                        <br />
+                        <span style={{color: "#0900ff"}}>// your code</span>;
+                       <br />
+                    </code>
+                  </p>
+
+                  <p>
+                  The <span className='p-1 bh-highlight border rounded'>label</span> is an identifier. 
+                  When the <span className='p-1 bh-highlight border rounded'>goto</span> statement is encountered, 
+                  the control of the program jumps to <span className='p-1 bh-highlight border rounded'>label :</span> and starts executing the code.
+                  </p>
+
                 </div>
 
 
