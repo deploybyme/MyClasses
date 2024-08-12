@@ -28,15 +28,15 @@ export default function CPrograming() {
                 </p>
                 <div className="list-group-item border-0 rounded">
 
-                  <p className='bg-dark p-3 rounded'>
-                  <code className='text-light'>
-                      <span style={{color:"#4eb5ff"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                  <code className='text-dark'>
+                      <span style={{color:"#006cb9"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
                       <br />
-                      <span style={{color:"magenta"}}>int</span> <span style={{color:"#4eb5ff"}}>main</span>&#40;&#41;
+                      <span style={{color:"magenta"}}>int</span> <span style={{color:"#006cb9"}}>main</span>&#40;&#41;
                       <br />
                       &#123;   
                       <br />    
-                        &nbsp; &nbsp; &nbsp;   <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>" Hello World! "</span>&#41;;
+                        &nbsp; &nbsp; &nbsp;   <span className='text-warning'>printf</span>&#40;<span style={{color:"#009500"}}>" Hello World! "</span>&#41;;
                       <br />
                         &nbsp; &nbsp; &nbsp;    <span style={{color:"magenta"}}>return</span> <span style={{color:"orange"}}>0</span>;
                       <br />
@@ -189,7 +189,7 @@ export default function CPrograming() {
                   To indicate the storage area, each variable should be given a unique name &#40;<b>Identifier</b>&#41;.
                   </p>
                   <b>syntax of variable declaration and initiation</b>
-                  <p className='bg-dark text-light rounded mt-2 p-2' style={{fontSize:12+"px"}}>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey",fontSize:12+"px"}}>
                   <span style={{color:"magenta"}}>data_type</span> &nbsp; variable_name &nbsp; = &nbsp; <span style={{color:"orange"}}>value</span>;
                   </p>
                   <b>Example:</b>
@@ -213,7 +213,7 @@ export default function CPrograming() {
                 In C programming, data types are declarations for variables. 
                 This determines the type and size of data associated with variables. For example,
                 </p>
-                <p className='bg-dark text-light rounded mt-2 p-2'>
+                <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
                 <span style={{color:"magenta"}}>int</span> myVar ;
                 </p>
                 <p>
@@ -287,8 +287,8 @@ export default function CPrograming() {
                     The function sends formatted output to the screen. For example,
                     </p>
                     <h6>Syntax :</h6>
-                      <p className='bg-dark text-light rounded mt-2 p-2' style={{fontSize:15+"px"}}>
-                        <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>" Text content "</span>&#41;;
+                      <p className='rounded mt-2 p-2' style={{background: "lightgrey",fontSize:15+"px"}}>
+                        <span className='text-warning'>printf</span>&#40;<span style={{color:"#009500"}}>" Text content "</span>&#41;;
                       </p>
 
                       <p className='bg-dark p-3 rounded' style={{textAlign:"start"}}>
@@ -314,8 +314,8 @@ export default function CPrograming() {
                     <h6>Output of type variables</h6>
 
                     <h6>Syntax :</h6>
-                      <p className='bg-dark text-light rounded mt-2 p-2' style={{fontSize:15+"px"}}>
-                        <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>" Content + FS "</span>, Variable_name&#41;;
+                      <p className='rounded mt-2 p-2' style={{background: "lightgrey",fontSize:15+"px"}}>
+                        <span className='text-warning'>printf</span>&#40;<span style={{color:"#009500"}}>" Content + FS "</span>, Variable_name&#41;;
                       </p>
 
                       <p className='bg-dark p-3 rounded' style={{textAlign:"start"}}>
@@ -367,8 +367,8 @@ export default function CPrograming() {
                     </p>
 
                     <h6>Syntax :</h6>
-                      <p className='bg-dark text-light rounded mt-2 p-2' style={{fontSize:15+"px"}}>
-                        <span className='text-warning'>scanf</span>&#40;<span style={{color:"lightgreen"}}>" FS "</span>, &variable_name&#41; ;
+                      <p className='rounded mt-2 p-2' style={{background: "lightgrey",fontSize:15+"px"}}>
+                        <span className='text-warning'>scanf</span>&#40;<span style={{color:"#009500"}}>" FS "</span>, &variable_name&#41; ;
                       </p>
 
                       <p className='bg-dark p-2 rounded' style={{textAlign:"start"}}>
@@ -893,13 +893,194 @@ export default function CPrograming() {
 
                 </div>
 
-
-
-
-                <div className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                <p className="mb-2 mt-3  text-dark fw-bold textShadow">
                   Switch Statements
+                </p>
+
+                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
+                    <p>
+                    The switch statement allows us to execute one code block among many alternatives.
+                    <br />
+                    You can do the same thing with the 
+                    <span className='p-1 bh-highlight border rounded'>if</span>...<span className='p-1 bh-highlight border rounded'>else if</span>...<span className='p-1 bh-highlight border rounded'>else</span> 
+                      ladder.
+                     However, the syntax of the <span className='p-1 bh-highlight border rounded'>switch</span> statement is much easier to read and write.
+                    </p>
+
+                  <b>Syntax of switch...case:</b>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                    <code className='text-dark'>
+                      <span style={{color:"magenta"}}>switch </span> ( expression ) 
+                       <br />
+                       &#123; 
+                       <br />
+                        &nbsp; <span style={{color:"magenta"}}>case </span> constant1 :
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "#0900ff"}}>// code</span>
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "magenta"}}>break</span>;
+                       <br />
+                        &nbsp; <span style={{color:"magenta"}}>case </span> constant2 :
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "#0900ff"}}>// code</span>
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "magenta"}}>break</span>;
+                       <br />
+                       &nbsp; &nbsp; .
+                       <br />
+                       &nbsp; &nbsp; .
+                       <br />
+                       &nbsp; &nbsp; .
+                       <br />
+                       &nbsp; <span style={{color:"magenta"}}>default </span>:
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "#0900ff"}}>// code</span>
+                       <br />
+                       &#125; 
+                    </code>
+                  </p>
+
+                  <b>Example :</b>
+                  <p className='bg-dark rounded mt-2 p-2' style={{textAlign:"left"}}>
+                    <code className='text-light'>
+
+                    <span style={{color:"#4eb5ff"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
+                      <br />
+                      <span style={{color:"magenta"}}>int</span> <span style={{color:"#4eb5ff"}}>main</span>&#40;&#41;
+                      <br />
+                      &#123;   
+                      <br />
+                      &nbsp;  <span style={{color:"magenta"}}>char</span> op; 
+                      <br />   
+                      &nbsp;  <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"choose \n + : addition \n - : subtraction \n  &nbsp; : "</span>&#41;;
+                      <br />
+                      &nbsp;  <span className='text-warning'>scanf</span>&#40;<span style={{color:"lightgreen"}}>" %c "</span>,&op&#41;;
+                      <br />
+                      &nbsp;  <span style={{color:"magenta"}}>switch </span> ( op ) 
+                       <br />
+                       &nbsp;  &#123; 
+                       <br />
+                       &nbsp; &nbsp; <span style={{color:"magenta"}}>case </span> '+' :
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"You select addition \n"</span>&#41;;
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span style={{color: "magenta"}}>break</span>;
+                       <br />
+                       &nbsp; &nbsp; <span style={{color:"magenta"}}>case </span> '-' :
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"You select subtraction \n"</span>&#41;;
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span style={{color: "magenta"}}>break</span>;
+                       <br />
+                       &nbsp; &nbsp; <span style={{color:"magenta"}}>default </span>:
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"invalid selection \n"</span>&#41;;
+                       <br />
+                       &nbsp; &#125; 
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>return</span> <span style={{color:"orange"}}>0</span>;
+                      <br />
+                      &#125;
+                    </code>
+                  </p>
+
+                  <b>Output :</b>
+                  <p className='bg-dark rounded mt-2 mb-4 p-2'>
+                    <code className='text-light'>
+                        choose <br />+ : addition <br />- : subtraction <br /> &nbsp; : + 
+                        <br />You select addition
+                    </code>
+                  </p>
+
+
+
                 </div>
+
+                <p className="mb-2 mt-3  text-dark fw-bold textShadow">
+                  Switch Statements
+                </p>
+
+                <div className="list-group-item border-0 rounded" style={{textAlign:"justify"}}>
+                    <p>
+                    The switch statement allows us to execute one code block among many alternatives.
+                    <br />
+                    You can do the same thing with the 
+                    <span className='p-1 bh-highlight border rounded'>if</span>...<span className='p-1 bh-highlight border rounded'>else if</span>...<span className='p-1 bh-highlight border rounded'>else</span> 
+                      ladder.
+                     However, the syntax of the <span className='p-1 bh-highlight border rounded'>switch</span> statement is much easier to read and write.
+                    </p>
+
+                  <b>Another Syntax of switch...case:</b>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                    <code className='text-dark'>
+                      <span style={{color:"magenta"}}>switch </span> ( condition ) 
+                       <br />
+                       &#123; 
+                       <br />
+                        &nbsp; <span style={{color:"magenta"}}>case </span> 0 :
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "#0900ff"}}>// run if condition is true</span>
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "magenta"}}>break</span>;
+                       <br />
+                        &nbsp; <span style={{color:"magenta"}}>case </span> 1 :
+                       <br />
+                        &nbsp; &nbsp; &nbsp; <span style={{color: "#0900ff"}}>// run if condition is false</span>
+                       <br />
+                       &#125; 
+                    </code>
+                  </p>
+
+                  <b>Example :</b>
+                  <p className='bg-dark rounded mt-2 p-2' style={{textAlign:"left"}}>
+                    <code className='text-light'>
+
+                    <span style={{color:"#4eb5ff"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
+                      <br />
+                      <span style={{color:"magenta"}}>int</span> <span style={{color:"#4eb5ff"}}>main</span>&#40;&#41;
+                      <br />
+                      &#123;   
+                      <br />
+                      &nbsp;  <span style={{color:"magenta"}}>int</span> num; 
+                      <br />   
+                      &nbsp;  <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"Enter number : "</span>&#41;;
+                      <br />
+                      &nbsp;  <span className='text-warning'>scanf</span>&#40;<span style={{color:"lightgreen"}}>" %d "</span>,&num&#41;;
+                      <br />
+                      &nbsp;  <span style={{color:"magenta"}}>switch </span> ( num&gt; 0 ) 
+                       <br />
+                       &nbsp;  &#123; 
+                       <br />
+                       &nbsp; &nbsp; <span style={{color:"magenta"}}>case </span> 1 :
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"%d is positive \n"</span>,num&#41;;
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span style={{color: "magenta"}}>break</span>;
+                       <br />
+                       &nbsp; &nbsp; <span style={{color:"magenta"}}>case </span> 0 :
+                       <br />
+                       &nbsp; &nbsp; &nbsp; &nbsp; <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"%d is negitive \n"</span>,num&#41;;
+                       <br />
+                       &nbsp; &#125; 
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>return</span> <span style={{color:"orange"}}>0</span>;
+                      <br />
+                      &#125;
+                    </code>
+                  </p>
+
+                  <b>Output :</b>
+                  <p className='bg-dark rounded mt-2 mb-4 p-2'>
+                    <code className='text-light'>
+                    Enter number : -7 
+                    <br /> -7  is negitive
+                    </code>
+                  </p>
+
+
+
+                </div>
+
 
 
                 <div className="list-group-item border-0">
