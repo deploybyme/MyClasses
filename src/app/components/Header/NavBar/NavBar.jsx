@@ -65,7 +65,7 @@ export default function NavBar(props) {
                         )}
                 </button>
                 <ul className="dropdown-menu dropdown-menu-end px-4 mt-2">
-                    <li className='pt-2 username'>
+                    <li className='pt-2 username text-center'>
                     
                         { userDetails ? (
                            <b className='fw-bold'>{userDetails.name}</b>
