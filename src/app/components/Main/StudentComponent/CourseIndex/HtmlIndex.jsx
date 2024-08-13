@@ -4,13 +4,13 @@ export default function HtmlIndex() {
   return (
   <>
   
-  <section className="py-2 mt-4 mx-3 rounded timebox">
+  <section className="py-2 mt-4 mx-1 rounded timebox">
   <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">HTML Index</h3>
-    <ul className="timeline ps-4">
+    <ul className="timeline ps-1">
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">Introduction</h5>
-            <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">Introduction</h5>
+            <div className="list-group me-1">
                  <label className="list-group-item border-0">
                    <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                    What is HTML?
@@ -27,8 +27,8 @@ export default function HtmlIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">HTML Basics</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">HTML Basics</h5>
+        <div className="list-group me-1">
         <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Paragraphs
@@ -61,8 +61,8 @@ export default function HtmlIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">HTML Inline</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">HTML Inline</h5>
+        <div className="list-group me-1">
         <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Block and Inline
@@ -83,8 +83,8 @@ export default function HtmlIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">HTML Form</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">HTML Form</h5>
+        <div className="list-group me-1">
         <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Form
@@ -105,8 +105,8 @@ export default function HtmlIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">Semantic HTML</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">Semantic HTML</h5>
+        <div className="list-group me-1">
         <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML div Tag
@@ -127,8 +127,8 @@ export default function HtmlIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">Graphics & Media</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">Graphics & Media</h5>
+        <div className="list-group me-1">
         <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   HTML Video
@@ -148,9 +148,11 @@ export default function HtmlIndex() {
               </div>
       </li>
 
+
     </ul>
   </section>
 
+  
   </>
 
   )
