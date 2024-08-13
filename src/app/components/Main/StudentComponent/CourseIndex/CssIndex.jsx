@@ -6,7 +6,7 @@ export default function CssIndex() {
     <>
 
   <section className="py-2 mt-4 mx-1 rounded timebox">
-  <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">Cascading Style Sheet Index</h3>
+  <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">CSS Index</h3>
     <ul className="timeline ps-1">
 
       <li className="timeline-item mb-5">
@@ -31,15 +31,15 @@ export default function CssIndex() {
         <h5 className="fw-bold ps-3">CSS Selectors</h5>
         <div className="list-group me-1">
                 <label className="list-group-item border-0">
-                  <div className="row">
-                    <div className="col-sm-6">
+                  <div className="row pb-4 mt-0 mt-sm-2 border-bottom">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                         <b>Element selector</b>  
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <div>
                         {" TagName {"}
-                        </div> property : value 
+                        </div> property : value ;
                         <div>
                         {"}  "}
                         </div>
@@ -47,15 +47,15 @@ export default function CssIndex() {
                   </div>
                 </label>
                 <label className="list-group-item border-0">
-                  <div className="row">
-                    <div className="col-sm-6">
+                  <div className="row pb-4 border-bottom">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                         <b>Universal selector</b>  
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <div>
                         {" * {"}
-                        </div> property : value 
+                        </div> property : value ;
                         <div>
                         {"}  "}
                         </div>
@@ -65,15 +65,15 @@ export default function CssIndex() {
                 </label>
                 <label className="list-group-item border-0">
                   
-                <div className="row">
-                    <div className="col-sm-6">
+                  <div className="row pb-4 border-bottom">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                         <b>Discendent selector</b> 
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <div>
                         {" parent child {"}
-                        </div> property : value 
+                        </div> property : value ;
                         <div>
                         {"}  "}
                         </div>
@@ -84,15 +84,15 @@ export default function CssIndex() {
                 </label>
                 <label className="list-group-item border-0">
                   
-                <div className="row">
-                    <div className="col-sm-6">
+                  <div className="row pb-4 border-bottom">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                         <b>Class selector</b> 
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <div>
                         {" .className {"}
-                        </div> property : value 
+                        </div> property : value ;
                         <div>
                         {"}  "}
                         </div>
@@ -103,15 +103,15 @@ export default function CssIndex() {
                 </label>
                 <label className="list-group-item border-0">
                   
-                <div className="row">
-                    <div className="col-sm-6">
+                  <div className="row pb-4 border-bottom">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                         <b>Id selector</b> 
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <div>
                         {" #idName {"}
-                        </div> property : value 
+                        </div> property : value ;
                         <div>
                         {"}  "}
                         </div>
@@ -122,15 +122,15 @@ export default function CssIndex() {
                 </label>
                 <label className="list-group-item border-0">
                  
-                <div className="row">
-                    <div className="col-sm-6">
+                  <div className="row pb-4 border-bottom">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                         <b>Group selector</b> 
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <div>
                         {" selector1 , selector2 {"}
-                        </div> property : value 
+                        </div> property : value ;
                         <div>
                         {"}  "}
                         </div>
@@ -140,15 +140,15 @@ export default function CssIndex() {
                 </label>
                 <label className="list-group-item border-0">
                   
-                <div className="row">
-                    <div className="col-sm-6">
+                  <div className="row pb-4">
+                    <div className="col-sm-6 mt-sm-0 mt-4">
                         <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                         <b>Attribute selector</b>  
                     </div>
-                    <div className="col-sm-6">
-                    <div>
+                    <div className="col-sm-6 mt-sm-0 mt-4">
+                        <div>
                         {" selector[attribute] {"}
-                        </div> property : value 
+                        </div> property : value ; 
                         <div>
                         {"}  "}
                         </div>
