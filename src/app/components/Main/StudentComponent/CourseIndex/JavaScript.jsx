@@ -4,13 +4,13 @@ export default function JavaScript() {
   return (
 
     <>  
-  <section className="py-2 mt-4 mx-3 rounded timebox">
+  <section className="py-2 mt-4 mx-1 rounded timebox">
   <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">Core JavaScript Index</h3>
-    <ul className="timeline ps-4">
+    <ul className="timeline ps-1">
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold"> JS Introduction</h5>
-            <div className="list-group me-4">
+        <h5 className="fw-bold ps-3"> JS Introduction</h5>
+            <div className="list-group me-1">
                  <label className="list-group-item border-0">
                    <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                    Getting Started with JS
@@ -45,8 +45,8 @@ export default function JavaScript() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">JS Control Flow</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">JS Control Flow</h5>
+        <div className="list-group me-1">
         <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   JavaScript if...else Statement
@@ -75,8 +75,8 @@ export default function JavaScript() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">JS Functions</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">JS Functions</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   JavaScript Function and Function Expressions
@@ -98,9 +98,9 @@ export default function JavaScript() {
 
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">JS Document Object Model</h5>
+        <h5 className="fw-bold ps-3">JS Document Object Model</h5>
 
-        <div className="list-group me-4">
+        <div className="list-group me-1">
                 <p className="text-muted mb-2 mt-3 fw-bold">
                   Selecting elements
                 </p>
@@ -362,8 +362,8 @@ export default function JavaScript() {
 
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">JS Types</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">JS Types</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   JavaScript Objects
