@@ -5,13 +5,13 @@ export default function CssIndex() {
 
     <>
 
-  <section className="py-2 mt-4 mx-3 rounded timebox">
+  <section className="py-2 mt-4 mx-1 rounded timebox">
   <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">Cascading Style Sheet Index</h3>
-    <ul className="timeline ps-4">
+    <ul className="timeline ps-1">
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Introduction</h5>
-            <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Introduction</h5>
+            <div className="list-group me-1">
                  <label className="list-group-item border-0">
                    <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                    Getting Started with CSS
@@ -28,8 +28,8 @@ export default function CssIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Selectors</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Selectors</h5>
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <div className="row">
                     <div className="col-sm-6">
@@ -37,7 +37,12 @@ export default function CssIndex() {
                         <b>Element selector</b>  
                     </div>
                     <div className="col-sm-6">
-                        {" TagName { property : value }  "}
+                        <div>
+                        {" TagName {"}
+                        </div> property : value 
+                        <div>
+                        {"}  "}
+                        </div>
                     </div>
                   </div>
                 </label>
@@ -48,7 +53,12 @@ export default function CssIndex() {
                         <b>Universal selector</b>  
                     </div>
                     <div className="col-sm-6">
-                         {"  * { property : value }  "}
+                        <div>
+                        {" * {"}
+                        </div> property : value 
+                        <div>
+                        {"}  "}
+                        </div>
                     </div>
                   </div>
                     
@@ -61,7 +71,12 @@ export default function CssIndex() {
                         <b>Discendent selector</b> 
                     </div>
                     <div className="col-sm-6">
-                    {" parent child { property : value }  "}
+                        <div>
+                        {" parent child {"}
+                        </div> property : value 
+                        <div>
+                        {"}  "}
+                        </div>
                     </div>
                   </div>
 
@@ -75,7 +90,12 @@ export default function CssIndex() {
                         <b>Class selector</b> 
                     </div>
                     <div className="col-sm-6">
-                    {" .className { property : value }  "}
+                        <div>
+                        {" .className {"}
+                        </div> property : value 
+                        <div>
+                        {"}  "}
+                        </div>
                     </div>
                   </div>
 
@@ -89,7 +109,12 @@ export default function CssIndex() {
                         <b>Id selector</b> 
                     </div>
                     <div className="col-sm-6">
-                    {" #idName { property : value }  "}
+                        <div>
+                        {" #idName {"}
+                        </div> property : value 
+                        <div>
+                        {"}  "}
+                        </div>
                     </div>
                   </div>
 
@@ -103,7 +128,12 @@ export default function CssIndex() {
                         <b>Group selector</b> 
                     </div>
                     <div className="col-sm-6">
-                    {" selector1 , selector2 { property : value }  "}
+                        <div>
+                        {" selector1 , selector2 {"}
+                        </div> property : value 
+                        <div>
+                        {"}  "}
+                        </div>
                     </div>
                   </div>
 
@@ -116,7 +146,12 @@ export default function CssIndex() {
                         <b>Attribute selector</b>  
                     </div>
                     <div className="col-sm-6">
-                    {" selector[attribute] { property : value }  "}
+                    <div>
+                        {" selector[attribute] {"}
+                        </div> property : value 
+                        <div>
+                        {"}  "}
+                        </div>
                     </div>
                   </div>                  
                 </label>
@@ -124,9 +159,9 @@ export default function CssIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Pseudo-Classes Selectors</h5>
+        <h5 className="fw-bold ps-3">CSS Pseudo-Classes Selectors</h5>
        
-        <div className="list-group me-4">
+        <div className="list-group me-1">
         <label className="list-group-item border-0">
             <div className="row">
               <div className="col-12">
@@ -142,7 +177,7 @@ export default function CssIndex() {
         <p className="text-muted mb-2 mt-3 fw-bold">
         Structural pseudo-class
         </p>
-        <div className="list-group me-4">
+        <div className="list-group me-1">
                 <label className="list-group-item border-0">
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   : first-child 
@@ -192,7 +227,7 @@ export default function CssIndex() {
         <p className="text-muted mb-2 mt-3 fw-bold">
         Link pseudo-class:
         </p>
-        <div className="list-group me-4">
+        <div className="list-group me-1">
             <label className="list-group-item border-0">
               <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
               : link 
@@ -223,7 +258,7 @@ export default function CssIndex() {
         <p className="text-muted mb-2 mt-3 fw-bold">
             UI pseudo-class:
         </p>
-        <div className="list-group me-4">
+        <div className="list-group me-1">
             <label className="list-group-item border-0">
               <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
               : enabled 
@@ -270,8 +305,8 @@ export default function CssIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Font Property</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Font Property</h5>
+        <div className="list-group me-1">
             <label className="list-group-item border-0">
                 <div className="row">
                   <div className="col-12">
@@ -283,7 +318,7 @@ export default function CssIndex() {
                 </div>
               </label>
         </div>
-        <div className="list-group me-4">
+        <div className="list-group me-1">
         
         <div className="list-group mt-2">
 
@@ -327,14 +362,14 @@ export default function CssIndex() {
                   line-height:
                 </label>
 
-              </div>
+        </div>
         </div>
 
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Text Formatting</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Text Formatting</h5>
+        <div className="list-group me-1">
             <label className="list-group-item border-0">
                 <div className="row">
                   <div className="col-12">
@@ -346,7 +381,7 @@ export default function CssIndex() {
                 </div>
               </label>
         </div>
-        <div className="list-group me-4">
+        <div className="list-group me-1">
         
         <div className="list-group mt-2">
 
@@ -393,14 +428,14 @@ export default function CssIndex() {
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   direction:
                 </label>
-              </div>
+        </div>
         </div>
 
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Background Properties</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Background Properties</h5>
+        <div className="list-group me-1">
             <label className="list-group-item border-0">
                 <div className="row">
                   <div className="col-12">
@@ -412,7 +447,7 @@ export default function CssIndex() {
                 </div>
               </label>
         </div>
-        <div className="list-group me-4">
+        <div className="list-group me-1">
         
         <div className="list-group mt-2">
 
@@ -463,14 +498,14 @@ export default function CssIndex() {
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   opacity: 
                 </label>
-              </div>
+        </div>
         </div>
 
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Border Properties</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Border Properties</h5>
+        <div className="list-group me-1">
             <label className="list-group-item border-0">
                 <div className="row">
                   <div className="col-12">
@@ -482,7 +517,7 @@ export default function CssIndex() {
                 </div>
               </label>
         </div>
-        <div className="list-group me-4">
+        <div className="list-group me-1">
         
         <div className="list-group mt-2">
 
@@ -521,14 +556,14 @@ export default function CssIndex() {
                   <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
                   border:
                 </label>
-              </div>
+        </div>
         </div>
 
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Box Model</h5>
-        <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Box Model</h5>
+        <div className="list-group me-1">
             <label className="list-group-item border-0">
                 <div className="row">
                   <div className="col-12">
@@ -540,7 +575,7 @@ export default function CssIndex() {
                 </div>
               </label>
         </div>
-      <div className="list-group me-4">
+      <div className="list-group me-1">
         
         <div className="list-group mt-2">
                 <p className="text-muted mb-2 mt-3 fw-bold">
@@ -700,8 +735,8 @@ export default function CssIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Display and Position</h5>
-      <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Display and Position</h5>
+      <div className="list-group me-1">
           <p className="text-muted mb-2 mt-3 fw-bold">
             CSS Display
           </p>
@@ -826,8 +861,8 @@ export default function CssIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Z-index and Overflow</h5>
-      <div className="list-group me-4">
+        <h5 className="fw-bold ps-3">CSS Z-index and Overflow</h5>
+      <div className="list-group me-1">
 
       <div className="list-group">
             <label className="list-group-item border-0">
@@ -869,9 +904,9 @@ export default function CssIndex() {
       </li>
 
       <li className="timeline-item mb-5">
-        <h5 className="fw-bold">CSS Transform, Transition and Animations</h5>
+        <h5 className="fw-bold ps-3">CSS Transform, Transition and Animations</h5>
      
-      <div className="list-group me-4">
+      <div className="list-group me-1">
 
           <p className="text-muted mb-2 mt-3 fw-bold">
             CSS Transform
@@ -884,7 +919,7 @@ export default function CssIndex() {
                       <b>Syntax : </b>  
                   </div>
                   <div className="col-12">
-                     selector {`{`} <br /> {`Transform : value`} <br /> {`}`}  
+                     selector {`{`} <br /> {`transform : value`} <br /> {`}`}  
                   </div>
                 </div>
               </label>
@@ -944,7 +979,7 @@ export default function CssIndex() {
         </div>       
       </div>
 
-      <div className="list-group me-4">
+      <div className="list-group me-1">
           <p className="text-muted mb-2 mt-3 fw-bold">
             CSS Transition
           </p>
@@ -956,7 +991,7 @@ export default function CssIndex() {
                       <b>Syntax : </b>  
                   </div>
                   <div className="col-12">
-                     selector {`{`} <br /> {`Transition : value`} <br /> {`}`}  
+                     selector {`{`} <br /> {`transition : value`} <br /> {`}`}  
                   </div>
                 </div>
               </label>
@@ -1005,7 +1040,7 @@ export default function CssIndex() {
         </div>       
       </div>
 
-      <div className="list-group me-4">
+      <div className="list-group me-1">
           <p className="text-muted mb-2 mt-3 fw-bold">
             CSS Animation
           </p>
@@ -1017,7 +1052,7 @@ export default function CssIndex() {
                       <b>Syntax : </b>  
                   </div>
                   <div className="col-12">
-                     selector {`{`} <br /> {`Animation : value`} <br /> {`}`}  
+                     selector {`{`} <br /> {`animation : value`} <br /> {`}`}  
                   </div>
                 </div>
               </label>
