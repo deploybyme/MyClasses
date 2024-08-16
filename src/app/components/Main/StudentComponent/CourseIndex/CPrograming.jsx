@@ -693,7 +693,7 @@ export default function CPrograming() {
                       </li>
                     </ul>
 
-                  <b>if Statement syntax:</b>
+                  <b className='text-decoration-underline fs-5'>if Statement syntax:</b>
                   <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
                     <code className='text-dark'>
                       <span style={{color:"magenta"}}>if</span> ( condition ) 
@@ -734,13 +734,13 @@ export default function CPrograming() {
                   </p>
 
                   <b>Output :</b>
-                  <p className='bg-dark rounded mt-2 mb-4 p-2'>
+                  <p className='bg-dark rounded mt-2 mb-5 p-2'>
                     <code className='text-light'>
                     You are Adult 
                     </code>
                   </p>
 
-                  <b>if..else Statement syntax:</b>
+                  <b className='text-decoration-underline fs-5'>if..else Statement syntax:</b>
                   <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
                     <code className='text-dark'>
                       <span style={{color:"magenta"}}>if</span> ( condition ) 
@@ -794,13 +794,13 @@ export default function CPrograming() {
                   </p>
 
                   <b>Output :</b>
-                  <p className='bg-dark rounded mt-2 mb-4 p-2'>
+                  <p className='bg-dark rounded mt-2 mb-5 p-2'>
                     <code className='text-light'>
                     6 is an even num 
                     </code>
                   </p>
 
-                  <b>if..else if...else Ladder syntax:</b>
+                  <b className='text-decoration-underline fs-5'>if..else if...else Ladder syntax:</b>
                   <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
                     <code className='text-dark'>
                       <span style={{color:"magenta"}}>if</span> ( condition1 ) 
@@ -881,7 +881,7 @@ export default function CPrograming() {
                   </p>
 
                   <b>Output :</b>
-                  <p className='bg-dark rounded mt-2 mb-4 p-2'>
+                  <p className='bg-dark rounded mt-2 mb-5 p-2'>
                     <code className='text-light'>
                         Result: 22 &gt; 13 
                     </code>
@@ -1060,7 +1060,6 @@ export default function CPrograming() {
                 </div>
 
 
-
                 <p className="mb-2 mt-3  text-dark fw-bold textShadow">
                   Goto Statement
                 </p>
@@ -1098,16 +1097,201 @@ export default function CPrograming() {
                 </div>
 
 
-                <div className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
+                <p className="mb-2 mt-3  text-dark fw-bold textShadow">
                   while and do...while Loop
-                </div>
+                </p>
+
+                <div className="list-group-item border-0 rounded py-4" style={{textAlign:"justify"}}>
+                    <p>
+                    In programming, loops are used to repeat a block of code until a specified condition is met.
+                    </p>
+                    <p>
+                    C programming has three types of loops.
+                    </p>
+                    <ol>
+                      <li>do...while loop</li>
+                      <li>while loop</li>
+                      <li>for loop</li>
+                    </ol>
+
+                  <p className='pt-4 fw-bold text-decoration-underline fs-5'>do...while loop</p>
+                  <p>
+                  The <span className='p-1 bh-highlight border rounded'>do..while</span> loop is similar to the 
+                  <span className='p-1 bh-highlight border rounded'>while</span> loop with one important difference. 
+                  The body of <span className='p-1 bh-highlight border rounded'>do..while</span> loop is executed at least once. Only then, 
+                  the Condition is false.
+                  </p>
+
+                  <b>syntax of do..while :</b>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                    <code className='text-dark'>
+                      
+                    <span style={{color:"magenta"}}>data_type</span> variable_name;
+                      <br />
+                      <span style={{color:"magenta"}}>do </span>
+                       <br />
+                      &#123;   
+                      <br />    
+                      <span style={{color: "#0900ff"}}>// your code</span>;
+                      <br />
+                      <span style={{color: "#0900ff"}}>// iteration</span>;
+                      <br />
+                      &#125;
+                      <br />
+                      <span style={{color:"magenta"}}>while</span>( condition ); 
+                        <br />
+                    </code>
+                  </p>
+
+                  <b>Example :</b>
+                  <p className='bg-dark rounded mt-2 p-2' style={{textAlign:"left"}}>
+                    <code className='text-light'>
+
+                    <span style={{color:"#4eb5ff"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
+                      <br />
+                      <span style={{color:"magenta"}}>int</span> <span style={{color:"#4eb5ff"}}>main</span>&#40;&#41;
+                      <br />
+                      &#123;   
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>int</span> i = <span style={{color:"orange"}}>0</span>;    
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>do</span>
+                                <br />
+                      &nbsp;    &#123; 
+                                <br />
+                      &nbsp;    &nbsp;    <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"%d "</span>,i&#41;;
+                                <br />
+                      &nbsp;    &nbsp; i++;         
+                                <br />
+                      &nbsp;    &#125; 
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>while</span>( i &lt; 10 );
+                     <br /><br />
+                      &nbsp;    <span style={{color:"magenta"}}>return</span> <span style={{color:"orange"}}>0</span>;
+                      <br />
+                      &#125;
+                    </code>
+                  </p>
+
+                  <b>Output :</b>
+                  <p className='bg-dark rounded mt-2 mb-5 p-2'>
+                    <code className='text-light'>
+                        0 1 2 3 4 5 6 7 8 9
+                    </code>
+                  </p>
 
 
-                <div className="list-group-item border-0">
-                  <input className="form-check-input rounded-pill me-1" type="checkbox" value=""/>
-                  for Loop
+                  <p className='pt-4 fw-bold text-decoration-underline fs-5'>while loop</p>
+                  <b>The syntax of the while loop is :</b>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                    <code className='text-dark'>
+                      
+                    <span style={{color:"magenta"}}>data_type</span> variable_name;
+                      <br />
+                      <span style={{color:"magenta"}}>while</span>( condition ) 
+                       <br />
+                      &#123;   
+                      <br />    
+                      <span style={{color: "#0900ff"}}>// your code</span>;
+                      <br />
+                      <span style={{color: "#0900ff"}}>// iteration</span>;
+                      <br />
+                      &#125;
+                      <br />
+                    </code>
+                  </p>
+
+                  <b>Example :</b>
+                  <p className='bg-dark rounded mt-2 p-2' style={{textAlign:"left"}}>
+                    <code className='text-light'>
+
+                    <span style={{color:"#4eb5ff"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
+                      <br />
+                      <span style={{color:"magenta"}}>int</span> <span style={{color:"#4eb5ff"}}>main</span>&#40;&#41;
+                      <br />
+                      &#123;   
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>int</span> i = <span style={{color:"orange"}}>0</span>;    
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>while</span>( i &lt; 10 )
+                                <br />
+                      &nbsp;    &#123; 
+                                <br />
+                      &nbsp;    &nbsp;    <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"%d "</span>,i&#41;;
+                                <br />
+                      &nbsp;    &nbsp; i++;         
+                                <br />
+                      &nbsp;    &#125; 
+                      <br />
+                     <br />
+                      &nbsp;    <span style={{color:"magenta"}}>return</span> <span style={{color:"orange"}}>0</span>;
+                      <br />
+                      &#125;
+                    </code>
+                  </p>
+
+                  <b>Output :</b>
+                  <p className='bg-dark rounded mt-2 mb-5 p-2'>
+                    <code className='text-light'>
+                        0 1 2 3 4 5 6 7 8 9
+                    </code>
+                  </p>
+
+
+                  <p className='pt-4 fw-bold text-decoration-underline fs-5'>for loop</p>
+                  <b>The syntax of the while loop is :</b>
+                  <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
+                    <code className='text-dark'>
+                      
+                    <span style={{color:"magenta"}}>data_type</span> variable_name;
+                      <br />
+                      <span style={{color:"magenta"}}>for</span>(initialization ; condition ; iteration) 
+                       <br />
+                      &#123;   
+                      <br />    
+                      <span style={{color: "#0900ff"}}>// your code</span>;
+                      <br />
+                      &#125;
+                      <br />
+                    </code>
+                  </p>
+
+                  <b>Example :</b>
+                  <p className='bg-dark rounded mt-2 p-2' style={{textAlign:"left"}}>
+                    <code className='text-light'>
+
+                    <span style={{color:"#4eb5ff"}}>#include</span> <span style={{color:"#00c400"}}>&lt;stdio.h&gt;</span>
+                      <br />
+                      <span style={{color:"magenta"}}>int</span> <span style={{color:"#4eb5ff"}}>main</span>&#40;&#41;
+                      <br />
+                      &#123;   
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>int</span> i;    
+                      <br />
+                      &nbsp;    <span style={{color:"magenta"}}>for</span>( i = 1 ; i &lt; 10 ; i++ )
+                                <br />
+                      &nbsp;    &#123; 
+                                <br />
+                      &nbsp;    &nbsp;    <span className='text-warning'>printf</span>&#40;<span style={{color:"lightgreen"}}>"%d "</span>,i&#41;;       
+                                <br />
+                      &nbsp;    &#125; 
+                      <br />
+                     <br />
+                      &nbsp;    <span style={{color:"magenta"}}>return</span> <span style={{color:"orange"}}>0</span>;
+                      <br />
+                      &#125;
+                    </code>
+                  </p>
+
+                  <b>Output :</b>
+                  <p className='bg-dark rounded mt-2 p-2'>
+                    <code className='text-light'>
+                        0 1 2 3 4 5 6 7 8 9
+                    </code>
+                  </p>
+
                 </div>
+
 
               </div>
       </li>
