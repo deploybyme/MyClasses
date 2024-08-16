@@ -21,7 +21,7 @@ export default function page() {
         </li>
 
         <li className="nav-item ms-1" role="presentation">
-          <button className="nav-link link-dark border border border-dark" id="pills-JavaScript-tab" data-bs-toggle="pill" data-bs-target="#pills-JavaScript" type="button" role="tab" aria-controls="pills-History" aria-selected="false">JavaScript</button>
+          <button className="nav-link link-dark border border border-dark" id="pills-JavaScript-tab" data-bs-toggle="pill" data-bs-target="#pills-JavaScript" type="button" role="tab" aria-controls="pills-History" aria-selected="false">JS</button>
         </li>
 
       </ul>
