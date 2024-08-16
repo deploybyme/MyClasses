@@ -3,9 +3,12 @@ import React from 'react'
 export default function CPrograming() {
   return (
     <>
+
   <section className="py-2 mt-4 mx-1 rounded timebox">
+
   <h3 className="fw-bold p-2 mx-4 my-3 bg-light border-dark rounded border-bottom">Core C / C++ Index</h3>
     <ul className="timeline ps-1">
+
 
       <li className="timeline-item mb-5">
         <h5 className="fw-bold ps-3">Introduction</h5>
@@ -905,7 +908,7 @@ export default function CPrograming() {
                      However, the syntax of the <span className='p-1 bh-highlight border rounded'>switch</span> statement is much easier to read and write.
                     </p>
 
-                  <b>Syntax of switch...case:</b>
+                  <b className='text-decoration-underline fs-5'>Syntax of switch...case:</b>
                   <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
                     <code className='text-dark'>
                       <span style={{color:"magenta"}}>switch </span> ( expression ) 
@@ -990,7 +993,7 @@ export default function CPrograming() {
                     </code>
                   </p>
 
-                  <b>Another Syntax of switch...case:</b>
+                  <b className='text-decoration-underline fs-5'>Another Syntax of switch...case:</b>
                   <p className='rounded mt-2 p-2' style={{background: "lightgrey"}}>
                     <code className='text-dark'>
                       <span style={{color:"magenta"}}>switch </span> ( condition ) 
