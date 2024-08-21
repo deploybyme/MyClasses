@@ -86,7 +86,7 @@ export default function Transition() {
     <button className="nav-link link-dark border border border-dark" id="pills-History-tab" data-bs-toggle="pill" data-bs-target="#pills-History" type="button" role="tab" aria-controls="pills-History" aria-selected="false">History</button>
   </li>
 </ul>
-<div className="tab-content" id="pills-tabContent">
+<div className="tab-content overflow-hidden" id="pills-tabContent">
   <div className="tab-pane fade show active" id="pills-Transition" role="tabpanel" aria-labelledby="pills-Transition-tab">
   { userDetails ? ( <StaffTransition UserMember={userDetails.name}/>):(<>User Not Found</>)}
   </div>
