@@ -158,8 +158,8 @@ if(UpdateCourse === "JavaScript"){
 
                                     <small className='my-2 p-0'>C Programing</small>
                                     <div className="progress px-0 border border-secondary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number(data["C Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["C Marks"])}
+                                            <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number((data["C Marks"]/20)*100)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["C Marks"])} / 20
                                             </div>
                                         </div>
 
