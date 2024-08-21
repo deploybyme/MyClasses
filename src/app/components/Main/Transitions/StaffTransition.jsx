@@ -35,6 +35,7 @@ export default function StaffTransition(props) {
     const[Paid,setPaid]=useState("");
     const[date,setdate]=useState(datetime);
     const[studentName,setstudentName]=useState("");
+    
     const handleSubmit = async (e)=>{
         e.preventDefault();
         const addData = await addTransition(name,Paid,studentName,PayToo);
@@ -46,6 +47,8 @@ export default function StaffTransition(props) {
           setPayToo("")
           alert("data add successfully")
         }
+
+        window.location.reload() 
       }
 
 
