@@ -87,12 +87,16 @@ export default function Profile(props) {
                                 <>
                                     <small className='my-2 p-0'>C Programing</small>
                                     <div className="progress px-0 border border-secondary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number(props.CMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{props.CppMarks}</div>
+                                            <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number((props.CMarks/20)*100)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            {props.CMarks} / 20
+                                            </div>
                                     </div>
 
                                     <small className='my-2 p-0'>C++ Programing</small>
                                     <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(props.CppMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{props.CppMarks}</div>
+                                            <div className="progress-bar" role="progressbar" style={{width: Number(props.CppMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                              {props.CppMarks}
+                                              </div>
                                     </div>
                                 </>
                             ):(
