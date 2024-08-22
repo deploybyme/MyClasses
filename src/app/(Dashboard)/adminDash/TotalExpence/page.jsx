@@ -94,15 +94,26 @@ export default function TotalExp(props) {
           </div>
 
 
-<ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-center bg-light" id="pills-tab" role="tablist">
-  <li className="nav-item" role="presentation">
-    <button className="nav-link link-dark border active" id="pills-student-tab" data-bs-toggle="pill" data-bs-target="#pills-student" type="button" role="tab" aria-controls="pills-student" aria-selected="true">Students</button>
+<ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-left bg-light" id="pills-tab" role="tablist">
+  <li className="nav-item me-1" role="presentation">
+    <button className="nav-link link-dark border active" id="pills-student-tab" data-bs-toggle="pill" data-bs-target="#pills-student" type="button" role="tab" aria-controls="pills-student" aria-selected="true">Balance</button>
   </li>
+
+  <li className="nav-item ms-1" role="presentation">
+    <button className="nav-link link-dark border" id="pills-student-paid-tab" data-bs-toggle="pill" data-bs-target="#pills-student-paid" type="button" role="tab" aria-controls="pills-student-paid" aria-selected="false">Paid</button>
+  </li>
+
 </ul>
 <div className="tab-content" id="pills-tabContent">
+
   <div className="tab-pane fade show active" id="pills-student" role="tabpanel" aria-labelledby="pills-student-tab">
-      <StudentExpence/>
+      <StudentExpence Balance="none" Paid="block"/>
   </div>
+
+  <div className="tab-pane fade show active" id="pills-student-paid" role="tabpanel" aria-labelledby="pills-student-paid-tab">
+      <StudentExpence Balance="block" Paid="none"/>
+  </div>
+
 </div>
 
 
