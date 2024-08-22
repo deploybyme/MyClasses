@@ -110,7 +110,7 @@ export default function TotalExp(props) {
       <StudentExpence Balance="none" Paid="block"/>
   </div>
 
-  <div className="tab-pane fade show active" id="pills-student-paid" role="tabpanel" aria-labelledby="pills-student-paid-tab">
+  <div className="tab-pane fade" id="pills-student-paid" role="tabpanel" aria-labelledby="pills-student-paid-tab">
       <StudentExpence Balance="block" Paid="none"/>
   </div>
 
