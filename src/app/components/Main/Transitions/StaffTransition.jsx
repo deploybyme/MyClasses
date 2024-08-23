@@ -25,6 +25,7 @@ async function addTransition(name,Paid,studentName,PayToo){
       console.error("Error adding Data :",error);
       return false;
     }
+    await refresh()
   }
   
 async function refresh(){
@@ -49,7 +50,6 @@ export default function StaffTransition(props) {
           setPayToo("")
           alert("data add successfully")
         }
-        await refresh()
       }
      
 
