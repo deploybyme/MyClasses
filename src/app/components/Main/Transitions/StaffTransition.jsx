@@ -27,7 +27,9 @@ async function addTransition(name,Paid,studentName,PayToo){
     }
   }
   
-
+async function refresh(){
+    window.location.reload()
+}
 
 export default function StaffTransition(props) {
     const [name,setName]=useState(props.UserMember);
@@ -47,8 +49,9 @@ export default function StaffTransition(props) {
           setPayToo("")
           alert("data add successfully")
         }
+        await refresh()
       }
-    window.location.reload() 
+     
 
 
     return (
