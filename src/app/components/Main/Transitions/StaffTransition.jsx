@@ -47,9 +47,8 @@ export default function StaffTransition(props) {
           setPayToo("")
           alert("data add successfully")
         }
-
-        window.location.reload() 
       }
+    window.location.reload() 
 
 
     return (
