@@ -20,7 +20,6 @@ async function addTransition(name,Paid,studentName,PayToo){
         studentName:studentName,
         transitionTo:PayToo
       });
-        await refresh()
       return true;
     } catch(error){
       console.error("Error adding Data :",error);
@@ -28,7 +27,7 @@ async function addTransition(name,Paid,studentName,PayToo){
     }
   }
   
-async function refresh(){
+function refresh(){
     window.location.reload()
 }
 
