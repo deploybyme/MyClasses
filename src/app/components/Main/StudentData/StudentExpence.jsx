@@ -205,7 +205,7 @@ const update = async ()=>{
                 </div>
              
               {/* -------------------Update Modal-------------------- */}
-              <div className="modal fade" id="updateDataModal" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+             <div className="modal fade" id={`updateDataModal${index}`} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                           <div className="modal-dialog modal-dialog-centered modal-lg">
                               <div className="modal-content">
                               <div className="modal-header">
