@@ -13,6 +13,9 @@ export default function TotalExp(props) {
   const[countBalance,setcountBalance] = useState(0);  
   const[countCollect,setcountCollect] = useState(0); 
 
+  const[showBalance,setshowBalance] = useState("none"); 
+  const[showPaid,setshowPaid] = useState("block"); 
+
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async()=>{
       auth.onAuthStateChanged(async(user)=>{
@@ -99,20 +102,20 @@ export default function TotalExp(props) {
     <button className="nav-link link-dark border active" id="pills-student-tab" data-bs-toggle="pill" data-bs-target="#pills-student" type="button" role="tab" aria-controls="pills-student" aria-selected="true">Balance</button>
   </li>
 
-  <li className="nav-item ms-1" role="presentation">
-    <button className="nav-link link-dark border" id="pills-student-paid-tab" data-bs-toggle="pill" data-bs-target="#pills-student-paid" type="button" role="tab" aria-controls="pills-student-paid" aria-selected="false">Paid</button>
+  <li className="nav-item ms-1">
+    <button className="nav-link link-dark border"
+    onClick={()=>{}} >Paid</button>
   </li>
 
 </ul>
 <div className="tab-content" id="pills-tabContent">
 
   <div className="tab-pane fade show active" id="pills-student" role="tabpanel" aria-labelledby="pills-student-tab">
-      <StudentExpence Balance="none" Paid="block"/>
+      <StudentExpence 
+      // Balance={showBalance} Paid={showPaid}
+      />
   </div>
 
-  <div className="tab-pane fade" id="pills-student-paid" role="tabpanel" aria-labelledby="pills-student-paid-tab">
-      <StudentExpence Balance="block" Paid="none"/>
-  </div>
 
 </div>
 
