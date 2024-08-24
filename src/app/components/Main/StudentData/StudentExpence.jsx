@@ -193,7 +193,7 @@ const update = async ()=>{
                             <div className="col d-flex justify-content-end">
                               
                                     <button type="button" className='btn btn-primary mt-2' 
-                                    data-bs-toggle="modal" data-bs-target="#updateDataModal"
+                                    data-bs-toggle="modal" data-bs-target={`#updateDataModal${index}`}
                                      onClick={() => {passData(data.id)}}
                                     >
                                     Update</button>
