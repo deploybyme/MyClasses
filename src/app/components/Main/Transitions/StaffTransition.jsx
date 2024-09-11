@@ -27,7 +27,7 @@ async function addTransition(name,Paid,studentName,PayToo){
     }
   }
   
-function refresh(){
+async function refresh(){
     window.location.reload()
 }
 
@@ -48,6 +48,7 @@ export default function StaffTransition(props) {
           setstudentName("")
           setPayToo("")
           alert("data add successfully")
+          await refresh()
         }
       }
      
