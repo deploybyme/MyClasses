@@ -46,7 +46,7 @@ export default function Transition() {
 
  
 
-  const[Show,setShow] = useState(false); 
+  const[Show,setShow] = useState(true); 
   
   return (
 <>
