@@ -97,17 +97,14 @@ export default function TotalExp(props) {
           </div>
 
 
-<ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-left bg-light" id="pills-tab" role="tablist">
-  <li className="nav-item me-1" role="presentation">
-    <button className="nav-link link-dark border active" id="pills-student-tab" data-bs-toggle="pill" data-bs-target="#pills-student" type="button" role="tab" aria-controls="pills-student" aria-selected="true">Balance</button>
-  </li>
+<ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-center bg-light" id="pills-tab" role="tablist">
 
-  <li className="nav-item ms-1">
-    <button className="nav-link link-dark border"
+  <li className="nav-item">
+    <button className="nav-link link-light border bg-dark"
     onClick={()=>{
       setshowblock(!showblock)
       setshownone(!shownone)
-    }} >Paid</button>
+    }} >{showblock?"Show Balance":"Show Paid"}</button>
   </li>
 
 </ul>
