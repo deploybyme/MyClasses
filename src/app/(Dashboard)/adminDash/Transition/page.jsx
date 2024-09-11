@@ -46,7 +46,8 @@ export default function Transition() {
 
  
 
-
+  const[Show,setShow] = useState(false); 
+  
   return (
 <>
      
@@ -78,21 +79,38 @@ export default function Transition() {
 
 </div>
   
-<ul className="nav nav-pills mb-3 mx-2 border rounded text-light bg-light" id="pills-tab" role="tablist">
+<ul className="nav nav-pills mb-3 mx-2 border justify-content-center rounded text-light bg-light" id="pills-tab" role="tablist">
+  
   <li className="nav-item me-2" role="presentation">
-    <button className="nav-link link-dark border border-dark active" id="pills-Transition-tab" data-bs-toggle="pill" data-bs-target="#pills-Transition" type="button" role="tab" aria-controls="pills-Transition" aria-selected="false">Do Transition</button>
+    <button className="nav-link link-dark border border-dark active"
+     id="pills-Transition-tab" data-bs-toggle="pill" data-bs-target="#pills-Transition"
+     type="button" role="tab" aria-controls="pills-Transition" aria-selected="false"
+     onClick={()=>{setShow(!Show)}}
+     >{Show? "Show History" : "Do Transition"}</button>
   </li>
-  <li className="nav-item ms-2" role="presentation">
-    <button className="nav-link link-dark border border border-dark" id="pills-History-tab" data-bs-toggle="pill" data-bs-target="#pills-History" type="button" role="tab" aria-controls="pills-History" aria-selected="false">History</button>
-  </li>
+
+
+  
 </ul>
 <div className="tab-content overflow-hidden" id="pills-tabContent">
+ 
   <div className="tab-pane fade show active" id="pills-Transition" role="tabpanel" aria-labelledby="pills-Transition-tab">
-  { userDetails ? ( <StaffTransition UserMember={userDetails.name}/>):(<>User Not Found</>)}
+  
+  
+  { userDetails ? 
+    (
+    Show?(
+      <>
+      <h5 className='text-center rounded bg-light mx-2 py-2'>Do Transition</h5>
+      <StaffTransition UserMember={userDetails.name}/>
+      </>
+        ):( <History/>)
+     ):(
+     <>User Not Found</>
+     )}
+  
   </div>
-  <div className="tab-pane fade" id="pills-History" role="tabpanel" aria-labelledby="pills-History-tab">
-    <History/>
-  </div>
+
 </div>
 
 
