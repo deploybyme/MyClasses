@@ -66,6 +66,10 @@ const passData = async (id) => {
   setId(matchId.id)
 }
 
+async function refresh() {
+  window.location.reload()
+}
+
 // Update -----------------------------------------------------------------------------------------------
 const update = async ()=>{
   
@@ -77,14 +81,15 @@ const update = async ()=>{
       TimeStamp:datetime,
       balance:Balance-Pay
     })
-    alert("updateData Successfully");
-
-    window.location.reload()
+    alert("Update Data Successfully");
+    await refresh()
+    
   } catch (error) {
     alert("Error Occurs");
   }
 }
 
+const [showMe, setShowMe] = useState(false);
 
   return (
     <>
@@ -107,8 +112,8 @@ const update = async ()=>{
             fetchData.map( (data,index) => 
             {
             return(
-            
-              <div key={data.id} className="accordion shadow-0 mt-1 overflow-hidden" style={{display: (data.balance==0)? props.Balance:props.Paid}} >
+
+              <div key={data.id} className="accordion shadow-0 mt-1 overflow-hidden" style={{display: (data.balance==0)?props.shownone:props.showblock}} >
                 <div className="accordion-item ">
                   <h2 className="accordion-header">
                     <div className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#${data.id}StudentDetails`} aria-expanded="false" aria-controls="collapseTwo">
@@ -256,7 +261,7 @@ const update = async ()=>{
               {/* --------------------------------------------------- */}  
 
               </div>  
-                   
+     
             )
             })
           }
