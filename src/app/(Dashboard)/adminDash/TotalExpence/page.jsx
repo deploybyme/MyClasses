@@ -13,8 +13,8 @@ export default function TotalExp(props) {
   const[countBalance,setcountBalance] = useState(0);  
   const[countCollect,setcountCollect] = useState(0); 
 
-  const[showBalance,setshowBalance] = useState("none"); 
-  const[showPaid,setshowPaid] = useState("block"); 
+  const[showblock,setshowblock] = useState(false); 
+  const[shownone,setshownone] = useState(true); 
 
   const [userDetails, setUserDetails] = useState(null);
   const fetchUserData = async()=>{
@@ -104,7 +104,10 @@ export default function TotalExp(props) {
 
   <li className="nav-item ms-1">
     <button className="nav-link link-dark border"
-    onClick={()=>{}} >Paid</button>
+    onClick={()=>{
+      setshowblock(!showblock)
+      setshownone(!shownone)
+    }} >Paid</button>
   </li>
 
 </ul>
@@ -112,7 +115,8 @@ export default function TotalExp(props) {
 
   <div className="tab-pane fade show active" id="pills-student" role="tabpanel" aria-labelledby="pills-student-tab">
       <StudentExpence 
-      // Balance={showBalance} Paid={showPaid}
+        showblock={showblock?"none":"block"}
+        shownone={shownone?"none":"block"}
       />
   </div>
 
