@@ -48,10 +48,10 @@ export default function StaffTransition(props) {
           setdate("")
           setstudentName("")
           setPayToo("")
-          alert("Please wat")
-          await refresh()
+          alert("Please wait...")
         }
       }
+          await refresh()
      
 
 
