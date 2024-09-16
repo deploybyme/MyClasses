@@ -30,7 +30,6 @@ async function addTransition(name,Paid,studentName,PayToo){
   }
   
 async function refresh(){
-    alert("data add successfully")
     window.location.reload()
 }
 
@@ -50,7 +49,7 @@ export default function StaffTransition(props) {
           setdate("")
           setstudentName("")
           setPayToo("")
-          alert("Please wait...")
+          alert("Transition save successfully")
         }
       }
        
