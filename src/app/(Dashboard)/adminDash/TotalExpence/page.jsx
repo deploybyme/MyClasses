@@ -15,7 +15,8 @@ export default function TotalExp(props) {
  
   
   const[countBalance,setcountBalance] = useState(0);  
-  const[countCollect,setcountCollect] = useState(0); 
+  const[OldBalance,setoldBalance] = useState(0); 
+  const[NewBalance,setnewBalance] = useState(0); 
 
   const[showblock,setshowblock] = useState(false); 
   const[shownone,setshownone] = useState(true); 
@@ -65,20 +66,23 @@ export default function TotalExp(props) {
       setcountExpence(totalExpence)
       setoldExpence(oldExpence)
 
-    // --------------------- Total Collect  ---------------------------
-    let totalCollect = 0;
-    querySnapshot.forEach((doc) => {
-      totalCollect+=parseInt(doc.data().totalPaid)
-    });
-    setcountCollect(totalCollect)
-
-    // --------------------- Total Balance  ---------------------------
-    let totalBalance = 0;
-    querySnapshot.forEach((doc) => {
-      totalBalance+=parseInt(doc.data().balance)
-    });
-    setcountBalance(totalBalance)
-
+        // --------------------- Total Balance  ---------------------------
+      
+        let oldBalance = 0;
+        let newBalance = 0;
+        let countBalance = 0;
+        querySnapshot.forEach((doc) => {
+          countBalance+=parseInt(doc.data().balance)
+          if(doc.data().studentType == "New"){
+            newBalance+=parseInt(doc.data().balance)
+          }
+          if(doc.data().studentType == "Old"){
+            oldBalance+=parseInt(doc.data().balance)
+          }
+        });
+        setcountBalance(countBalance)
+        setoldBalance(oldBalance)
+        setnewBalance(newBalance)
     }
     fetchData();
   },[]);
@@ -132,10 +136,10 @@ export default function TotalExp(props) {
 
                         <div className="col-12 col-md-4">
                             <p className="form-label">
-                                <b className='mt-3'>Total Collection</b> 
+                                <b className='mt-3'>Newly Balance</b> 
                             </p>
                             <h1 className='data_number'>
-                                <p className=' fs-4'><i className="bi bi-currency-rupee"></i> {countCollect} </p> 
+                                <p className=' fs-4'><i className="bi bi-currency-rupee"></i> {NewBalance} </p> 
                             </h1>
                         </div>
 
@@ -150,13 +154,12 @@ export default function TotalExp(props) {
 
                         <div className="col-12 col-md-4">
                             <p className="form-label">
-                                <b className='mt-3'>60% of Collection</b> 
+                                <b className='mt-3'>Previous Balance</b> 
                             </p>
                             <h1 className='data_number'>
-                                <p className=' fs-4'><i className="bi bi-currency-rupee"></i> {countCollect*0.6} </p> 
+                                <p className=' fs-4'><i className="bi bi-currency-rupee"></i> {OldBalance} </p> 
                             </h1>
                         </div>
-
 
                 </div>
             </div>
