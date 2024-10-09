@@ -8,7 +8,6 @@ export default function CPrograming() {
 
   return (
     <>
-
       <a id="TopButton" href="#C/C++">
         <button className="text-black">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
@@ -85,8 +84,8 @@ export default function CPrograming() {
       <section className="py-2 mt-4 mx-1 rounded text-light bg-dark bg-gradient">
 
         {/* ======================================  Introduction  =========================================== */}
-
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='introduction'>Introduction</h5>
+        <div className="p-4" id="introduction"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">Introduction</h5>
         <div className="list-group mb-5">
 
           <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -96,8 +95,8 @@ export default function CPrograming() {
             <a className='text-link' style={{ cursor: "pointer" }}> Dennis Ritchie </a>
             and remains very widely used and influential
           </div>
-
-          <p className="pt-5 m-3 fw-bold" id="Csyntax">
+          <div className="p-3" id="Csyntax"></div>
+          <p className="pt-5 m-3 fw-bold">
             Structure of C
           </p>
           <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4 ">
@@ -167,8 +166,8 @@ export default function CPrograming() {
             </div>
 
           </div>
-
-          <p className="pt-5 m-3 fw-bold" id="Keywords">
+          <div className="p-3" id="Keywords"></div>
+          <p className="pt-5 m-3 fw-bold">
             Keywords is C
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4">
@@ -238,11 +237,12 @@ export default function CPrograming() {
         </div>
         {/* ======================================  /Introduction  =========================================== */}
         {/* =======================================  Fundamentals  =========================================== */}
-
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='Fundamentals'>C Fundamentals</h5>
+        <div className="p-4" id="Fundamentals"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C Fundamentals</h5>
         <div className="list-group">
 
-          <p className="pt-5 m-3 fw-bold" id="Variables">
+        <div className="p-3" id="Variables"></div>
+          <p className="pt-5 m-3 fw-bold">
             Variables, Constants and Literals
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
@@ -266,8 +266,8 @@ export default function CPrograming() {
               </code>
             </p>
           </div>
-
-          <p className="pt-5 m-3 fw-bold" id="DataTypes">
+        <div className="p-3" id="DataTypes"></div>
+          <p className="pt-5 m-3 fw-bold">
             C Data Types
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
@@ -341,8 +341,8 @@ export default function CPrograming() {
 
 
           </div>
-
-          <p className="pt-5 m-3 fw-bold" id="InputOutput">
+          <div className="p-3" id="InputOutput"></div>
+          <p className="pt-5 m-3 fw-bold">
             Input Output (I/O)
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
@@ -494,8 +494,8 @@ export default function CPrograming() {
             </div>
 
           </div>
-
-          <p className="pt-5 m-3 fw-bold" id="Operators">
+          <div className="p-3" id="Operators"></div>
+          <p className="pt-5 m-3 fw-bold">
             Operators
           </p>
           <div className="list-group-item border-0 ronded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
@@ -736,11 +736,12 @@ export default function CPrograming() {
         </div>
         {/* ======================================  /Fundamentals  =========================================== */}
         {/* =======================================  Flow Control  =========================================== */}
-
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='FlowControl'>C Flow Control</h5>
+        <div className="p-4" id="FlowControl"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C Flow Control</h5>
             <div className="list-group">
 
-              <p className="pt-5 m-3 fw-bold" id="ifElse">
+            <div className="p-3" id="ifElse"></div>
+              <p className="pt-5 m-3 fw-bold">
                 If Else Statements
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -957,7 +958,8 @@ export default function CPrograming() {
 
               </div>
 
-              <p className="fw-bold bg-light text-dark mt-5 p-3" id="Switch">
+              <div className="p-3" id="Switch"></div>
+              <p className="fw-bold bg-light text-dark mt-5 p-3">
                 Switch Statements
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -1124,7 +1126,8 @@ export default function CPrograming() {
 
               </div>
 
-              <p className="fw-bold bg-light text-dark mt-5 p-3" id="Goto">
+              <div className="p-3" id="Goto"></div>
+              <p className="fw-bold bg-light text-dark mt-5 p-3">
                 Goto Statement
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -1158,7 +1161,8 @@ export default function CPrograming() {
 
               </div>
 
-              <p className="fw-bold bg-light text-dark mt-5 p-3" id="Loop">
+              <div className="p-3" id="Loop"></div>
+              <p className="fw-bold bg-light text-dark mt-5 p-3">
                 while, do...while and for Loop
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -1354,7 +1358,8 @@ export default function CPrograming() {
             </div>
         {/* ======================================  /Flow Control  =========================================== */}
         {/* =======================================  Functions  =========================================== */}
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='Functions'>C++ Functions</h5>
+        <div className="p-4" id="Functions"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ Functions</h5>
             <div className="list-group">
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
                 <input className="form-check-input rounded-pill me-1" type="checkbox" />
@@ -1367,7 +1372,8 @@ export default function CPrograming() {
             </div>
         {/* =======================================  /Functions  =========================================== */}
         {/* =======================================  Arrays  =========================================== */}
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='Arrays'>C++ Arrays</h5>
+        <div className="p-4" id="Arrays"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ Arrays</h5>
             <div className="list-group">
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
                 <input className="form-check-input rounded-pill me-1" type="checkbox" />
@@ -1380,7 +1386,8 @@ export default function CPrograming() {
             </div>
         {/* =======================================  /Arrays  =========================================== */}
         {/* ======================================== Pointers  =========================================== */}
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='Pointers'>C++ Pointers</h5>
+        <div className="p-4" id="Pointers"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ Pointers</h5>
             <div className="list-group">
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
                 <input className="form-check-input rounded-pill me-1" type="checkbox" />
@@ -1393,7 +1400,8 @@ export default function CPrograming() {
             </div>
         {/* ======================================== /Pointers  =========================================== */}
         {/* ======================================== Structures  =========================================== */}
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='Structures'>C++ Structures</h5>
+        <div className="p-4" id="Structures"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ Structures</h5>
             <div className="list-group">
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
                 <input className="form-check-input rounded-pill me-1" type="checkbox" />
@@ -1406,7 +1414,8 @@ export default function CPrograming() {
             </div>
         {/* ======================================  / Structures  =========================================== */}
         {/* =======================================  File Handling  =========================================== */}
-<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark" id='FileHandling'>C++ File Handling</h5>
+        <div className="p-4" id="FileHandling"></div>
+<h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ File Handling</h5>
             <div className="list-group">
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
                 <input className="form-check-input rounded-pill me-1" type="checkbox" />
