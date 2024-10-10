@@ -14,7 +14,7 @@ export default function HistoryCard(props) {
         <strong>Against:</strong><b className='fw-light'> {props.stdname}</b>
         </div>
         <div className="col-6 text-end">
-          <strong>{props.Paid}</strong>
+          <strong><i className="bi bi-currency-rupee"></i>{props.Paid}</strong>
         </div>
        </div>
       </button>
@@ -25,12 +25,12 @@ export default function HistoryCard(props) {
       <div className="accordion-body">
       <div className="row p-2">
         <div className="col-6">
-    
-        <strong>Date of Transition</strong><p> {props.Dot}</p>
+          <p><strong>Updated By </strong><br /> {props.name}</p>
+          <p><strong>Transition Type </strong><br />{props.transitionType || "No Record"}</p>
         </div>
         <div className="col-6 text-end">
-          <p><strong>Transition Update By : </strong>{props.name}</p>
-          <p><strong>To :</strong>{props.transitionTo}</p>
+          <p><strong>Date of Transition</strong> <br />{props.Dot}</p>
+          <p><strong>Paid To </strong><br /> {props.transitionTo}</p>
         </div>
        </div>
       </div>
