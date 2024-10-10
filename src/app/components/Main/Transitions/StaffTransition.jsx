@@ -35,7 +35,7 @@ async function refresh(){
 }
 
 export default function StaffTransition(props) {
-    const [name,setName]=useState();
+    const [name,setName]=useState(props.UserMember);
     const [PayToo,setPayToo]=useState("Faizan Mirza");
     const[Paid,setPaid]=useState("");
     const[date,setdate]=useState(datetime);
@@ -75,6 +75,7 @@ export default function StaffTransition(props) {
                   value={name}
                   onChange={(e)=>setName(e.target.value)}
                   >
+                    <option className='py-1' value="None" >Select Payee Name</option>
                     <option className='py-1' value="Amit Raghav">Amit Raghav</option>
                     <option className='py-1' value="Ishwar Singh">Ishwar Singh</option>
                   </select>
@@ -84,7 +85,7 @@ export default function StaffTransition(props) {
                 <div className="col-12 col-md-6">
                   <label htmlFor="Name" className="form-label"><b>Payee Name</b></label>
                   <input type="text" className="form-control shadow-none" readOnly
-                  placeholder="Enter Student Name" id="Name" value={props.UserMember || ""} 
+                  placeholder="Enter Student Name" id="Name" value={name || ""} 
                   onChange={(e)=>setName(e.target.value)}/>
                 </div>
               </>
