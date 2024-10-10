@@ -44,10 +44,10 @@ export default function History() {
 
   return (
     <>
-      <div className="alert alert-success mx-1" role="alert">
+      <div className={`alert ${(((countCollect*0.6) - countTransition)>=0)?"alert-warning":"alert-success "} mx-1`} role="alert">
       <div className="row">
-            <div className="col-12 col-md-6 mb-2 mb-md-0">Total Transition : <i className="bi bi-currency-rupee"></i> {countTransition}</div>
-            <div className="col-12 col-md-6 mt-2 mt-md-0">{(((countCollect*0.6) - countTransition)>=0)?"Balance Pending":"Advance"} :  <i className="bi bi-currency-rupee"></i> {(((countCollect*0.6) - countTransition)>0)?((countCollect*0.6) - countTransition) : (-((countCollect*0.6) - countTransition)) }</div>
+            <div className="col-12 col-md-6 mb-2 mb-md-0">Total Transition : <i className="bi bi-currency-rupee"></i>{countTransition}</div>
+            <div className="col-12 col-md-6 mt-2 mt-md-0">{(((countCollect*0.6) - countTransition)>=0)?"Balance Pending":"Advance of "} : <i className="bi bi-currency-rupee"></i> {(((countCollect*0.6) - countTransition)>0)?((countCollect*0.6) - countTransition) : (-((countCollect*0.6) - countTransition)) }</div>
       </div>
       </div>
 
@@ -62,6 +62,7 @@ export default function History() {
                  Dot={record.date}
                  stdname={record.studentName} 
                  transitionTo={record.transitionTo}
+                 transitionType={record.transitionType}
                  />
     
                 </div>
