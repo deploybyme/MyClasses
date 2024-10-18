@@ -11,10 +11,9 @@ export default function UserRegister() {
     const [phone,setPhone]=useState("");
     const[fatherName,setFatherName]=useState("");
     const[Course,setCourse]=useState("");
-    const[fee,setfee]=useState("4000");
+    const[fee,setfee]=useState(5000);
     const[admissionDate,setAdmissionDate]=useState("");
-    const[Paid,setPaid]=useState("");
-    const[balance,setbalance]=useState(0);
+    const[Paid,setPaid]=useState(0);
     const[password,setPassword] = useState("");
 
     const handleRegister = async (e) =>{
