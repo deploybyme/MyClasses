@@ -5,24 +5,31 @@ import { getDocs , collection, getCountFromServer } from 'firebase/firestore'
 
 
 export default function GetStudentData(props) {
-
+    const[countOldExpence,setcountOldExpence] = useState(0);
     const[countExpence,setcountExpence] = useState(0);
+
     const[countStudent,setcountStudent] = useState(0);
     const[countMember,setcountMember] = useState(0);
+    const[countOldCollect,setcountOldCollect]=useState(0);
     const[countCollect,setcountCollect]=useState(0);
+
   
 useEffect(()=>{
       async function fetchData(){
       // --------------------- Total Balance  ---------------------------
         const ExpencequerySnapshot = await getDocs(collection(db, "StudentRegister"))
         let totalExpence = 0;
+        let totalOldExpence =0;
         ExpencequerySnapshot.forEach((doc) => {
-          if(doc.data().studentType=="New"){
+          if(doc.data().studentType="New"){
             totalExpence+=parseInt(doc.data().balance)
+          }
+          else{
+            totalOldExpence+=parseInt(doc.data().balance)
           }
         });
         setcountExpence(totalExpence)
-        
+        setcountOldExpence(totalOldExpence)
       // --------------------- New Students  ---------------------------
       let totalMember = 0;
       ExpencequerySnapshot.forEach((doc) => {
@@ -34,12 +41,17 @@ useEffect(()=>{
       
     // --------------------- Total Collect  ---------------------------
     let totalCollect = 0;
+    let totalOldCollect = 0;
     ExpencequerySnapshot.forEach((doc) => {
       if(doc.data().studentType==="New"){
       totalCollect+=parseInt(doc.data().totalPaid)
       }
+      else{
+        totalOldCollect+=parseInt(doc.data().totalPaid)
+      }
     });
     setcountCollect(totalCollect)
+    setcountOldCollect(totalOldCollect)
 
       // --------------------- Student count  ---------------------------
         const SnapStudent = await getCountFromServer(collection(db, "StudentRegister"))
@@ -76,18 +88,18 @@ useEffect(()=>{
     <div className="row">
 
             <div className="col-12 col-md-6">
-              <p className="form-label">New Student Balance</p>
+              <p className="form-label">{props.studentType} Student Balance</p>
               <h1 className='data_number'>
               <i className="bi bi-currency-rupee"></i>
-              {countExpence}
+              {props.studentType=="New"?countExpence:countOldExpence}
               </h1>
             </div>
 
             <div className="col-12 col-md-6 bg-light">
-              <p className="form-label">Total Collection</p>
+              <p className="form-label">Total {props.studentType} Collection</p>
               <h1 className='data_number'>
               <i className="bi bi-currency-rupee"></i>
-              {countCollect}
+              {props.studentType=="New"?countCollect:countOldCollect}
               </h1>
             </div>
 
