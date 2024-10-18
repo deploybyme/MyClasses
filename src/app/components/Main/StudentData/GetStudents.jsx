@@ -24,7 +24,7 @@ export default function GetStudents(props) {
   
   
   
-  // Create Database reference --------------------------------------------------------------------
+// Create Database reference --------------------------------------------------------------------
     const dbref = collection(db,"StudentRegister")
     // Get Data -------------------------------------------------------------------------------------
 const fetchFirebaseDatabase = async () => {
@@ -242,7 +242,7 @@ async function refresh(){
                           <div className="modal-dialog modal-dialog-centered modal-lg">
                               <div className="modal-content">
                               <div className="modal-header">
-                                  <h1 className="modal-title fs-5" id="updateDataModalLabel">Update Student Details</h1>
+                                  <h1 className="modal-title fs-5" id={`updateDataModalLabel${index}`}>Update Student Details</h1>
                                   <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div className="modal-body">
@@ -254,18 +254,18 @@ async function refresh(){
                                     <div className="row">
 
                                       <div className="col-12 col-md-6">
-                                        <label htmlFor="Name" className="form-label">Student Name</label>
+                                        <label htmlFor={`Name${index}`} className="form-label">Student Name</label>
                                         <input type="text" className="form-control shadow-none"
-                                        placeholder="Enter Student Name" id="Name" required  
+                                        placeholder="Enter Student Name" id={`Name${index}`} required  
                                         value={updateName || ""}
                                         onChange={(e)=>setUpdateName(e.target.value)}
                                         />
                                       </div>
 
                                       <div className="col-12 col-md-6">
-                                        <label htmlFor="Phone" className="form-label">Student Phone</label>
+                                        <label htmlFor={`Phone${index}`} className="form-label">Student Phone</label>
                                         <input type="text" className="form-control shadow-none" 
-                                        placeholder="Enter Student Phone" id="Phone" maxLength={10} required
+                                        placeholder="Enter Student Phone" id={`Phone${index}`} maxLength={10} required
                                         value={UpdatePhone || ""}
                                         onChange={(e)=>setUpdatePhone(e.target.value)}
                                         />
@@ -276,18 +276,18 @@ async function refresh(){
                                     <div className="row mt-lg-3 mt-2">
 
                                       <div className="col-12 col-md-6">
-                                        <label htmlFor="Father_Name" className="form-label">Father' Name</label>
+                                        <label htmlFor={`Father_Name${index}`} className="form-label">Father' Name</label>
                                         <input type="text" className="form-control shadow-none" 
-                                        placeholder="Enter Father's Name" id="Father_Name" required 
+                                        placeholder="Enter Father's Name" id={`Father_Name${index}`} required 
                                         value={UpdateFatherName || ""} 
                                         onChange={(e)=>setUpdateFatherName(e.target.value)}
                                         />
                                       </div>
 
                                       <div className="col-12 col-md-6"> 
-                                          <label htmlFor="Fee" className="form-label">Course Fee</label>
+                                          <label htmlFor={`Fee${index}`} className="form-label">Course Fee</label>
                                           <input type="text" className="form-control shadow-none bg-dark text-light"  required
-                                          id="Fee" maxLength={4} placeholder='4000'
+                                          id={`Fee${index}`} maxLength={4} placeholder='4000'
                                           value={UpdateCourseFee || ""}
                                           onChange={(e)=>setUpdateCourseFee(e.target.value)}
                                           />
@@ -299,8 +299,8 @@ async function refresh(){
 
 
                                         <div className="col-12 col-md-6">
-                                          <label htmlFor="Course" className="form-label">Course</label>
-                                          <select className="form-select shadow-none" id="Course"  required
+                                          <label htmlFor={`Course${index}`} className="form-label">Course</label>
+                                          <select className="form-select shadow-none" id={`Course${index}`}  required
                                           value={UpdateCourse || ""}
                                           onChange={(e)=>setUpdateCourse(e.target.value)}
                                           >
@@ -312,9 +312,9 @@ async function refresh(){
                                         </div>
 
                                         <div className="col-12 col-md-6">
-                                          <label htmlFor="Admission_date" className="form-label">Date of Admission</label>
+                                          <label htmlFor={`Admission_date${index}`} className="form-label">Date of Admission</label>
                                           <input type="date" className="form-control shadow-none" 
-                                          id="Admission_date" required
+                                          id={`Admission_date${index}`} required
                                           value={UpdateAdmissionDate || ""}
                                           onChange={(e)=>setUpdateAdmissionDate(e.target.value)}
                                           />
@@ -327,8 +327,8 @@ async function refresh(){
 
 
                                         <div className="col-12 col-md-6">
-                                          <label htmlFor="Course" className="form-label">Student Type</label>
-                                          <select className="form-select shadow-none" id="Course"  required
+                                          <label htmlFor={`StudentType${index}`} className="form-label">Student Type</label>
+                                          <select className="form-select shadow-none" id={`StudentType${index}`}  required
                                           value={studentType || ""}
                                           onChange={(e)=>setstudentType(e.target.value)}
                                           >
@@ -365,7 +365,3 @@ async function refresh(){
 
   )
 }
-
-
-
-
