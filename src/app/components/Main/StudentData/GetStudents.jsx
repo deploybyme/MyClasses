@@ -120,6 +120,7 @@ async function refresh(){
           <div className="row">
             <div className="col-md-5 col-12">
               <input 
+                id="SearchStudent"
                 className="form-control shadow-none ps-3 border-dark rounded-pill" 
                 type="search" 
                 placeholder="Search by Name"
