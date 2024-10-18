@@ -49,7 +49,7 @@ export default function AdminLogin() {
   return (
     <div className="d-flex justify-content-center align-self-center py-5 mt-5">
       <form className='bg-light shadow text-black' id="LoginForm" onSubmit={handleSubmit}>
-        <div className="row mt-2">
+        <div className="row">
           <div className="col-12 text-end">
             <Link className='text-decoration-none text-info text-end' href="/">Student</Link>
           </div>
