@@ -36,9 +36,9 @@ export default function UserLogin() {
       // Set persistence to 'local', so user stays logged in even after closing the browser
       await setPersistence(auth, browserLocalPersistence);
       
-      // Sign in the user
+      // // Sign in the user
       await signInWithEmailAndPassword(auth, email, password);
-      
+
       // Redirect to dashboard
       router.push("/userDash");
 
