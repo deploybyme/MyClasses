@@ -60,12 +60,12 @@ export default function NavBar(props) {
                             </>
                         ) : (
                             <>
-                            <small className='p-3'></small>
+                            <small className='p-3 border border-black rounded-pill'></small>
                             </>
                         )}
                 </button>
-                <ul className="dropdown-menu dropdown-menu-end px-4 mt-2">
-                    <li className='pt-2 username text-center'>
+                <ul className="dropdown-menu dropdown-menu-end px-1 pb-1 mt-1">
+                    <li className='pt-1 username text-center'>
                     
                         { userDetails ? (
                            <b className='fw-bold'>{userDetails.name}</b>
@@ -75,7 +75,7 @@ export default function NavBar(props) {
                     
                     </li>
                     <li>
-                      <button className="dropdown-item d-flex align-items-center px-2 mt-2" type="button" id="exit" onClick={handleLogout}>
+                      <button className="dropdown-item d-flex align-items-center justify-content-center mt-2" type="button" id="exit" onClick={handleLogout}>
                           <i className="bi bi-box-arrow-in-right fs-4 me-2"></i>
                           <b className='text-decoration-none fw-light'>Logout</b>
                       </button>
@@ -89,11 +89,6 @@ export default function NavBar(props) {
         </div>
     </nav>
                         
-
-
-
-
-
     </>
   )
 }
