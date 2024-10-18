@@ -10,8 +10,8 @@ export default function CPrograming() {
     <>
       <a id="TopButton" href="#C/C++">
         <button className="text-black">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-arrow-up-short" viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
           </svg>
         </button>
       </a>
@@ -66,6 +66,14 @@ export default function CPrograming() {
           </li>
           <li>
             <a href="#Functions" className="text-warning text-decoration-none">Functions</a>
+            <ul>
+                  <li>
+                      <a href="#functionIntro" className="text-decoration-none">If Else Statements</a>
+                  </li>
+                  <li>
+                      <a href="#UserDefinedFunction" className="text-decoration-none">Switch Statements</a>
+                  </li>
+            </ul>
           </li>
           <li>
             <a href="#Arrays" className="text-warning text-decoration-none">Arrays</a>
@@ -1361,14 +1369,56 @@ export default function CPrograming() {
         <div className="p-4" id="Functions"></div>
 <h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ Functions</h5>
             <div className="list-group">
-              <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
-                <input className="form-check-input rounded-pill me-1" type="checkbox" />
-                Functions
+          
+            <div className="p-3" id="functionIntro"></div>
+              <p className="pt-5 m-3 fw-bold">
+                C++ Functions
+              </p>
+              <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
+                <p>
+                  A <b className="text-primary">function</b> is a block of code that performs a specific task,
+                  <br/>
+                  by dividing a complex problem into smaller chunks makes our program easy to understand and reusable.
+                </p>
+                
+                There are two types of function:
+                <ol>
+                  <li>
+                    <b className="text-primary">Standard-Library Functions : </b> 
+                    Predefined in C and C++ 
+                  </li>
+                  <li>
+                    <b className="text-primary">User-defined Function : </b> 
+                    Created by users
+                  </li>
+                </ol>
+                
+                Predefined Functions Example : 
+                  <ul>
+                    <li>main{"()"}</li>
+                    <li>printf{"()"}</li>
+                    <li>scanf{"()"}</li>
+                    <li>sqrt{"()"}</li>
+                    <li>and so on...</li>
+                  </ul>
+                
+
               </div>
-              <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
-                <input className="form-check-input rounded-pill me-1" type="checkbox" />
-                User-defined Functions
+
+              <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
+                  <div className="p-3" id="UserDefinedFunction"></div>
+                  <p className="pt-5 m-3 fw-bold">
+                    User-defined Function
+                  </p>
+                  <p>
+                      C++ allows the programmer to define their own function.
+                      <br /><br />
+                      A user-defined function groups code to perform a specific task and that group of code is given a name (identifier).
+                      <br /><br />
+                      When the function is invoked from any part of the program, it all executes the codes defined in the body of the function
+                  </p>
               </div>
+
             </div>
         {/* =======================================  /Functions  =========================================== */}
         {/* =======================================  Arrays  =========================================== */}
