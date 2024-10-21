@@ -33,7 +33,7 @@ export default function UserRegister() {
                     admissionDate:admissionDate,
                     totalPaid:Paid,
                     balance:(fee-Paid),
-                    password:`P${phone}`,
+                    password:password,
                     studentType:"New"
                 })
               }
