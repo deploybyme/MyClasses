@@ -36,13 +36,13 @@ export default function page() {
             <>
                     {userDetails.course=="C and C++ Programing"?
                         <>
-                        <ul className="nav nav-pills py-1 mb-3 mx-2 border rounded text-light bg-light d-flex justify-content-evenly" id="pills-tab" role="tablist">
+                        {/* <ul className="nav nav-pills py-1 mb-3 mx-2 border rounded text-light bg-light d-flex justify-content-evenly" id="pills-tab" role="tablist">
                             <li className="nav-item me-1" role="presentation">
                                 <button className="nav-link link-dark border border-dark active" id="pills-CPrograming-tab" data-bs-toggle="pill" data-bs-target="#pills-CPrograming" type="button" role="tab" aria-controls="pills-Transition" aria-selected="false">C/C++</button>
                             </li>
-                        </ul>
+                        </ul> */}
 
-                        <div className="tab-content" id="pills-tabContent">
+                        <div className="tab-content bg-dark border-0 rounded overflow-hidden" id="pills-tabContent">
                                 <div className="tab-pane fade show active" id="pills-CPrograming" role="tabpanel" aria-labelledby="pills-CPrograming-tab">
                                     <CPrograming/>
                                 </div>
@@ -98,7 +98,7 @@ export default function page() {
                                         </>):<>
                                                 <div className='d-flex justify-content-center'>
                                                     
-                                                    <div className="spinner-border my-5" role="status">
+                                                    <div className="spinner-border text-light my-5" role="status">
                                                         <span className="sr-only"></span>
                                                     </div>
 
@@ -117,7 +117,7 @@ export default function page() {
 
                 <div className='d-flex justify-content-center'>
                                                 
-                        <div className="spinner-border my-5" role="status">
+                        <div className="spinner-border text-light my-5" role="status">
                             <span className="sr-only"></span>
                         </div>
 
