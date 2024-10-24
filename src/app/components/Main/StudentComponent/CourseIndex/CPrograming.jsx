@@ -11,7 +11,7 @@ export default function CPrograming() {
           </svg>
         </button>
       </a>
-      <h3 id="C/C++" className="fw-bold p-2 my-3 text-light bg-dark">Core C and C++</h3>
+      <h3 id="C/C++" className="fw-bold p-2 my-3 text-center text-light bg-dark">Core C and C++</h3>
 
       <ul className="list-group-item border-0 rounded-0 bg-dark text-light p-4" style={{lineHeight:2}}>
       <h4>INDEX</h4>
@@ -75,7 +75,7 @@ export default function CPrograming() {
             <a href="#Arrays" className="text-warning text-decoration-none">Arrays</a>
             <ul>
                   <li>
-                      <a href="#ArraysIntro" className="text-decoration-none">One-Dimentional Arrays</a>
+                      <a href="#ArraysIntro" className="text-decoration-none">Arrays introduction, 1-D Array</a>
                   </li>
                   <li>
                       <a href="#MultiDimentionalArray" className="text-decoration-none">Multi-Dimentional Arrays</a>
@@ -84,6 +84,14 @@ export default function CPrograming() {
           </li>
           <li>
             <a href="#Pointers" className="text-warning text-decoration-none">Pointers</a>
+            <ul>
+                  <li>
+                      <a href="#PointerIntro" className="text-decoration-none">Pointer Variable</a>
+                  </li>
+                  <li>
+                      <a href="#ReferencesIntro" className="text-decoration-none">References Variable</a>
+                  </li>
+            </ul>
           </li>
           <li>
             <a href="#Structures" className="text-warning text-decoration-none">Structures</a>
@@ -108,7 +116,7 @@ export default function CPrograming() {
             and remains very widely used and influential
           </div>
           <div className="p-3" id="Csyntax"></div>
-          <p className="pt-5 m-3 fw-bold">
+          <p className="pt-3 m-3 text-info">
             Structure of C
           </p>
           <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4 ">
@@ -179,7 +187,7 @@ export default function CPrograming() {
 
           </div>
           <div className="p-3" id="Keywords"></div>
-          <p className="pt-5 m-3 fw-bold">
+          <p className="pt-3 m-3 text-info fs-5">
             Keywords is C
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4">
@@ -254,7 +262,7 @@ export default function CPrograming() {
         <div className="list-group">
 
         <div className="p-3" id="Variables"></div>
-          <p className="pt-5 m-3 fw-bold">
+          <p className="pt-3 m-3 text-info fs-5">
             Variables, Constants and Literals
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
@@ -279,7 +287,7 @@ export default function CPrograming() {
             </p>
           </div>
         <div className="p-3" id="DataTypes"></div>
-          <p className="pt-5 m-3 fw-bold">
+          <p className="pt-3 m-3 text-info fs-5">
             C Data Types
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
@@ -354,14 +362,14 @@ export default function CPrograming() {
 
           </div>
           <div className="p-3" id="InputOutput"></div>
-          <p className="pt-5 m-3 fw-bold">
+          <p className="pt-3 m-3 text-info fs-5">
             Input Output (I/O)
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
             <div>
 
               <h3 className="border-bottom">C output</h3>
-              <p>
+              <p style={{lineHeight:2}}>
                 In C programming,<span className='p-1 bh-highlight border rounded'>printf( )</span> is one of the main output function.
                 The function sends formatted output to the screen. For example,
               </p>
@@ -442,8 +450,8 @@ export default function CPrograming() {
             <div className='my-3'>
               <h3 className="mt-5">C Input</h3>
               <p style={{ lineHeight: 2 }}>
-                In C programming, <span className='p-1 bh-highlight border rounded'>scanf( )</span> is one of the commonly used function to take input from the user.
-                The <span className='p-1 bh-highlight border rounded'>scanf( )</span> function reads formatted input from the standard input such as keyboards
+                In C programming, <span className='p-1 bh-highlight border rounded'>scanf()</span> is one of the commonly used function to take input from the user.
+                The <span className='p-1 bh-highlight border rounded'>scanf()</span> function reads formatted input from the standard input such as keyboards
               </p>
 
               <h6>Syntax :</h6>
@@ -507,7 +515,7 @@ export default function CPrograming() {
 
           </div>
           <div className="p-3" id="Operators"></div>
-          <p className="pt-5 m-3 fw-bold">
+          <p className="pt-3 m-3 text-info fs-5">
             Operators
           </p>
           <div className="list-group-item border-0 ronded-0 text-light bg-dark py-4" style={{ textAlign: "justify" }}>
@@ -753,7 +761,7 @@ export default function CPrograming() {
             <div className="list-group">
 
             <div className="p-3" id="ifElse"></div>
-              <p className="pt-5 m-3 fw-bold">
+              <p className="pt-3 m-3 text-info fs-5">
                 If Else Statements
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -772,7 +780,7 @@ export default function CPrograming() {
                   </li>
                 </ul>
 
-                <b className='text-decoration-underline fs-2'>if Statement syntax:</b>
+                <p className="text-decoration-underline fs-5">if Statement syntax:</p>
                 <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
                     <span style={{ color: "magenta" }}>if</span> ( condition )
@@ -819,7 +827,7 @@ export default function CPrograming() {
                   </code>
                 </p>
 
-                <b className='text-decoration-underline fs-2'>if..else Statement syntax:</b>
+                <p className="text-decoration-underline fs-5">if..else Statement syntax:</p>
                 <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
                     <span style={{ color: "magenta" }}>if</span> ( condition )
@@ -879,7 +887,7 @@ export default function CPrograming() {
                   </code>
                 </p>
 
-                <b className='text-decoration-underline fs-2'>if..else if...else Ladder syntax:</b>
+                <p className="text-decoration-underline fs-5">if..else if...else Ladder syntax:</p>
                 <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
                     <span style={{ color: "magenta" }}>if</span> ( condition1 )
@@ -971,20 +979,19 @@ export default function CPrograming() {
               </div>
 
               <div className="p-3" id="Switch"></div>
-              <p className="fw-bold bg-light text-dark mt-5 p-3">
+              <p className="pt-3 m-3 text-info fs-5">
                 Switch Statements
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
                 <p style={{lineHeight:2}}>
                   The switch statement allows us to execute one code block among many alternatives.
                   <br />
-                  You can do the same thing with the
-                  <span className='p-1 bh-highlight border rounded'>if</span>...<span className='p-1 bh-highlight border rounded'>else if</span>...<span className='p-1 bh-highlight border rounded'>else</span>
-                  ladder.
+                  You can do the same thing with the <span className='p-1 bh-highlight border rounded'>if</span>...
+                  <span className='d-inline p-1 bh-highlight border rounded'>else if</span>...<span className='p-1 bh-highlight border rounded'>else</span> ladder.
                   However, the syntax of the <span className='p-1 bh-highlight border rounded'>switch</span> statement is much easier to read and write.
                 </p>
 
-                <b className='text-decoration-underline fs-2'>Syntax of switch...case:</b>
+                <p className="text-decoration-underline fs-5">Syntax of switch...case:</p>
                 <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
                     <span style={{ color: "magenta" }}>switch </span> ( expression )
@@ -1069,7 +1076,7 @@ export default function CPrograming() {
                   </code>
                 </p>
 
-                <b className='text-decoration-underline fs-2'>Another Syntax of switch...case:</b>
+                <p className="text-decoration-underline fs-5">Another Syntax of switch...case:</p>
                 <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
                     <span style={{ color: "magenta" }}>switch </span> ( condition )
@@ -1139,7 +1146,7 @@ export default function CPrograming() {
               </div>
 
               <div className="p-3" id="Goto"></div>
-              <p className="fw-bold bg-light text-dark mt-5 p-3">
+              <p className="pt-3 m-3 text-info fs-5">
                 Goto Statement
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -1174,7 +1181,7 @@ export default function CPrograming() {
               </div>
 
               <div className="p-3" id="Loop"></div>
-              <p className="fw-bold bg-light text-dark mt-5 p-3">
+              <p className="pt-3 m-3 text-info fs-5">
                 while, do...while and for Loop
               </p>
               <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4" style={{ textAlign: "justify" }}>
@@ -1190,7 +1197,7 @@ export default function CPrograming() {
                   <li>for loop</li>
                 </ol>
 
-                <p className='pt-4 fw-bold text-decoration-underline fs-2'>do...while loop</p>
+                <p className="text-decoration-underline fs-5">do...while loop</p>
                 <p  style={{lineHeight:2}}>
                   The <span className='p-1 bh-highlight border rounded'>do..while</span> loop is similar to the
                   <span className='p-1 bh-highlight border rounded'>while</span> loop with one important difference.
@@ -1256,7 +1263,7 @@ export default function CPrograming() {
                 </p>
 
 
-                <p className='pt-4 fw-bold text-decoration-underline fs-2'>while loop</p>
+                <p className="text-decoration-underline fs-5">while loop</p>
                 <b>The syntax of the while loop is :</b>
                 <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
@@ -1313,7 +1320,7 @@ export default function CPrograming() {
                 </p>
 
 
-                <p className='pt-4 fw-bold text-decoration-underline fs-2'>for loop</p>
+                <p className="text-decoration-underline fs-5">for loop</p>
                 <b>The syntax of the while loop is :</b>
                 <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
@@ -1375,10 +1382,10 @@ export default function CPrograming() {
             <div className="list-group">
 
               <div className="p-3" id="functionIntro"></div>
-              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
-              <p className="pt-5 m-3 fw-bold">
-                C++ Functions
+              <p className="pt-3 m-3 text-info fs-5">
+                Functions
               </p>
+              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
                 <p>
                   A <b className="text-primary">function</b> is a block of code that performs a specific task,
                   <br/>
@@ -1410,9 +1417,9 @@ export default function CPrograming() {
 
               <div className="pt-5 p-3" id="UserDefinedFunction"></div>
               <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
-                  <b className='text-decoration-underline fs-2'>
+                  <p className="text-decoration-underline fs-5">
                     User-defined Function
-                  </b>
+                  </p>
                   <p>
                       C++ allows the programmer to define their own function.
                       <br /><br />
@@ -1422,7 +1429,7 @@ export default function CPrograming() {
                   </p>
 
 
-                  <p className="pt-3 m-3 fw-bold">The syntax to declare a function is:</p>
+                  <p className="pt-3 fw-bold">The syntax to declare a function is:</p>
                   <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
                     <span style={{ color: "magenta" }}>returnType </span> functionName( parameter1, parameter2,...)
@@ -1436,11 +1443,11 @@ export default function CPrograming() {
                   </p>
 
 
-                <p className="pt-3 m-3 fw-bold">Here's an example of a function declaration.</p>
+                <p className="pt-3 fw-bold">Here's an example of a function declaration.</p>
                 <p className='bg-black rounded mt-2 p-2' id="CodeBox">
                   <code className='text-light'>
 
-                    // function declaration
+                  <span className='fw-lighter text-secondary'>// function declaration</span>
                     <br />
                     <span style={{ color: "magenta" }}>int</span> <span style={{ color: "#4eb5ff" }}>greet</span>{"()"}
                     <br />
@@ -1454,8 +1461,8 @@ export default function CPrograming() {
                   </code>
                 </p>
 
-                <h5 className='pt-3'>Calling a Function</h5>
-                <p className="m-3">
+                <h6 className='pt-3'>Calling a Function</h6>
+                <p>
                 In the above program, we have declared a function named <span className='border p-1 rounded'>greet()</span>.
                  To use the <span className='border p-1 rounded'>greet()</span> function, we need to call it.
                 <br /><br />
@@ -1468,7 +1475,7 @@ export default function CPrograming() {
                     <br />
                     {"{"}
                     <br />
-                    &nbsp;     // calling a function 
+                    &nbsp;     <span className='fw-lighter text-secondary'>// calling a function</span> 
                     <br />
                     &nbsp;    <span className='text-warning'>greet</span>{"()"};
                     <br />
@@ -1476,12 +1483,12 @@ export default function CPrograming() {
                   </code>
                 </p>
 
-                <h5 className='pt-3'>How function Work</h5>
+                <h6 className='pt-3'>How function Work</h6>
                 <div className='py-3 bg-white'>
                     <img className='img-fluid' src="https://www.programiz.com/sites/tutorial2program/files/cpp-function-call.png"/>
                 </div>
 
-                <h5 className='pt-3'>Example Display Text</h5>
+                <h6 className='pt-4'>Example Display Text</h6>
                 <p className='bg-black rounded mt-2 p-2' id="CodeBox">
                   <code className='text-light'>
 
@@ -1489,7 +1496,7 @@ export default function CPrograming() {
                     <br />
                     <span style={{ color: "magenta" }}>using namespace </span><span style={{ color: "orange" }}>std</span>;
                     <br /><br />
-                    // function declaration
+                    <span className='fw-lighter text-secondary'>// function declaration</span>
                     <br />
                     <span style={{ color: "magenta" }}>int</span> <span style={{ color: "#4eb5ff" }}>greet</span>{"()"}
                     {"{"}
@@ -1504,7 +1511,7 @@ export default function CPrograming() {
                     <span style={{ color: "magenta" }}>int</span> <span style={{ color: "#4eb5ff" }}>main</span>{"()"}
                     {"{"}
                     <br />
-                    &nbsp;     // calling a function 
+                    &nbsp;     <span className='fw-lighter text-secondary'>// calling a function</span> 
                     <br />
                     &nbsp;    <span className='text-warning'>greet</span>{"()"};
                     <br />
@@ -1529,10 +1536,10 @@ export default function CPrograming() {
             <div className="list-group">
 
             <div className="p-3" id="ArraysIntro"></div>
-              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
-              <p className="pt-5 m-3 fw-bold">
-                C++ Arrays
+              <p className="pt-3 m-3 text-info fs-5">
+                Arrays
               </p>
+              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
                 <p>
                 In C++, an array is a variable that can store multiple values of the same type. For example,
                 </p>
@@ -1546,7 +1553,7 @@ export default function CPrograming() {
                   </code>
                 </p>               
 
-                <p className="pt-5 m-3 fw-bold">One-Dimentional Array Declaration</p>
+                <p className="pt-5 fw-bold">One-Dimentional Array Declaration</p>
                   <p className='rounded mt-2 p-2' id="CodeBox">
                   <code className='text-dark'>
                     <span style={{ color: "magenta" }}>dataType </span> arrayName[ arraySize ];
@@ -1566,7 +1573,7 @@ export default function CPrograming() {
 
                 <p className='bg-black rounded mt-2 p-2' id="CodeBox">
                   <code className='text-light'>  
-                    // syntax to access array elements
+                  <span className='fw-lighter text-secondary'>// syntax to access array elements</span>
                     <br />
                     array[ <span style={{color: "orange"}}>index</span> ];
                   </code>
@@ -1577,14 +1584,14 @@ export default function CPrograming() {
                   <img className='img-fluid' src="https://www.programiz.com/sites/tutorial2program/files/cpp-array-declaration_0.png" title="Elements of an array in C++"/>
                 </figure>
 
-                <p className="pt-5 m-3 fw-bold">C++ Array Initialization</p>
+                <p className="pt-5 fw-bold">C++ Array Initialization</p>
                 <p>
                 In C++, it's possible to initialize an array during declaration. For example,
                 </p>
                 
                 <p className='bg-black rounded mt-2 p-2' id="CodeBox">
                   <code className='text-light'>  
-                    // declare and initialize an array
+                  <span className='fw-lighter text-secondary'>// declare and initialize an array</span>
                     <br />
                     <span style={{ color: "magenta" }}>int</span> x[<span style={{color: "orange"}}>6</span>] = {'{'}<span style={{color: "orange"}}>19, 10, 8, 17, 9, 15</span>{'}'};
                   </code>
@@ -1595,10 +1602,10 @@ export default function CPrograming() {
               </div>
 
               <div className="p-3" id="MultiDimentionalArray"></div>
-              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
-              <p className="pt-5 m-3 fw-bold">
+              <p className="pt-5 px-3 fw-bold">
                 Multi-Dimentional Array
               </p>
+              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
               <p>
               In C++, we can create an array of an array, known as a multidimensional array. For example:
               </p>
@@ -1620,14 +1627,14 @@ export default function CPrograming() {
                   <img className='img-fluid' src="https://www.programiz.com/sites/tutorial2program/files/cpp-two-dimensional-array.png" title="Elements of an array in C++"/>
               </figure>
 
-                <p className="pt-5 m-3 fw-bold">Initialization of two-dimensional array</p>
+                <p className="pt-5 fw-bold">Initialization of two-dimensional array</p>
                 <p>
                 In C++, it's possible to initialize an array during declaration. For example,
                 </p>
                 
                 <p className='bg-black rounded mt-2 p-2' id="CodeBox">
                   <code className='text-light'>  
-                    // declare and initialize an array
+                  <span className='fw-lighter text-secondary'>// declare and initialize an array</span>
                     <br />
                     <span style={{ color: "magenta" }}>int</span> test[<span style={{color: "orange"}}>2</span>][<span style={{color: "orange"}}>3</span>] = {'{'}{' {'}<span style={{color: "orange"}}>2, 4, 5</span>{'} '}, {' {'}<span style={{color: "orange"}}>9, 0, 19</span>{'} '}{'}'};
                   </code>
@@ -1646,6 +1653,210 @@ export default function CPrograming() {
         <div className="p-4" id="Pointers"></div>
 <h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ Pointers</h5>
             <div className="list-group">
+
+            <div className="p-0" id="PointerIntro"></div>
+              <p className="pt-5 px-3 text-info fs-5">
+                Pointers
+              </p>
+              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
+              <p>
+              In C++, pointers are variables that store the memory addresses of other variables.
+              </p>
+
+              <p className="pt-4 fw-bold">
+                Address in C++
+              </p>
+              <p>
+              Every variable we declare in our program has an associated location in the memory, which we call the memory address of the variable.
+              </p>
+              <p>
+              If we have a variable <span className='p-1 border rounded'>var</span> in our program, <span className='p-1 border rounded'>&var</span> returns its memory address. For example,
+              </p>
+
+              <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                  <code className='text-light'>
+
+                    <span style={{ color: "#4eb5ff" }}>#include</span> <span style={{ color: "#00c400" }}>{"<"}iostream{">"}</span>
+                    <br />
+                    <span style={{ color: "magenta" }}>using namespace </span><span style={{ color: "orange" }}>std</span>;
+                    <br /><br />
+
+                    <span style={{ color: "magenta" }}>int</span> <span style={{ color: "#4eb5ff" }}>main</span>{"()"}
+                    {"{"}
+                    <br />
+                    &nbsp;     <span className='fw-lighter text-secondary'>// declare variables</span>
+                    <br />
+                    &nbsp;    <span style={{ color: "magenta" }}>int</span> var1 = <span style={{ color: "orange" }}>3</span>;
+                    <br />
+                    &nbsp;    <span style={{ color: "magenta" }}>int</span> var2 = <span style={{ color: "orange" }}>24</span>;
+                    <br />
+                    &nbsp;    <span style={{ color: "magenta" }}>int</span> var3 = <span style={{ color: "orange" }}>17</span>;
+                    <br />
+                    <br />
+                    &nbsp;    <span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Address of var1: "</span>{'<<'} &var1 {'<<'}<span className='text-warning'>endl</span>;
+                    <br />
+                    <br />
+                    &nbsp;    <span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Address of var2: "</span>{'<<'} &var2 {'<<'}<span className='text-warning'>endl</span>;
+                    <br />
+                    <br />
+                    &nbsp;    <span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Address of var3: "</span>{'<<'} &var3 {'<<'}<span className='text-warning'>endl</span>;
+                    <br />
+                    {"}"}
+                  </code>
+                </p>             
+
+
+                <b>Output :</b>
+                <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                  <code className='text-light'>
+                  Address of var1: 0x7fff5fbff8ac 
+                  <br />
+                  Address of var2: 0x7fff5fbff8a8 
+                  <br />
+                  Address of var3: 0x7fff5fbff8a4
+                  </code>
+                </p>
+              <p>
+              Here, <span className='p-1 rounded border'>0x</span> at the beginning represents the address in the hexadecimal form.
+              </p>
+              <p>
+              Notice that the first address differs from the second by <b className='text-primary'>4</b> bytes, and the second address differs from the third by <b className='text-primary'>4</b> bytes.
+              </p>
+              <p>
+              The difference is because the size of an <span className='p-1 rounded border'>int</span> is <b className='text-primary'>4</b> bytes in a <b className='text-primary'>64-bit</b> system.
+              </p>
+
+              <p className="pt-5 fw-bold">
+              Here is how we can declare pointers:
+              </p>
+
+                <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                  <code className='text-light'>  
+                  <span style={{ color: "magenta" }}>int</span>* point_var;
+                  </code>
+                </p>
+
+              <p className="pt-5 fw-bold">
+                Assigning Addresses to Pointers
+              </p>
+              <p>
+              Here is how we can assign addresses to pointers:
+              </p>
+
+              <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                <code className='text-light'>  
+                <span style={{ color: "magenta" }}>int</span> var = <span style={{ color: "orange" }}>5</span>;
+                  <br />
+                <span style={{ color: "magenta" }}>int</span>* point_var = var;
+                </code>
+              </p>
+
+              <p style={{lineHeight:2}}>
+              Here, <span className='p-1 rounded border'>5</span> is assigned to the variable <span className='p-1 rounded border'>var</span>.
+              And the address of <span className='p-1 rounded border'>var</span> is assigned to the <span className='p-1 rounded border'>point_var</span> pointer with the code <span className='p-1 rounded border'>point_var= &var</span>  .
+              </p>
+                
+              <p className="pt-5 fw-bold">
+              Get the Value from the Address Using Pointers
+              </p>
+              <p>
+              To get the value pointed by a pointer, we use the <span className='p-1 px-2 border rounded'>*</span> operator. For example:
+              </p>
+
+              <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                <code className='text-light'>  
+                <span style={{ color: "magenta" }}>int</span> var = <span style={{ color: "orange" }}>5</span>;
+                  <br /><br />
+                  <span className='fw-lighter text-secondary'>// assign address of var to point_var</span>
+                  <br />
+                  <span style={{ color: "magenta" }}>int</span>* point_var = var;
+                  <br /><br />
+                  <span className='fw-lighter text-secondary'>// access value pointed by point_var</span>
+                  <br />
+                  <span className='text-warning'>cout</span>{"<<"} *point_var {'<<'}<span className='text-warning'>endl</span>;                   <span className='fw-lighter text-secondary'>// Output: 5 </span>
+                </code>
+              </p>
+              </div>
+
+              <div className="p-0" id="ReferencesIntro"></div>
+              <p className="pt-5 px-3 text-info fs-5">
+                References
+              </p>
+              <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
+              <p>
+              In C++, we use a reference to create an alias for a variable. We can use the reference variable to access or modify the variable.              </p>
+
+              <p className="pt-4 fw-bold">
+              Create a C++ Reference
+              </p>
+
+              <p>
+              We use the ampersand sign to create a reference. For example,
+              </p>
+
+              <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                <code className='text-light'>  
+                <span style={{ color: "magenta" }}>string</span> city = <span style={{ color: "lightgreen" }}>"Paris"</span>;
+                  <br />
+                <span style={{ color: "magenta" }}>string</span>& ref_city = city;
+                </code>
+              </p>
+
+              <p>Here,</p>
+              <ul style={{lineHeight:2}}>
+                <li><span className='p-1 px-2 border rounded'>string</span> - datatype of the variable</li>
+                <li><span className='p-1 px-2 border rounded'>&</span> - denotes we are creating a reference</li>
+                <li><span className='p-1 px-2 border rounded'>ref_city</span> - name of the reference variable</li>
+                <li><span className='p-1 px-2 border rounded'>city</span> - the variable for which reference is created</li>
+              </ul>
+
+
+
+              <p className="pt-4 fw-bold">
+              Example of Reference :
+              </p>
+
+              <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                  <code className='text-light'>
+
+                    <span style={{ color: "#4eb5ff" }}>#include</span> <span style={{ color: "#00c400" }}>{"<"}iostream{">"}</span>
+                    <br />
+                    <span style={{ color: "magenta" }}>using namespace </span><span style={{ color: "orange" }}>std</span>;
+                    <br /><br />
+
+                    <span style={{ color: "magenta" }}>int</span> <span style={{ color: "#4eb5ff" }}>main</span>{"()"}
+                    {"{"}
+                    <br /><br />
+                    &nbsp;    <span style={{ color: "magenta" }}>string</span> city = <span style={{ color: "lightgreen" }}>"Paris"</span>;
+                    <br /><br />
+                    &nbsp;    <span className='fw-lighter text-secondary'>// create a reference to the variable</span>
+                    <br />
+                    &nbsp;    <span style={{ color: "magenta" }}>string</span>& ref_city = city;
+                    <br />
+                    <br />
+                    &nbsp;    <span className='fw-lighter text-secondary'>// create a reference to the variable</span>
+                    <br />
+                    &nbsp;    <span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Variable Value: "</span>{'<<'} city {'<<'}<span className='text-warning'>endl</span>;
+                    <br />
+                    &nbsp;    <span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Reference Value:  "</span>{'<<'} ref_city {'<<'}<span className='text-warning'>endl</span>;
+                    <br />
+                    {"}"}
+                  </code>
+                </p>             
+
+
+                <b>Output :</b>
+                <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+                  <code className='text-light'>
+                  Variable Value: Paris
+                  <br />
+                  Reference Value: Paris
+                  </code>
+                </p>
+              <p style={{lineHeight:2}}>
+              In the above example, we have used the reference variable <span className='p-1 px-2 border rounded'>ref_city</span> to display the value of the variable <span className='p-1 px-2 border rounded'>city</span>.
+              </p>
+              </div>
 
             </div>
         {/* ======================================== /Pointers  =========================================== */}
