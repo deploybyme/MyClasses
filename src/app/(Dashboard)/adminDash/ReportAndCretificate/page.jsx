@@ -6,9 +6,10 @@ import { doc,getDoc} from 'firebase/firestore'
 
 import ReportAndCertificate from '@/app/components/Main/StudentData/ReportAndCertificate';
 
-export default function TotalExp(props) {
-
+export default function ReportAndCretificate(props) {
+  const [ToggleStudent, setToggleStudent] = useState(true);
   const [userDetails, setUserDetails] = useState(null);
+
   const fetchUserData = async()=>{
       auth.onAuthStateChanged(async(user)=>{
           
@@ -23,6 +24,7 @@ export default function TotalExp(props) {
           }
       })
   };
+
   useEffect(()=>{
       fetchUserData()
   },[]);
@@ -35,14 +37,21 @@ export default function TotalExp(props) {
     <>
     <div className="px-sm-5 pt-3">
       
-<ul className="nav nav-pills mb-3 mx-2 border rounded text-light justify-content-center bg-light py-1" id="pills-tab" role="tablist">
-  <li className="nav-item" role="presentation">
-    <button className="nav-link link-dark border active" id="pills-student-tab" data-bs-toggle="pill" data-bs-target="#pills-student" type="button" role="tab" aria-controls="pills-student" aria-selected="true">Student Performance</button>
-  </li>
-</ul>
+    <ul className="nav nav-pills mb-3 mx-2 border justify-content-center rounded text-light bg-light" id="pills-tab" role="tablist">
+            <li className="nav-item me-2" role="presentation">
+              <button className="nav-link link-dark border border-dark active"
+                id="pills-Transition-tab" data-bs-toggle="pill" data-bs-target="#pills-Transition"
+                type="button" role="tab" aria-controls="pills-Transition" aria-selected="false"
+                onClick={() => setToggleStudent(!ToggleStudent)}
+              >
+                {ToggleStudent ? "Tab to Old Student" : "Tab to New Student"}
+              </button>
+            </li>
+          </ul>
+
 <div className="tab-content" id="pills-tabContent">
   <div className="tab-pane fade show active" id="pills-student" role="tabpanel" aria-labelledby="pills-student-tab">
-      <ReportAndCertificate/>
+      <ReportAndCertificate studentType={ToggleStudent ? "New" : "Old"}/>
   </div>
 </div>
 
