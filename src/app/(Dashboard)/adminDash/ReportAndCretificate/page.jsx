@@ -6,7 +6,7 @@ import { doc,getDoc} from 'firebase/firestore'
 
 import ReportAndCertificate from '@/app/components/Main/StudentData/ReportAndCertificate';
 
-export default function ReportAndCretificate(props) {
+export default function Report(props) {
   const [ToggleStudent, setToggleStudent] = useState(true);
   const [userDetails, setUserDetails] = useState(null);
 
