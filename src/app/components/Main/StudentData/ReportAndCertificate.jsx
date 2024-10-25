@@ -159,14 +159,14 @@ if(UpdateCourse === "JavaScript"){
                                     <small className='my-2 p-0'>Class Performance</small>
                                     <div className="progress px-0 border border-secondary" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number((data["C Marks"]/20)*100)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["C Marks"])} / 20 || " Not Updated yet! "
+                                                {data["C Marks"] ? Number(data["C Marks"]) + ' / 20' : " Not Updated yet! "}
                                             </div>
                                         </div>
 
                                     <small className='my-2 p-0'>Overall Performance</small>
                                     <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
                                             <div className="progress-bar" role="progressbar" style={{width: Number(data["Cpp Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["Cpp Marks"])} / 100 || " Not Updated yet! "
+                                                {data["Cpp Marks"] ? Number(data["Cpp Marks"]) + ' / 100' : " Not Updated yet! "}
                                             </div>
                                     </div>
                                 </>
@@ -176,20 +176,20 @@ if(UpdateCourse === "JavaScript"){
                                         <small className='my-2 p-0'>Class Performance</small>
                                         <div className="progress px-0 border border-danger" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(data["HTML Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["HTML Marks"])} / 20 || " Not Updated yet! "
+                                                {data["HTML Marks"] ? Number(data["HTML Marks"]) + ' / 20' : " Not Updated yet! "}
                                             </div>
                                         </div>
     
                                         <small className='my-2 p-0'>Project</small>
                                         <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
                                             <div className="progress-bar" role="progressbar" style={{width: Number(data["CSS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["CSS Marks"])} / 30 || " Not Updated yet! "
+                                                {data["CSS Marks"] ? Number(data["CSS Marks"]) + ' / 30' : " Not Updated yet! "}
                                             </div>
                                         </div>
                                         <small className='my-2 p-0'>Overall Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["JS Marks"])} /100 || " Not Updated yet! "
+                                                {data["JS Marks"] ? Number(data["JS Marks"]) + ' /100' : " Not Updated yet! "}
                                             </div>
                                         </div>
                                     </>
@@ -199,7 +199,7 @@ if(UpdateCourse === "JavaScript"){
                                         <small className='my-2 p-0'>Overall Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["JS Marks"])} / 100 || " Not Updated yet! "
+                                                {data["JS Marks"] ? Number(data["JS Marks"]) + ' / 100' : " Not Updated yet! "}
                                             </div>
                                         </div>
                                     </>
