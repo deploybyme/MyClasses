@@ -88,14 +88,14 @@ export default function Profile(props) {
                                     <small className='my-2 p-0'>Class Performance</small>
                                     <div className="progress px-0 border border-secondary" style={{height: 20+"px"}}>
                                             <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number((props.CMarks/20)*100)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                            {props.CMarks} / 20 || " Not Updated yet! "
+                                            {propst.CMarks ? propst.CMarks + ' / 20 ' : " Not Updated yet! "}
                                             </div>
                                     </div>
 
                                     <small className='my-2 p-0'>Overall Performance</small>
                                     <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
                                             <div className="progress-bar" role="progressbar" style={{width: Number(props.CppMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                              {props.CppMarks} / 100 || " Not Updated yet! "
+                                              {props.CppMarks ? props.CppMarks + ' / 100 ' : " Not Updated yet! "}
                                               </div>
                                     </div>
                                 </>
@@ -104,16 +104,16 @@ export default function Profile(props) {
                                     <>
                                         <small className='my-2 p-0'>Class Performance</small>
                                         <div className="progress px-0 border border-danger" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(props.HtmlMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{Number(props.HtmlMarks)} / 20|| " Not Updated yet! "</div>
+                                            <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(props.HtmlMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{props.HtmlMarks ? Number(props.HtmlMarks) + ' / 20' : " Not Updated yet! "}</div>
                                         </div>
     
                                         <small className='my-2 p-0'>Project</small>
                                         <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(props.CssMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{Number(props.CssMarks)} / 30|| " Not Updated yet! "</div>
+                                            <div className="progress-bar" role="progressbar" style={{width: Number(props.CssMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{props.CssMarks ? Number(props.CssMarks) + ' / 30' : " Not Updated yet! "}</div>
                                         </div>
                                         <small className='my-2 p-0'>Overall Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(props.JsMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{Number(props.JsMarks)} /100 || " Not Updated yet! "</div>
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(props.JsMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{props.JsMarks ? Number(props.JsMarks) + ' /100 ' : " Not Updated yet! "}</div>
                                         </div>
                                     </>
                                 ):(
@@ -121,7 +121,7 @@ export default function Profile(props) {
                                     <>
                                         <small className='my-2 p-0'>Overall Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(props.JsMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{Number(props.JsMarks)} / 100|| " Not Updated yet! "</div>
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(props.JsMarks)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{props.JsMarks ? Number(props.JsMarks) + ' /100 ' : " Not Updated yet! "}</div>
                                         </div>
                                     </>
                                 ):(
