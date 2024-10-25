@@ -64,11 +64,9 @@ export default function StudentProfile() {
             AdmissionDate={userDetails.admissionDate}
             Id={userDetails.uid} 
             Course={userDetails.course}
-            CMarks={userDetails["C Marks"]}
-            CppMarks={userDetails["Cpp Marks"]}
-            HtmlMarks={userDetails["HTML Marks"]}
-            CssMarks={userDetails["CSS Marks"]}
-            JsMarks={userDetails["JS Marks"]}
+            ClassPerformance={userDetails["Class Performance"]}
+            TheoryMarks={userDetails["Theory Performance"]}
+            ProjectMarks={userDetails["Project Performance"]}
           />
         </>
       ) : (
