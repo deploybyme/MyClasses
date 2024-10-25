@@ -6,13 +6,10 @@ import { doc, collection, getDocs, updateDoc} from 'firebase/firestore'
 
 export default function ReportAndCertificate(props) {
   
-  const[CppMarks,setCppMarks]=useState("")
-  const[CMarks,setCMarks]=useState("")
-
-  const[HtmlMarks,setHtmlMarks]=useState("")
-  const[CssMarks,setCssMarks]=useState("")
-  const[JsMarks,setJsMarks]=useState("")
-
+  const[ClassPerformance,setClassPerformance]=useState("")
+  const[TheoryMarks,setTheoryMarks]=useState("")
+  const[ProjectMarks,setProjectMarks]=useState("")
+  
   const[updateName,setUpdateName]=useState();
   const[UpdateCourse,setUpdateCourse]=useState();
 
@@ -66,8 +63,8 @@ const update = async ()=>{
 if(UpdateCourse === "C and C++ Programing"){
     try {
         await updateDoc(updateRef ,{
-        "C Marks": CMarks,
-        "Cpp Marks":CppMarks,
+          "Class Performance": Number(ClassPerformance),
+          "Theory Performance": Number(TheoryMarks),
       })
       alert("C/C++ Performance Mark Successfully");
   
@@ -79,10 +76,10 @@ if(UpdateCourse === "C and C++ Programing"){
 if(UpdateCourse === "FrontEnd Development"){
     try {
         await updateDoc(updateRef ,{
-        "HTML Marks": HtmlMarks,
-        "CSS Marks":CssMarks,
-        "JS Marks": JsMarks
-      })
+          "Class Performance": Number(ClassPerformance),
+          "Theory Performance": Number(TheoryMarks),
+          "Project Performance": Number(ProjectMarks),
+        })
       alert("FrontEnd Performance Mark Successfully");
   
       window.location.reload()
@@ -93,7 +90,9 @@ if(UpdateCourse === "FrontEnd Development"){
 if(UpdateCourse === "JavaScript"){
     try {
         await updateDoc(updateRef ,{
-        "JS Marks": JsMarks
+          "Class Performance": Number(ClassPerformance),
+          "Theory Performance": Number(TheoryMarks),
+          "Project Performance": Number(ProjectMarks),
       })
       alert("Javascript Performance Mark Successfully");
   
@@ -128,7 +127,7 @@ if(UpdateCourse === "JavaScript"){
             fetchData.map( (data,index) => 
             {
             return(
-            
+              (data.studentType === (props.studentType))?
               <div key={data.id} className="accordion shadow-0 mt-1 overflow-hidden">
                 <div className="accordion-item ">
                   <h2 className="accordion-header">
@@ -156,50 +155,65 @@ if(UpdateCourse === "JavaScript"){
                             (data.course==="C and C++ Programing")?(
                                 <>
 
-                                    <small className='my-2 p-0'>C Programing</small>
+                                    <small className='my-2 p-0'>Class Performance</small>
                                     <div className="progress px-0 border border-secondary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number((data["C Marks"]/20)*100)+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["C Marks"])} / 20
+                                            <div className="progress-bar bg-secondary" role="progressbar" style={{width: Number((data["Class Performance"]/20)*100)+"%" , padding: "0 10px" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Class Performance"]) || 'Not Updated yet'}
                                             </div>
                                         </div>
 
-                                    <small className='my-2 p-0'>C++ Programing</small>
+                                    <small className='my-2 p-0'>Theory Performance</small>
                                     <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["Cpp Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["Cpp Marks"])}
+                                            <div className="progress-bar" role="progressbar" style={{width: Number((data["Theory Performance"]/80)*100)+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Theory Performance"]) || 'Not Updated yet'}
                                             </div>
                                     </div>
                                 </>
                             ):(
                                 (data.course==="FrontEnd Development")?(
                                     <>
-                                        <small className='my-2 p-0'>HTML</small>
+                                        <small className='my-2 p-0'>Class Performance</small>
                                         <div className="progress px-0 border border-danger" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(data["HTML Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["HTML Marks"])}
+                                            <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(data["Class Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Class Performance"]) || 'Not Updated yet '} 
                                             </div>
                                         </div>
     
-                                        <small className='my-2 p-0'>CSS</small>
+                                        <small className='my-2 p-0'>Theory Performance</small>
                                         <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["CSS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["CSS Marks"])}
+                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["Theory Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Theory Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
-                                        <small className='my-2 p-0'>Javascript</small>
+
+                                        <small className='my-2 p-0'>Project Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["JS Marks"])}
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Project Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Project Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
                                     </>
                                 ):(
                                   (data.course==="JavaScript")?(
                                     <>
-                                        <small className='my-2 p-0'>Javascript</small>
+                                        <small className='my-2 p-0'>Class Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["JS Marks"])+"%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                {Number(data["JS Marks"])}
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Class Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Class Performance"]) || 'Not Updated yet '}
+                                            </div>
+                                        </div>
+
+                                        <small className='my-2 p-0'>Theory Performance</small>
+                                        <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Theory Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Theory Performance"]) || 'Not Updated yet '}
+                                            </div>
+                                        </div>
+
+                                        <small className='my-2 p-0'>Project Performance</small>
+                                        <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Project Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                {Number(data["Project Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
                                     </>
@@ -263,50 +277,64 @@ if(UpdateCourse === "JavaScript"){
                                 <>
 
                                     <div className="col-12 col-md-6"> 
-                                            <label htmlFor={`C${index}`} className="form-label"><b>C Programing</b></label>
+                                            <label htmlFor={`C${index}`} className="form-label"><b>Class Performance</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`C${index}`} value={CMarks} maxLength={3} placeholder='00'
-                                            onChange={(e)=>setCMarks(e.target.value)}/>
+                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setClassPerformance(e.target.value)}/>
                                     </div>
                                     <div className="col-12 col-md-6"> 
-                                            <label htmlFor={`Cpp${index}`} className="form-label"><b>C++ Programing</b></label>
+                                            <label htmlFor={`Cpp${index}`} className="form-label"><b>Theory Performance</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`Cpp${index}`} value={CppMarks} maxLength={3} placeholder='00'
-                                            onChange={(e)=>setCppMarks(e.target.value)}/>
+                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setTheoryMarks(e.target.value)}/>
                                     </div>
 
                                 </>
                             ):(
                                 (data.course==="FrontEnd Development")?(
                                     <>
-                                    <div className="col-12 col-md-4"> 
-                                            <label htmlFor={`HTML${index}`} className="form-label"><b>HTML</b></label>
+                                    <div className="col-12 col-md-6"> 
+                                            <label htmlFor={`C${index}`} className="form-label"><b>Class Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`HTML${index}`} value={HtmlMarks} maxLength={3} placeholder='00'
-                                            onChange={(e)=>setHtmlMarks(e.target.value)}/>
+                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setClassPerformance(e.target.value)}/>
                                     </div>
-                                    <div className="col-12 col-md-4"> 
-                                            <label htmlFor={`CSS${index}`} className="form-label"><b>CSS</b></label>
+                                    <div className="col-12 col-md-6"> 
+                                            <label htmlFor={`Cpp${index}`} className="form-label"><b>Theory Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`CSS${index}`} value={CssMarks} maxLength={3} placeholder='00'
-                                            onChange={(e)=>setCssMarks(e.target.value)}/>
+                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setTheoryMarks(e.target.value)}/>
                                     </div>
-                                    <div className="col-12 col-md-4"> 
-                                            <label htmlFor={`JS${index}`} className="form-label"><b>Javascript</b></label>
+
+                                    <div className="col-12 col-md-6"> 
+                                            <label htmlFor={`JS${index}`} className="form-label"><b>Project Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`JS${index}`} value={JsMarks} maxLength={3} placeholder='00'
-                                            onChange={(e)=>setJsMarks(e.target.value)}/>
+                                            id={`JS${index}`} value={ProjectMarks} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setProjectMarks(e.target.value)}/>
                                     </div>
 
                                     </>
                                 ):(
                                   (data.course==="JavaScript")?(
                                     <>
-                                        <div className="col-12"> 
-                                            <label htmlFor={`JS${index}`} className="form-label"><b>Javascript</b></label>
+                                    <div className="col-12 col-md-6"> 
+                                            <label htmlFor={`C${index}`} className="form-label"><b>Class Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`JS${index}`} value={JsMarks} maxLength={3} placeholder='00'
-                                            onChange={(e)=>setJsMarks(e.target.value)}/>
+                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setClassPerformance(e.target.value)}/>
+                                    </div>
+                                    <div className="col-12 col-md-6"> 
+                                            <label htmlFor={`Cpp${index}`} className="form-label"><b>Theory Marks</b></label>
+                                            <input type="text" className="form-control shadow-none"  required
+                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setTheoryMarks(e.target.value)}/>
+                                    </div>
+
+                                    <div className="col-12 col-md-6"> 
+                                            <label htmlFor={`JS${index}`} className="form-label"><b>Project Marks</b></label>
+                                            <input type="text" className="form-control shadow-none"  required
+                                            id={`JS${index}`} value={ProjectMarks} maxLength={3} placeholder='00'
+                                            onChange={(e)=>setProjectMarks(e.target.value)}/>
                                     </div>
                                     </>
                                 ):(
@@ -329,7 +357,7 @@ if(UpdateCourse === "JavaScript"){
               {/* --------------------------------------------------- */}  
 
               </div>  
-                   
+                  : ""
             )
             })
           }
