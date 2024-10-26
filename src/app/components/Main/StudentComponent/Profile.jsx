@@ -104,7 +104,7 @@ export default function Profile(props) {
                             <small className='my-2 p-0'>Overall Performance</small>
                             <div className="progress px-0 border border-warning" style={{ height: 20 + "px" }}>
                               <div className="progress-bar bg-warning text-dark" role="progressbar"
-                                style={{ width: Number(((props.ClassPerformance + props.TheoryMarks) / 2) * 100) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                style={{ width: Number(((props.ClassPerformance + props.TheoryMarks) / 100) * 100) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                 {Number(props.ClassPerformance + props.TheoryMarks) || 0} / 100
                               </div>
                             </div>
@@ -139,7 +139,7 @@ export default function Profile(props) {
                                 <small className='my-2 p-0'>Overall Performance</small>
                                 <div className="progress px-0 border border-warning" style={{ height: 20 + "px" }}>
                                   <div className="progress-bar bg-warning text-dark" role="progressbar"
-                                    style={{ width: Number(((props.ClassPerformance + props.TheoryMarks + props.ProjectMarks) / 3) * 100) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                    style={{ width: Number(((props.ClassPerformance + props.TheoryMarks + props.ProjectMarks) / 100) * 100) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                     {Number(props.ClassPerformance + props.TheoryMarks + props.ProjectMarks)}
                                   </div>
                                 </div>
@@ -166,7 +166,7 @@ export default function Profile(props) {
                                     <small className='my-2 p-0'>Overall Performance</small>
                                     <div className="progress px-0 border border-warning" style={{ height: 20 + "px" }}>
                                       <div className="progress-bar bg-warning text-dark" role="progressbar"
-                                        style={{ width: Number(((props.ClassPerformance + props.TheoryMarks) / 2) * 100) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                        style={{ width: Number(((props.ClassPerformance + props.TheoryMarks) / 100) * 100) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                         {Number(props.ClassPerformance + props.TheoryMarks) || 0} / 100
                                       </div>
                                     </div>
@@ -183,6 +183,7 @@ export default function Profile(props) {
                   </div>
                 </div>
               </div>
+
 
 
             </div>
