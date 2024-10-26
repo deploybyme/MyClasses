@@ -6,9 +6,7 @@ import { doc, collection, getDocs, updateDoc} from 'firebase/firestore'
 
 export default function ReportAndCertificate(props) {
   
-  const[ClassPerformance,setClassPerformance]=useState("")
-  const[TheoryMarks,setTheoryMarks]=useState("")
-  const[ProjectMarks,setProjectMarks]=useState("")
+
   
   const[updateName,setUpdateName]=useState();
   const[UpdateCourse,setUpdateCourse]=useState();
@@ -39,6 +37,10 @@ export default function ReportAndCertificate(props) {
         console.error("Error fetching data: ", error);
       }
     };
+
+    const[ClassPerformance,setClassPerformance]=useState("")
+    const[TheoryMarks,setTheoryMarks]=useState("")
+    const[ProjectMarks,setProjectMarks]=useState("")
 
     useEffect(() => {
       fetchFirebaseDatabase();
@@ -174,21 +176,21 @@ if(UpdateCourse === "JavaScript"){
                                     <>
                                         <small className='my-2 p-0'>Class Performance</small>
                                         <div className="progress px-0 border border-danger" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-danger" role="progressbar" style={{width: Number(data["Class Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-danger" role="progressbar" style={{width: Number((data["Class Performance"]/20)*100)+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Class Performance"]) || 'Not Updated yet '} 
                                             </div>
                                         </div>
     
                                         <small className='my-2 p-0'>Theory Performance</small>
                                         <div className="progress px-0 border border-primary" style={{height: 20+"px"}}>
-                                            <div className="progress-bar" role="progressbar" style={{width: Number(data["Theory Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar" role="progressbar" style={{width: Number((data["Theory Performance"]/50)*100)+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Theory Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
 
                                         <small className='my-2 p-0'>Project Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Project Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number((data["Project Performance"]/30)*100)+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Project Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
@@ -198,21 +200,21 @@ if(UpdateCourse === "JavaScript"){
                                     <>
                                         <small className='my-2 p-0'>Class Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Class Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number((data["Class Performance"]/20)*100)+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Class Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
 
                                         <small className='my-2 p-0'>Theory Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Theory Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number((data["Theory Performance"]/50)*100)+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Theory Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
 
                                         <small className='my-2 p-0'>Project Performance</small>
                                         <div className="progress px-0 border border-warning" style={{height: 20+"px"}}>
-                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number(data["Project Performance"])+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div className="progress-bar bg-warning text-dark" role="progressbar" style={{width: Number((data["Project Performance"]/30)*100)+"%" , padding: "0 10px"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                                 {Number(data["Project Performance"]) || 'Not Updated yet '}
                                             </div>
                                         </div>
@@ -279,13 +281,13 @@ if(UpdateCourse === "JavaScript"){
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`C${index}`} className="form-label"><b>Class Performance</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder='00'
+                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder={`Marks was ${data["Class Performance"]}`}
                                             onChange={(e)=>setClassPerformance(e.target.value)}/>
                                     </div>
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`Cpp${index}`} className="form-label"><b>Theory Performance</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder='00'
+                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder={`Marks was ${data["Theory Performance"]}`}
                                             onChange={(e)=>setTheoryMarks(e.target.value)}/>
                                     </div>
 
@@ -296,20 +298,20 @@ if(UpdateCourse === "JavaScript"){
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`C${index}`} className="form-label"><b>Class Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder='00'
+                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder={`Marks was ${data["Class Performance"]}`}
                                             onChange={(e)=>setClassPerformance(e.target.value)}/>
                                     </div>
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`Cpp${index}`} className="form-label"><b>Theory Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder='00'
+                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder={`Marks was ${data["Theory Performance"]}`}
                                             onChange={(e)=>setTheoryMarks(e.target.value)}/>
                                     </div>
 
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`JS${index}`} className="form-label"><b>Project Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`JS${index}`} value={ProjectMarks} maxLength={3} placeholder='00'
+                                            id={`JS${index}`} value={ProjectMarks} maxLength={3} placeholder={`Marks was ${data["Project Performance"]}`}
                                             onChange={(e)=>setProjectMarks(e.target.value)}/>
                                     </div>
 
@@ -320,20 +322,20 @@ if(UpdateCourse === "JavaScript"){
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`C${index}`} className="form-label"><b>Class Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder='00'
+                                            id={`C${index}`} value={ClassPerformance} maxLength={3} placeholder={`Marks was ${data["Class Performance"]}`}
                                             onChange={(e)=>setClassPerformance(e.target.value)}/>
                                     </div>
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`Cpp${index}`} className="form-label"><b>Theory Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder='00'
+                                            id={`Cpp${index}`} value={TheoryMarks} maxLength={3} placeholder={`Marks was ${data["Theory Performance"]}`}
                                             onChange={(e)=>setTheoryMarks(e.target.value)}/>
                                     </div>
 
                                     <div className="col-12 col-md-6"> 
                                             <label htmlFor={`JS${index}`} className="form-label"><b>Project Marks</b></label>
                                             <input type="text" className="form-control shadow-none"  required
-                                            id={`JS${index}`} value={ProjectMarks} maxLength={3} placeholder='00'
+                                            id={`JS${index}`} value={ProjectMarks} maxLength={3} placeholder={`Marks was ${data["Project Performance"]}`}
                                             onChange={(e)=>setProjectMarks(e.target.value)}/>
                                     </div>
                                     </>
@@ -361,8 +363,6 @@ if(UpdateCourse === "JavaScript"){
             )
             })
           }
-
-
 
   
 </div>
