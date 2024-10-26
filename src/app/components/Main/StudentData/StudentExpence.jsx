@@ -14,7 +14,6 @@ export default function StudentExpence(props) {
   + currentdate.getMinutes() + ":" 
   + currentdate.getSeconds();
   
-  const [searchQuery, setSearchQuery] = useState("");
   const[Pay,setPay]=useState("")
   const[updateName,setUpdateName]=useState();
   const[UpdateCourse,setUpdateCourse]=useState();
@@ -89,7 +88,6 @@ const update = async ()=>{
   }
 }
 
-const [showMe, setShowMe] = useState(false);
 
   return (
     <>
@@ -131,19 +129,19 @@ const [showMe, setShowMe] = useState(false);
                         <div className="col-12 col-md-3 text-start p-2 mt-md-0 mt-2 mx-2 fw-light rounded"
                         style={{background:`
                           ${
-                          data.balance>=3500?
-                            "#ff000099"
+                          data.balance>=3000?
+                            "#ff0000"
                           :
-                          data.balance>=1500?
-                            "#ffff50bd"
+                          data.balance>=2500?
+                            "#ffac00"
                           :
-                          data.balance>=1000?
-                            "#ffff00bd"
+                          data.balance>=2000?
+                            "#ffff00"
                           :
                           data.balance>=500?
-                            "#d8fa96"
+                            "#97ff00"
                           :
-                            "#96fa96"
+                            "#2cff00"
                         }
                         `}}>
                           <b>{data.balance?"Balance :"+data.balance:(<>The Fee Paid <small>(in Full)</small></>)}</b>
