@@ -5,7 +5,7 @@ export default function Profile(props) {
     <>
 <div>
     <div className="main-body">
-          <div className="row gutters-sm">
+          <div className="row gutters-sm mx-0">
             <div className="col-md-4 mb-3">
               <div className="card" style={{position: "sticky", top: 75+"px"}}>
                 <div className="card-body">
