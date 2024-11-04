@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from 'react';
 import { signInWithEmailAndPassword, setPersistence, browserLocalPersistence, onAuthStateChanged } from 'firebase/auth';
-import { auth } from '../../../firebase';
+import { auth, db } from '../../../firebase'; // Make sure to import Firestore
+import { doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import Modal from '../SignUp/Modal';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; // updated import for Next.js 13+
@@ -36,8 +37,14 @@ export default function UserLogin() {
       // Set persistence to 'local', so user stays logged in even after closing the browser
       await setPersistence(auth, browserLocalPersistence);
       
-      // // Sign in the user
-      await signInWithEmailAndPassword(auth, email, password);
+      // Sign in the user
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const userId = userCredential.user.uid;
+
+      // Store the login timestamp in the StudentRegister document
+      await setDoc(doc(db, "StudentRegister", userId), {
+        lastLogin: serverTimestamp() // This will store the current timestamp
+      }, { merge: true }); // Use merge to avoid overwriting existing data
 
       // Redirect to dashboard
       router.push("/userDash");
@@ -51,11 +58,9 @@ export default function UserLogin() {
     <div className="d-flex justify-content-center align-self-center py-5 mt-5">
       <form id="LoginForm" onSubmit={handleSubmit}>
         <div className="row">
-
           <div className="col-12 text-end">
             <Link className='text-decoration-none text-info text-end' href="/AdminLogin">Admin</Link>
           </div>
-
           <div className='col-12'>
             <div className='container d-flex flex-column'>
               <i className="bi bi-feather align-self-center icon"></i>
@@ -104,10 +109,9 @@ export default function UserLogin() {
               Register Student
             </button>
           </div>
-
         </div>
       </form>   
-      <Modal/>
+      <Modal />
     </div>
   );
 }
