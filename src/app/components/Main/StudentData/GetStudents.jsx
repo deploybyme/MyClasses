@@ -100,7 +100,7 @@ export default function GetStudents(props) {
   const formatDate = (timestamp) => {
     if (!timestamp) return "Not Login yet!";
     const date = new Date(timestamp.seconds * 1000); // Convert seconds to milliseconds
-    return date.toLocaleTimeString() +" | "+ date.toDateString(); // Customize this format as needed
+    return date.toDateString() +" | "+ date.toLocaleTimeString(); // Customize this format as needed
   };
 
   return (
