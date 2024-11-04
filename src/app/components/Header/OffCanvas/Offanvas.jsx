@@ -22,13 +22,24 @@ export default function Offanvas(props) {
       fetchUserData()
   },[]);
 
+  function handleLogout(){
+    try {
+        auth.signOut();
+        window.location.href =(props.Directory==="StudentRegister")?"/":"/AdminLogin";
+        console.log("User Logout Successfully !");
+
+    } catch (error) {
+        console.error("Error Logging Out :",error.message);
+    }
+}
+
+
 
   return (
     <>
     <div className="offcanvas offcanvas-start sidebar-nav bg-dark text-light"  data-bs-scroll="true"  tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div className="offcanvas-header d-flex justify-content-between">
         <h5 className="offcanvas-title">
-          {/* <i className="bi bi-kanban mx-2"></i> */}
           <i className="bi bi-menu-button-wide text-light me-2"></i>
           DASHBOARD</h5>
         <button type="button" className="bg-transparent shadow-none text-light border-0 dash-btn" data-bs-dismiss="offcanvas">
@@ -40,13 +51,13 @@ export default function Offanvas(props) {
           <div className="col-12">
     { userDetails ? (
                 <>
-                <small className='text-start ps-2 type'>{userDetails.MemberType?<>{userDetails.MemberType} <big>{userDetails.name}</big></>:<big>{userDetails.name}</big>}</small>
+                <small className='text-start ps-2 type'>{userDetails.MemberType?<><big>{userDetails.name}</big></>:<big>{userDetails.name}</big>}</small>
                 <h6 className='accountInfo'>{userDetails.email}</h6>
                 </>
               ) : (
                 <>
                 <small className='text-start ps-2 type'>User</small>
-                <h6 className='accountInfo'>Email id</h6>
+                <h6 className='accountInfo'>Email</h6>
                 </>
         )}
           </div>
@@ -126,6 +137,17 @@ export default function Offanvas(props) {
           }
 
       </div>
+
+
+
+
+
+          <div className='nav flex-column nav-pills px-3 py-4 fixed'>
+            <button className="dropdown-item d-flex align-items-center justify-content-center rounded" type="button" id="exit" onClick={handleLogout}>
+                <i className="bi bi-box-arrow-in-right fs-4 me-1"></i>
+                <b className='text-decoration-none fw-light'>Log Out</b>
+            </button>
+          </div>
 
     </div>
     </>
