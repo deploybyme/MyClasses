@@ -23,7 +23,7 @@ export default function FeeStatus(props) {
                 <div className="card-body">
                   <div className="row mt-2">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-tags-fill me-2 fs-5"></i>Course Fee</h6>
+                      <h6 className="mb-0"><i className="bi bi-tags-fill me-2 fs-5"></i>Course Fee</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2 text-secondary">
                         {props.Fee}
@@ -32,7 +32,7 @@ export default function FeeStatus(props) {
                   <hr/>
                   <div className="row">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-cash-coin me-2 fs-5"></i>Paid</h6>
+                      <h6 className="mb-0"><i className="bi bi-cash-coin me-2 fs-5"></i>Paid</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2" style={{color:"green"}}>
                         {props.Paid}
@@ -41,7 +41,7 @@ export default function FeeStatus(props) {
                   <hr/>
                   <div className="row">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-coin me-2 fs-5"></i>Balance</h6>
+                      <h6 className="mb-0"><i className="bi bi-coin me-2 fs-5"></i>Balance</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2" style={{color:"red"}}>
                         {props.Balance}
@@ -50,7 +50,7 @@ export default function FeeStatus(props) {
                   <hr/>
                   <div className="row">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-calendar-month me-2 fs-5"></i>Admission Date</h6>
+                      <h6 className="mb-0"><i className="bi bi-calendar-month me-2 fs-5"></i>Admission Date</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2 text-secondary">
                         {props.AdmissionDate}
