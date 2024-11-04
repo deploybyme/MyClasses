@@ -76,8 +76,8 @@ export default function Profile(props) {
                 </div>
               </div>
 
-              <div className="row gutters-sm">
-                <div className="col-12 mb-3">
+              <div className="row gutters-sm mx-0">
+                <div className="col-12 mb-3 px-0">
                   <div className="card h-100">
                     <div className="card-body">
                       <h6 className="d-flex align-items-center mb-3">Performance Status</h6>
