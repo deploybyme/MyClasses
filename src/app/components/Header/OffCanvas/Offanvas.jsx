@@ -106,10 +106,13 @@ export default function Offanvas(props) {
           </button>
 
 
+
+
+
           {userDetails ? (
             <>
               {
-                userDetails.MemberType == "Admin" ?
+                (userDetails.MemberType == "Admin" || userDetails.studentType) ?
                   <>
                     <hr />
                     <button className={`nav-link border`} id="tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
@@ -120,9 +123,18 @@ export default function Offanvas(props) {
                         </span>
                       </Link>
                     </button>
+                  </> : ("")
+              }
+            </>
+          ) : ("")
+          }
 
 
-
+          {userDetails ? (
+            <>
+              {
+                userDetails.MemberType == "Admin" ?
+                  <>
                     <button className={`nav-link border`} id="tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
                       <Link href={`${props.link3}`} className='bg-dark text-light text-decoration-none'>
                         <span className="d-flex justify-content-between">
