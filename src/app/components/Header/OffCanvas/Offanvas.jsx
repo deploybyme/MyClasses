@@ -106,14 +106,12 @@ export default function Offanvas(props) {
           </button>
 
 
-          <hr />
-
-
           {userDetails ? (
             <>
               {
                 userDetails.MemberType == "Admin" ?
                   <>
+                    <hr />
                     <button className={`nav-link border`} id="tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
                       <Link href={`${props.link2}`} className='bg-dark text-light text-decoration-none'>
                         <span className="d-flex justify-content-between">
