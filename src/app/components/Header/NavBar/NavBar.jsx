@@ -42,7 +42,7 @@ export default function NavBar(props) {
 <nav id="navbar" className="navbar navbar-dark border-bottom-dark shadow fixed-top me-0 me-lg-2">
         <div className="container-fluid">
             <button className="navbar-toggler shadow-none border-0 dash-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <i className="bi bi-kanban text-light m-0"></i>
+            <i class="bi bi-menu-button-wide text-light m-0 fs-3"></i>
             </button>
           <a className="navbar-brand">
             <span className="d-flex"> 
