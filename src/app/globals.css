@@ -74,7 +74,6 @@ body::-webkit-scrollbar{
     background: #ffffff;
     border-radius: 20px;
     border:1px solid black;
-    margin: 0px 2px;
 }
 .accordion{
     border:1px solid black !important;
