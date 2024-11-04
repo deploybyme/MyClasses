@@ -28,7 +28,7 @@ export default function Offanvas(props) {
     <div className="offcanvas offcanvas-start sidebar-nav bg-dark text-light"  data-bs-scroll="true"  tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div className="offcanvas-header d-flex justify-content-between">
         <h5 className="offcanvas-title">
-         <i className="bi bi-menu-button-wide text-light m-0 fs-4"></i>
+          <i className="bi bi-menu-button-wide text-light me-2"></i>
          </i>DASHBOARD</h5>
         <button type="button" className="bg-transparent shadow-none text-light border-0 dash-btn" data-bs-dismiss="offcanvas">
            <i className="bi bi-x-lg"></i>
