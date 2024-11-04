@@ -30,7 +30,7 @@ export default function Profile(props) {
                 <div className="card-body">
                   <div className="row mt-2">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-person-fill me-2 fs-5"></i>Full Name</h6>
+                      <h6 className="mb-0"><i className="bi bi-person-fill me-2 fs-5"></i>Full Name</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.Name}
@@ -39,7 +39,7 @@ export default function Profile(props) {
                   <hr/>
                   <div className="row">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-envelope-at-fill me-2 fs-5"></i>Email</h6>
+                      <h6 className="mb-0"><i className="bi bi-envelope-at-fill me-2 fs-5"></i>Email</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.Email}
@@ -48,7 +48,7 @@ export default function Profile(props) {
                   <hr/>
                   <div className="row">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-people-fill me-2 fs-5"></i>Father's Name</h6>
+                      <h6 className="mb-0"><i className="bi bi-people-fill me-2 fs-5"></i>Father's Name</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.fatherName}
@@ -57,7 +57,7 @@ export default function Profile(props) {
                   <hr/>
                   <div className="row">
                     <div className="col-sm-5">
-                      <h6 className="mb-0"><i class="bi bi-telephone-inbound-fill me-2 fs-5"></i>Phone</h6>
+                      <h6 className="mb-0"><i className="bi bi-telephone-inbound-fill me-2 fs-5"></i>Phone</h6>
                     </div>
                     <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.Phone}
