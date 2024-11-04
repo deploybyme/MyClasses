@@ -10,8 +10,11 @@ export default function Footer() {
         Introducing our Student Record Management System powered by Next.js:
          Simplifying educational data management for streamlined efficiency. 
          Join me in revolutionizing educational administration with MERN.</p>
-    <p className="text-center fw-lighter pt-2 mt-2">© 2024 All rights reserved,<br /> Designed by Faizan Mirza</p>
+    <p className="text-center fw-lighter pt-2 mt-2">
+        Made with 🤍 by Faizan Mirza
+    </p>
   </footer>
+
 </div>
   )
 }
