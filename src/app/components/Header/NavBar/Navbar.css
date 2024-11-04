@@ -10,14 +10,14 @@
 
 #exit{
     border-radius: 3px;
-    background: #ffffff9c !important;
-    border: 1.5px solid #ff00009c;
+    background: #4408089c !important;
+    border: 1.5px solid #ff0000;
     color: #ff0000 !important;
 }
 
 #exit:hover{
-    background: #ff00009c !important;
-    border: 1.5px solid #d2d2d2;
+    background: #ff0000 !important;
+    border: 1.5px solid #ffffff;
 }
 
 #exit:hover i,
