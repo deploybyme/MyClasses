@@ -103,16 +103,24 @@ export default function Offanvas(props) {
     </button>
 
 
-
-    <button className= {`nav-link border`}  id="tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-      <Link href={`${props.link3}`} className='bg-dark text-light text-decoration-none'>
-          <span className="d-flex justify-content-between">
-          {props.tab3}
-          <i className={props.icon3}></i>
-          </span>
-      </Link> 
-    </button>
-
+          {userDetails ? (
+            <>
+              {
+                userDetails.MemberType ?
+                  <>
+                    <button className={`nav-link border`} id="tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                      <Link href={`${props.link3}`} className='bg-dark text-light text-decoration-none'>
+                        <span className="d-flex justify-content-between">
+                          {props.tab3}
+                          <i className={props.icon3}></i>
+                        </span>
+                      </Link>
+                    </button>
+                  </> : ("")
+              }
+            </>
+          ) : ("")
+          }
 
       </div>
 
