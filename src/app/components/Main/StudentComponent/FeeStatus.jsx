@@ -22,37 +22,37 @@ export default function FeeStatus(props) {
               <div className="card mb-3">
                 <div className="card-body">
                   <div className="row mt-2">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Course Fee</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-tags-fill me-2 fs-5"></i>Course Fee</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2 text-secondary">
                         {props.Fee}
                     </div>
                   </div>
                   <hr/>
                   <div className="row">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Paid</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-cash-coin me-2 fs-5"></i>Paid</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2" style={{color:"green"}}>
                         {props.Paid}
                     </div>
                   </div>
                   <hr/>
                   <div className="row">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Balance</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-coin me-2 fs-5"></i>Balance</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2" style={{color:"red"}}>
                         {props.Balance}
                     </div>
                   </div>
                   <hr/>
                   <div className="row">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Admission Date</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-calendar-month me-2 fs-5"></i>Admission Date</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2 text-secondary">
                         {props.AdmissionDate}
                     </div>
                   </div>
@@ -68,7 +68,6 @@ export default function FeeStatus(props) {
 
                 </div>
               </div>
-
 
             </div>
           </div>
