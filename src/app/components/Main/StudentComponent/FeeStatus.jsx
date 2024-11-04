@@ -3,8 +3,8 @@ import React from 'react'
 export default function FeeStatus(props) {
   return (
     <div className="main-body">
-          <div className="row gutters-sm">
-            <div className="col-md-4 mb-3">
+          <div className="row gutters-sm mx-0">
+            <div className="col-md-4 mb-3 px-0">
               <div className="card" style={{position: "sticky", top: 75+"px"}}>
                 <div className="card-body">
                   <div className="d-flex flex-column align-items-center text-center">
@@ -18,7 +18,7 @@ export default function FeeStatus(props) {
                 </div>
               </div>
             </div>
-            <div className="col-md-8 mb-5">
+            <div className="col-md-8 mb-5 px-0">
               <div className="card mb-3">
                 <div className="card-body">
                   <div className="row mt-2">
