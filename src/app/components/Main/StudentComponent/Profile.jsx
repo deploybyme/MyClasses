@@ -29,37 +29,37 @@ export default function Profile(props) {
               <div className="card mb-3">
                 <div className="card-body">
                   <div className="row mt-2">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Full Name</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-person-fill me-2 fs-5"></i>Full Name</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.Name}
                     </div>
                   </div>
                   <hr/>
                   <div className="row">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Email</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-envelope-at-fill me-2 fs-5"></i>Email</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.Email}
                     </div>
                   </div>
                   <hr/>
                   <div className="row">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Father's Name</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-people-fill me-2 fs-5"></i>Father's Name</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.fatherName}
                     </div>
                   </div>
                   <hr/>
                   <div className="row">
-                    <div className="col-sm-4">
-                      <h6 className="mb-0">Phone</h6>
+                    <div className="col-sm-5">
+                      <h6 className="mb-0"><i class="bi bi-telephone-inbound-fill me-2 fs-5"></i>Phone</h6>
                     </div>
-                    <div className="col-sm-8 text-secondary">
+                    <div className="col-sm-7 mt-md-0 mt-2 text-primary">
                         {props.Phone}
                     </div>
                   </div>
@@ -167,9 +167,9 @@ export default function Profile(props) {
                                       </div>
                                     </div>
 
-                                    <hr className='mt-4'/>
+                                    <hr className='mt-2'/>
 
-                                    <small className='my-2 p-0'>Overall Performance</small>
+                                    <small className='my-1 p-0'>Overall Performance</small>
                                     <div className="progress px-0 border border-warning" style={{ height: 20 + "px" }}>
                                       <div className="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar"
                                         style={{ width: Number(((props.ClassPerformance + props.TheoryMarks) / 100) * 100) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
