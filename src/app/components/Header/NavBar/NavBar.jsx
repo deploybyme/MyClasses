@@ -26,23 +26,23 @@ export default function NavBar(props) {
 
 
 
-  function handleLogout(){
-      try {
-          auth.signOut();
-          window.location.href =(props.Directory==="StudentRegister")?"/":"/AdminLogin";
-          console.log("User Logout Successfully !");
+//   function handleLogout(){
+//       try {
+//           auth.signOut();
+//           window.location.href =(props.Directory==="StudentRegister")?"/":"/AdminLogin";
+//           console.log("User Logout Successfully !");
 
-      } catch (error) {
-          console.error("Error Logging Out :",error.message);
-      }
-  }
+//       } catch (error) {
+//           console.error("Error Logging Out :",error.message);
+//       }
+//   }
 
   return (
     <>
 <nav id="navbar" className="navbar navbar-dark border-bottom-dark shadow fixed-top me-0 me-lg-2">
         <div className="container-fluid">
             <button className="navbar-toggler shadow-none border-0 dash-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <i className="bi bi-menu-button-wide text-light m-0 fs-4"></i>
+            <i className="bi bi-menu-button-wide text-light m-0 fs-3"></i>
             </button>
           <a className="navbar-brand">
             <span className="d-flex"> 
@@ -64,22 +64,22 @@ export default function NavBar(props) {
                             </>
                         )}
                 </button>
-                <ul className="dropdown-menu dropdown-menu-end px-1 pb-1 mt-1">
-                    <li className='pt-1 username text-center'>
-                    
+                <ul className="dropdown-menu dropdown-menu-end px-1">
                         { userDetails ? (
-                           <b className='fw-bold'>{userDetails.name}</b>
+                            
+                            <>
+                            <li className='pt-1 username text-center'>
+                                <b className='fw-bold'>{userDetails.name}</b>
+                            </li>
+
+                            <li className='pt-1 username text-center  text-secondary'>
+                                <b className='fw-bold'>{userDetails.course? userDetails.course: userDetails.MemberType}</b>
+                            </li>
+
+                            </>
                         ) : (
                             <></>
                         )}
-                    
-                    </li>
-                    <li>
-                      <button className="dropdown-item d-flex align-items-center justify-content-center mt-2" type="button" id="exit" onClick={handleLogout}>
-                          <i className="bi bi-box-arrow-in-right fs-4 me-2"></i>
-                          <b className='text-decoration-none fw-light'>Logout</b>
-                      </button>
-                    </li>  
               </ul>
             </div>
                        
@@ -89,11 +89,6 @@ export default function NavBar(props) {
         </div>
     </nav>
                         
-
-
-
-
-
     </>
   )
 }
