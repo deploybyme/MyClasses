@@ -35,7 +35,7 @@ export default function GetStudents(props) {
         studentType: doc.data().studentType || '',
         lastLogin: doc.data().lastLogin,
         email: doc.data().email || '' ,
-        balance: doc.data().balance || '' ,
+        Balance: doc.data().balance || '' ,
       }));
 
       // Filter data based on search term
@@ -174,7 +174,7 @@ export default function GetStudents(props) {
                             <div className="row">
                               <div className="col-4"><b>Balance</b></div>
                               <div className="col-2"><b>:</b></div>
-                              <div className="col-4">{data.balance}</div>
+                              <div className="col-4">{data.Balance}</div>
                             </div>
                           </div>
                         </div>
