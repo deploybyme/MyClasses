@@ -4,7 +4,7 @@ import { db } from '@/app/firebase';
 import { doc, collection, getDocs, updateDoc } from 'firebase/firestore';
 
 export default function StudentExpence(props) {
-  const [Pay, setPay] = useState("");
+  const [Pay, setPay] = useState("");  // This will store the current payment being entered
   const [updateName, setUpdateName] = useState("");
   const [UpdateCourse, setUpdateCourse] = useState("");
   const [TotalPaid, setTotalPaid] = useState(0);
@@ -59,12 +59,29 @@ export default function StudentExpence(props) {
       const payNumber = Number(Pay) || 0;
       const balanceNumber = Number(Balance) || 0;
 
+      // Create the new payment object
+      const newPayment = {
+        payment: payNumber,
+        timestamp: new Date().toLocaleString()  // Current timestamp
+      };
+
+      // Get the current payments array or initialize it if it doesn't exist
+      const currentPayments = Array.isArray(fetchData.find((data) => data.id === id)?.payments)
+        ? fetchData.find((data) => data.id === id).payments
+        : [];
+
+      // Add the new payment to the payments array
+      const updatedPayments = [...currentPayments, newPayment];
+
+      // Update the total paid amount
       let add = totalPaidNumber + payNumber;
 
+      // Update the document in Firestore
       await updateDoc(updateRef, {
         totalPaid: add,
         TimeStamp: new Date().toLocaleString(),
         balance: balanceNumber - payNumber,
+        payments: updatedPayments,  // Save the updated array of payment objects
       });
 
       alert("Update Data Successfully");
