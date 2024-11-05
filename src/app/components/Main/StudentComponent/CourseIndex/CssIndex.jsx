@@ -334,31 +334,86 @@ export default function CssIndex() {
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
                   
-                  font-family:
+                    <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                        font-family:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        Fontnames like Arial |  monospace etc ;
+                      </div>
+                    </div>
+
+                </div>
+                <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                 
+                    <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      font-size: 
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      length units (px |  em |  rem |  etc) ;
+                      </div>
+                    </div>
+
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
                   
-                  font-size:
+                    <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      font-weight: 
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        normal |  bold |  bolder |  lighter |  100-900 ;
+                      </div>
+                    </div>
+
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
                   
-                  font-weight:
+                    <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                        font-style:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        normal |  italic |  obalique ;
+                      </div>
+                    </div>
+
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
                   
-                  font-style:
+                  <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                        font-variant:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      normal | small-caps | initial | inherit ;
+                      </div>
+                    </div>
+
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      font-stretch:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      normal | semi-condensed | condensed | extra-condensed | ultra-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded ;
+                      </div>
+                    </div>
                   
-                  font-variant:
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      line-height:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      normal | number | length | % ;
+                      </div>
+                    </div>
                   
-                  font-stretch:
-                </div>
-                <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
                   
-                  line-height:
                 </div>
 
         </div>
@@ -396,36 +451,98 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      text-decoration:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      underline | overline | line-through | none | value | initial | inherit ;
+                      </div>
+                    </div>
                   
-                  text-decoration:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      text-transform:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      none | capitalize | uppercase | lowercase | initial | inherit ;
+                      </div>
+                    </div>
                   
-                  text-transform:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      text-align:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      left | right | center | justify | initial | inherit ;
+                      </div>
+                    </div>
                   
-                  text-align:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      text-align-last:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      auto | left | right | center | justify | start | end | initial | inherit;
+                      </div>
+                    </div>
                   
-                  text-align-last:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      text-shadow:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      h-shadow v-shadow blur-radius color | none | initial | inherit;
+                      </div>
+                    </div>
                   
-                  text-shadow:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      line-height:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      normal | number | length | initial | inherit;
+                      </div>
+                    </div>
                   
-                  line-height:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      word-spacing:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      normal | length | initial | inherit;
+                      </div>
+                    </div>
                   
-                  vertical-align:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
-                  
-                  direction:
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      text-indent: 
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      length | initial | inherit;
+                      </div>
+                    </div>
                 </div>
         </div>
         </div>
@@ -462,40 +579,112 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-color:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      color-value(rgb(0-255,0-255,0-255), #rrggbb,) | transparent | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-color:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-image:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      url(path-to-image) | none | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-image: 
+                   
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-repeat:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      repeat | repeat-x | repeat-y | no-repeat | space | round | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-repeat:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-attachment:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      scroll | fixed | local | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-attachment:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-size:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      auto | length | cover | contain | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-size:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-clip:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      border-box | padding-box | content-box | text | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-clip:
+               
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-origin:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      padding-box | border-box | content-box | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-origin:
+                
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      background-position:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      length value(s) | percentage value(s) | keyword(s) | initial | inherit;
+                      </div>
+                    </div>
                   
-                  background-position: 
+                   
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      opacity:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      number (0.0 - 1.0) | initial | inherit;
+                      </div>
+                    </div>
                   
-                  opacity: 
+                   
                 </div>
         </div>
         </div>
@@ -532,28 +721,76 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      border-style: 
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      solid | dottet | dashed | double | grove | ridge | inset | outset | none;
+                      </div>
+                    </div>
                   
-                  border-style: 
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      border-width:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        thin, medium, thick, px, pt, % ;
+                      </div>
+                    </div>
                   
-                  border-width:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      border-color:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      color | transparent;
+                      </div>
+                    </div>
                   
-                  border-color: 
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      border-radius:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      value | initial | inherit;
+                      </div>
+                    </div>
                   
-                  border-radius:
+                 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      border-image:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      source(URL()) slice(number) / width / outset repeat | initial | inherit;
+                      </div>
+                    </div>
                   
-                  border-image:
+                  
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                      border:
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                      border-width  border-style  border-color;
+                      </div>
+                    </div>
                   
-                  border:
+                 
                 </div>
         </div>
         </div>
@@ -592,10 +829,26 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   height: 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   width:
                 </div>
@@ -617,11 +870,27 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   box-sizing:
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   box-shadow:
                 </div>
@@ -644,18 +913,50 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   padding-top: 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   padding-right:
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   padding-bottom: 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   padding-left: 
                 </div>
@@ -678,18 +979,50 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   margin-top: 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   margin-right:
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   margin-bottom: 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   margin-left: 
                 </div>
@@ -712,18 +1045,50 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   outline-style: 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   outline-width:
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   outline-color:
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   outline: 
                 </div>
@@ -890,10 +1255,26 @@ export default function CssIndex() {
                 </div>
 
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   CSS z-index 
                 </div>
                 <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                   
                   CSS overflow 
                 </div> 
@@ -1013,22 +1394,62 @@ export default function CssIndex() {
 
                           <div className="list-group">
                               <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                                 
                                 transition-property
                               </div>
                               <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                                 
                                 transition-duration 
                               </div>
                               <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                                 
                                 transition-timing-function
                               </div>
                               <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                                 
                                 transition-delay
                               </div>
                               <div  className="list-group-item bg-black text-light border-left-0 border-right-0">
+                <div className="row">
+                      <div className="col-12 col-sm-6 ">
+                       xxx
+                      </div>
+                      <div className="col-12 col-sm-6 text-warning">
+                        yyy
+                      </div>
+                    </div>
                                 
                                 transition (shorthand property)
                               </div>                
@@ -1118,8 +1539,6 @@ export default function CssIndex() {
       </div>
 
       
-
-  
   </section>
   
     </>
