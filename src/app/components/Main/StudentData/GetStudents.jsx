@@ -35,7 +35,7 @@ export default function GetStudents(props) {
         studentType: doc.data().studentType || '',
         lastLogin: doc.data().lastLogin,
         email: doc.data().email || '' ,
-        Balance: doc.data().balance || '' ,
+        Balance: doc.data().balance,
       }));
 
       // Filter data based on search term
@@ -106,10 +106,7 @@ export default function GetStudents(props) {
         studentType: studentType
       });
       alert("Data Updated Successfully");
-      // Close modal (assuming you're using Bootstrap)
-      const modalElement = document.getElementById('updateDataModal');
-      const modal = bootstrap.Modal.getInstance(modalElement);
-      modal.hide();
+      await refresh()
       fetchFirebaseDatabase(); // Refresh data
     } catch (error) {
       console.error("Update error: ", error);
@@ -117,6 +114,9 @@ export default function GetStudents(props) {
     }
   };
 
+  const refresh = () => {
+    window.location.reload();
+  }
   // Function to format Firestore timestamp
   const formatDate = (timestamp) => {
     if (!timestamp) return "Not Login yet!";
