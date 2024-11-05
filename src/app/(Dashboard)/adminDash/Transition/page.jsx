@@ -95,7 +95,7 @@ export default function Transition() {
             </div>
           </div>
 
-          <div className="row mx-4">
+          <div className="row mx-2">
             <div className="col-12 col-md-12 text-center box overflow-hidden">
               <div className="row mx-1">
                 <div className="col-12 col-md-4">
