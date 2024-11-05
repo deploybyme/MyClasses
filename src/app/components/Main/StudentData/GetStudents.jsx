@@ -34,6 +34,8 @@ export default function GetStudents(props) {
         admissionDate: doc.data().admissionDate || '',
         studentType: doc.data().studentType || '',
         lastLogin: doc.data().lastLogin,
+        email: doc.data().email || '' ,
+        balance: doc.data().balance || '' ,
       }));
 
       // Filter data based on search term
