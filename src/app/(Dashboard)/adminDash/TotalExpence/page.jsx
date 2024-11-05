@@ -182,7 +182,7 @@ export default function TotalExp(props) {
                   </button>
                 </li>
               </ul>
-              <div className="tab-content" id="pills-tabContent">
+              <div className="tab-content px-0" id="pills-tabContent">
                 <div className="tab-pane fade show active" id="pills-student" role="tabpanel" aria-labelledby="pills-student-tab">
                   <StudentExpence
                     showblock={showblock ? "none" : "block"}
