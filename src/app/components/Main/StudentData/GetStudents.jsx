@@ -36,6 +36,7 @@ export default function GetStudents(props) {
         lastLogin: doc.data().lastLogin,
         email: doc.data().email || '' ,
         Balance: doc.data().balance,
+        lastLogin:doc.data().lastPageLoad
       }));
 
       // Filter data based on search term
