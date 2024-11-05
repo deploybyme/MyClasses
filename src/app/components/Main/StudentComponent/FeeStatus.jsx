@@ -5,7 +5,7 @@ export default function FeeStatus(props) {
     <div className="main-body">
           <div className="row gutters-sm mx-0">
             <div className="col-md-4 mb-3 px-0">
-              <div className="card" style={{position: "sticky", top: 75+"px"}}>
+              <div className="card me-0 me-md-2" style={{position: "sticky", top: 75+"px"}}>
                 <div className="card-body">
                   <div className="d-flex flex-column align-items-center text-center">
                     
