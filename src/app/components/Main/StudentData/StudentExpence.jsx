@@ -62,7 +62,7 @@ export default function StudentExpence(props) {
       // Create the new payment object
       const newPayment = {
         payment: payNumber,
-        timestamp: "Paid on " + new Date().toLocaleString()  // Current timestamp
+        timestamp: "Paid on " + new Date().toDateString() + " | " + new Date().toLocaleTimeString()  // Current timestamp
       };
 
       // Get the current payments array or initialize it if it doesn't exist
@@ -79,7 +79,7 @@ export default function StudentExpence(props) {
       // Update the document in Firestore
       await updateDoc(updateRef, {
         totalPaid: add,
-        TimeStamp: "Paid on " + new Date().toLocaleString(),
+        TimeStamp: "Paid on " + new Date().toDateString() + " | " + new Date().toLocaleTimeString(),  // Current timestamp
         balance: balanceNumber - payNumber,
         payments: updatedPayments,  // Save the updated array of payment objects
       });
