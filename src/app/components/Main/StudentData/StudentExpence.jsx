@@ -173,6 +173,25 @@ export default function StudentExpence(props) {
                       </div>
                     </div>
 
+                    {/* Payments History */}
+                    <div className="row mt-2 w-100">
+                      <b>Payments History:</b>
+                      <div className="col-12">
+                        {data.payments && data.payments.length > 0 ? (
+                          <ul className="list-group mt-2">
+                            {data.payments.map((payment, idx) => (
+                              <li key={idx} className="list-group-item d-flex justify-content-between align-items-center">
+                                <span>{payment.timestamp}</span>
+                                <span className="btn btn-outline-primary px-2 py-2">{payment.payment}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p>No payments recorded.</p>
+                        )}
+                      </div>
+                    </div>
+
                     <div className="row mt-2">
                       <div className="col d-flex justify-content-end">
                         <button type="button" className='btn btn-primary mt-2'
