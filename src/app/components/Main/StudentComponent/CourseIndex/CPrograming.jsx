@@ -1083,13 +1083,13 @@ export default function CPrograming() {
                     <br />
                     {"{"}
                     <br />
-                    &nbsp; <span style={{ color: "magenta" }}>case </span> 0 :
+                    &nbsp; <span style={{ color: "magenta" }}>case </span> 1 :
                     <br />
                     &nbsp; &nbsp; &nbsp; <span style={{ color: "#0900ff" }}>// run if condition is true</span>
                     <br />
                     &nbsp; &nbsp; &nbsp; <span style={{ color: "magenta" }}>break</span>;
                     <br />
-                    &nbsp; <span style={{ color: "magenta" }}>case </span> 1 :
+                    &nbsp; <span style={{ color: "magenta" }}>case </span> 0 :
                     <br />
                     &nbsp; &nbsp; &nbsp; <span style={{ color: "#0900ff" }}>// run if condition is false</span>
                     <br />
