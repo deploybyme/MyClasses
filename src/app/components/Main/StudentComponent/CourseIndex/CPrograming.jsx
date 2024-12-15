@@ -95,6 +95,14 @@ export default function CPrograming() {
         </li>
         <li>
           <a href="#Structures" className="text-warning text-decoration-none">Structures</a>
+          <ul>
+            <li>
+              <a href="#StructuresIntro" className="text-decoration-none">Structures Data-Member</a>
+            </li>
+            <li>
+              <a href="#MemberFunction" className="text-decoration-none">Member Function</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a href="#FileHandling" className="text-warning text-decoration-none">File Handling</a>
@@ -1865,9 +1873,9 @@ export default function CPrograming() {
         <h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ Structures</h5>
         <div className="list-group">
 
-          <div className="p-0" id="PointerIntro"></div>
+          <div className="p-0 pb-3" id="StructuresIntro"></div>
           <p className="pt-5 px-3 text-info fs-5">
-            C++ Structures
+            Structure
           </p>
           <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
             <p>
@@ -2033,7 +2041,159 @@ export default function CPrograming() {
             </p>
           </div>
 
-{/* // yaha se karna h Member Function */}
+          <div className="list-group-item border-0 rounded-0 text-light bg-dark" style={{ textAlign: "justify" }}>
+            <div className="p-0 pb-3" id="MemberFunction"></div>
+            <p className="pt-5 fw-bold text-info">
+              Member Functions in C++ Structures
+            </p>
+            <p>
+              In C++, structures can also have member functions.
+            </p>
+            <p>
+              These member functions are similar to regular functions but are defined within the scope {" { ... } "} of a structure. They can access and manipulate the data members of the structure directly.
+            </p>
+            <p>
+              We can declare a member function by defining the function within the structure definition.
+            </p>
+
+            <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+              <code className='text-light'>
+
+                <span style={{ color: "magenta" }}>struct</span> <span className='text-warning'>Person</span>
+                {"{"}
+                <br />
+                &nbsp;    <span className='text-warning'>string</span> first_name ;
+                <br />
+                &nbsp;    <span className='text-warning'>string</span> first_name ;
+                <br />
+                &nbsp;    <span style={{ color: "magenta" }}>int</span> age ;
+                <br />
+                &nbsp;    <span style={{ color: "magenta" }}>float</span> salary ;
+                <br />
+                <br />
+                &nbsp;    // member function to display information about the person
+                <br />
+                &nbsp;    <span style={{ color: "magenta" }}>void</span> <span style={{ color: "#4eb5ff" }}>displayInfo</span>{"() {"}
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"First Name: "</span>{"<< "} p1.first_name {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Last Name: "</span>{"<< "} p1.last_name {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Age:  "</span>{"<< "} p1.age {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Salary: "</span>{"<< "} p1.salary {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp;    {"}"}
+                <br />
+                {"};"}
+              </code>
+            </p>
+
+            <p>
+              In this example, the <span className='p-1 border rounded'>Person</span> structure includes a member function, <span className='p-1 border rounded'>displayInfo( )</span> which displays the information about the person.
+            </p>
+            <p>
+              Let's look at an example.
+            </p>
+
+            <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+              <code className='text-light'>
+
+                <span style={{ color: "#4eb5ff" }}>#include</span> <span style={{ color: "#00c400" }}>{"<"}iostream{">"}</span>
+                <br />
+                <span style={{ color: "magenta" }}>using namespace </span><span style={{ color: "orange" }}>std</span>;
+                <br /><br />
+
+                <span style={{ color: "magenta" }}>struct</span> <span className='text-warning'>Person</span>
+                {"{"}
+                <br />
+                &nbsp;    <span className='text-warning'>string</span> first_name ;
+                <br />
+                &nbsp;    <span className='text-warning'>string</span> first_name ;
+                <br />
+                &nbsp;    <span style={{ color: "magenta" }}>int</span> age ;
+                <br />
+                &nbsp;    <span style={{ color: "magenta" }}>float</span> salary ;
+                <br />
+                <br />
+                &nbsp;    // member function to display information about the person
+                <br />
+                &nbsp;    <span style={{ color: "magenta" }}>void</span> <span style={{ color: "#4eb5ff" }}>displayInfo</span>{"() {"}
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"First Name: "</span>{"<< "} p1.first_name {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Last Name: "</span>{"<< "} p1.last_name {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Age:  "</span>{"<< "} p1.age {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Salary: "</span>{"<< "} p1.salary {" <<"}<span className='text-warning'>endl</span>;
+                <br />
+                &nbsp;    {"}"}
+                <br />
+                {"};"}
+                <br /><br />
+
+
+                <span style={{ color: "magenta" }}>int</span> <span style={{ color: "#4eb5ff" }}>main</span>{"()"}
+                {"{"}
+                <br />
+                <br />
+                &nbsp; &nbsp;Person p1;
+
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Enter first name:  "</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cin</span>{">>"} p1.first_name;
+                <br />
+
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Enter last name:   "</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cin</span>{">>"} p1.last_name;;
+                <br />
+
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Enter age:  "</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cin</span>{">>"} p1.age;
+                <br />
+
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"Enter salary:  "</span>;
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cin</span>{">>"} p1.salary;
+                <br /><br />
+
+                &nbsp; &nbsp;// display information using member function
+                <br />
+                &nbsp; &nbsp;<span className='text-warning'>cout</span>{"<<"}<span style={{ color: "lightgreen" }}>"\nDisplaying Information. "</span>{"<<"}<span className='text-warning'>endl</span>;
+                <br />
+
+                &nbsp; &nbsp;p1.<span style={{ color: "#4eb5ff" }}>displayInfo</span>{"();"}
+                <br />
+                &nbsp; &nbsp;<span style={{ color: "magenta" }}>return</span> 0;
+                <br />
+                {"}"}
+              </code>
+            </p>
+
+            <p className="pt-5 text-info">
+              Output :
+            </p>
+
+            <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+              <code className='text-light'>
+                Enter first name: Jane
+                <br />Enter last name: Smith
+                <br />Enter age: 27
+                <br />Enter salary: 10000
+                <br />
+                <br />Displaying Information.
+                <br />First Name: Jane
+                <br />Last Name: Smith
+                <br />Age: 27
+                <br />Salary: 10000
+              </code>
+            </p>
+
+          </div>
 
         </div>
         {/* ======================================  / Structures  =========================================== */}
@@ -2041,6 +2201,46 @@ export default function CPrograming() {
         <div className="p-4" id="FileHandling"></div>
         <h5 className="fw-bold bg-light text-dark p-3 border-bottom border-3 border-dark">C++ File Handling</h5>
         <div className="list-group">
+        <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
+
+            <p className="pt-5 fw-bold text-info">
+              File Handling
+            </p>
+            <p>
+            File handling in C++ is a mechanism to create and perform read/write operations on a file.
+            </p>
+            <p>
+            We can access various file handling methods in C++ by importing the <span className='p-1 border rounded'> {"<fstream>"}</span>{" class;"} 
+            </p>
+
+            <p className='bg-black rounded mt-2 p-2' id="CodeBox">
+              <code className='text-light'>
+              <span style={{ color: "#4eb5ff" }}>#include</span> <span style={{ color: "#00c400" }}>{"<"}fstream{">"}</span>
+              </code>
+            </p>
+            <p>
+            <span className='p-1 border rounded'> {"<fstream>"}</span> includes two classes for file handling:
+            </p>
+            <ul style={{lineHeight:"2"}}>
+              <li>
+              <span className='p-1 border rounded'> {"ifstream"}</span> {"  - to read from a file."} 
+              </li>
+              <li>
+              <span className='p-1 border rounded'> {"ofstream"}</span> {"  - to create/open and write to a file."} 
+              </li>
+            </ul>
+
+        </div>
+
+
+
+
+
+
+
+
+{/* yaha hu mai */}
+
           <div className="list-group-item border-0 rounded-0 bg-dark text-light py-4">
 
             Opening and Closing a File
